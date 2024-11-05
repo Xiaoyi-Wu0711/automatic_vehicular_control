@@ -1,7 +1,6 @@
 import scipy.signal
 from gym.spaces import Box, Discrete
 
-# from automatic_vehicular_control.u import *
 from u import *
 
 def discount(x, gamma):
@@ -572,12 +571,12 @@ class PPO(Algorithm):
                     pg_obj * p_ratio.clamp(1 - c.pclip, 1 + c.pclip) # no gradient if larger
                 ).mean()
 
-                kl = start_dist.kl(curr_dist).mean()
+                kl =  start_dist.kl(curr_dist).mean()
                 entropy = curr_dist.entropy().mean()
 
                 loss = policy_loss + c.klcoef * kl - self.entcoef * entropy
                 stats = dict(
-                    policy_loss=policy_loss, kl=kl, entropy=entropy
+                    policy_loss=float(from_torch(policy_loss)), kl= float(from_torch(kl)), entropy=float(from_torch(entropy))
                 )
 
                 if value_warmup:
@@ -587,9 +586,12 @@ class PPO(Algorithm):
                     value_mask = mb.obs.get('value_mask') if isinstance(mb.obs, dict) else None
                     value_loss = self.value_loss(pred.value, mb.ret, v_start=mb.value, mask=value_mask)
                     loss += c.vcoef * value_loss
-                    stats['value_loss'] = value_loss
+                    stats['value_loss'] = float(from_torch(value_loss))
                 self.step_loss(loss)
-                batch_stats.append(from_torch(stats))
+                batch_stats.append(stats)
+            # if c.get('n_minibatches') == None:
+                # c.log_stats(pd.DataFrame(batch_stats).mean(axis=0), ii=i_gd, n_ii=c.n_gds)
+            # else:
             c.log_stats(pd.DataFrame(batch_stats).mean(axis=0), ii=i_gd, n_ii=c.n_gds)
         c.flush_writer_buffer()
 
@@ -711,7 +713,7 @@ class TRPO(Algorithm):
                     value_mask = mb.obs.get('value_mask') if isinstance(mb.obs, dict) else None
                     value_loss = self.value_loss(pred.value, mb.ret, mask=value_mask)
                     self.step_loss(value_loss)
-                    batch_stats.append(dict(value_loss=from_torch(value_loss)))
+                    batch_stats.append(dict(value_loss=float(from_torch(value_loss))))
                 c.log_stats(pd.DataFrame(batch_stats).mean(axis=0), ii=i_gd, n_ii=c.n_gds)
         c.flush_writer_buffer()
         entropy = test_dist.entropy().mean()

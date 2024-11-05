@@ -11,8 +11,6 @@ import warnings
 warnings.filterwarnings('ignore')
 
 from io import StringIO
-import os
-os.environ['F'] = 'automatic_vehicular_control'
 
 def lrange(*args, **kwargs):
     return list(range(*args, **kwargs))

@@ -3,6 +3,8 @@
 tmp
 *.code-workspace
 sumo/
+pareto/
+*.job 
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

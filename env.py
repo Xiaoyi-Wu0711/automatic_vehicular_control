@@ -9,9 +9,6 @@ import bisect
 import warnings
 import gym
 
-# from automatic_vehicular_control.u import *
-# from automatic_vehicular_control.ut import *
-
 from u import *
 from ut import *
 
@@ -913,8 +910,7 @@ class TrafficState:
             flow.backlog.add(veh_id)
 
         self.new_departed = set()
-        # add vehicles
-        for veh_id in sim_res.departed_vehicles_ids: 
+        for veh_id in sim_res.departed_vehicles_ids:
             subscribes.veh.subscribe(veh_id)
             type_id = tc.vehicle.getTypeID(veh_id)
             # import pdb; pdb.set_trace()
@@ -1131,6 +1127,7 @@ class Env:
         if isinstance(ret, tuple):
             return ret[0]
         return {k: v for k, v in ret.items() if k in ['obs', 'id']}
+
 
     def reset(self):
         while True:

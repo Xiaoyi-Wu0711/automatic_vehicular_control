@@ -1,0 +1,67 @@
+accel_feature: false
+accel_penalty: 0
+act_type: accel
+adv_norm: false
+alg: TRPO
+av: 1
+beta: 1.0
+center_reward: true
+circ_feature: false
+circumference: 250
+circumference_max: 300
+circumference_min: 200
+circumference_range: null
+collision_penalty: 100
+debug: false
+device: cpu
+disable_amp: true
+e: false
+gamma: 0.9995
+global_reward: true
+handcraft: false
+high: 1
+horizon: 1000
+initial_space: free
+lc_act_type: discrete
+logger: true
+low: -1
+lr: 0.0001
+main: true
+max_accel: 0.5
+max_decel: 0.5
+max_speed: 10
+mrtl: false
+n_lanes: 1
+n_rollouts_per_step: 32
+n_steps: 100
+n_veh: 2
+n_workers: "2\u201D n_rollouts_per_step"
+name: av_0_C_250
+norm_action: true
+norm_reward: true
+opt_level: O0
+redef_sumo: false
+render: false
+res: /Users/xiawu/sumo_test/automatic_vehicular_control/pareto/av_0_C_250/veh_2/
+residual_transfer: false
+scale_drac: 1
+scale_pet: 1
+scale_ttc: 1
+seed_np: 1409397498
+seed_torch: 23558
+sigma: 0.2
+sim_step: 0.1
+skip_stat_steps: 0
+step_save: 5
+tb: false
+tmp: false
+use_critic: false
+warmup_steps: 0
+wb: false
+
+Traceback (most recent call last):
+  File "/Users/xiawu/sumo_test/automatic_vehicular_control/ring_multiple_veh_number.py", line 331, in <module>
+    c.run()  # Assuming the RingEnv class has a run method
+  File "/Users/xiawu/sumo_test/automatic_vehicular_control/exp.py", line 396, in run
+    if c.get('use_ray', True) and c.n_rollouts_per_step > 1 and c.get('n_workers', np.inf) > 1:
+TypeError: '>' not supported between instances of 'str' and 'int'
