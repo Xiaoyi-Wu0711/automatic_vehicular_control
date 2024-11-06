@@ -460,7 +460,7 @@ class SumoDef:
             'random': True,
             'start': c.get('start', True)
         })
-        cmd = ['sumo-gui' if c.render else 'sumo']
+        cmd = ['sumo-gui' if c.render else 'sumo'] #this line decides sumo-gui or sumo based on render
         for k, v in sumo_args.items():
             cmd.extend(['--%s' % k, val_to_str(v)] if v is not None else [])
         c.log(' '.join(cmd))

@@ -291,7 +291,7 @@ if __name__ == '__main__':
         adv_norm=False,
         step_save=None,
 
-        render=False,
+        render=False, #True is for the sumo-gui
         beta=0,
         scale_ttc=1,
         scale_pet=1,
