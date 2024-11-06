@@ -76,11 +76,12 @@ automatic_vehicular_control/
 ### 3.1 Local Running
 #### 3.1.1 IDM without RL:
 ```
-python $F/ring_multiple_veh_number.py $F/pareto/av_1_c_250/ "av=0" "n_veh=18" "circumference=250"  \
-"warmup_steps=10" "skip_stat_steps=0" "horizon=2000" "global_reward=True" "n_steps=100" \
+python $F/ring_multiple_veh_number.py $F/pareto/av_1_c_250/ "av=0" "n_veh=18" "circumference=250"  "warmup_steps=10" "skip_stat_steps=0" \
+"horizon=2000" "global_reward=True" "n_steps=100" \
 "gamma=0.9995" "beta=1.0" "scale_ttc=1" "scale_drac=1" \
 "seed_np=1409397498" "seed_torch=23558" "residual_transfer=False" "mrtl=False" \
-"handcraft=False" "step_save=False" "lr=0.0001" "wb=False" "tb=False" 2>&1 | tee automatic_vehicular_control/logs/av_1/log_n_veh_18.txt 
+"handcraft=False" "step_save=False" "lr=0.0001"  \
+"wb=False" "tb=False" 2>&1 | tee automatic_vehicular_control/logs/av_1/log_n_veh_18.txt 
 ```
 
 #### Explanation of Arguments:
@@ -106,11 +107,12 @@ python $F/ring_multiple_veh_number.py $F/pareto/av_1_c_250/ "av=0" "n_veh=18" "c
 
 #### 3.1.2 RL:
 ```
-python $F/ring_single_veh_number.py $F/pareto/av_1_c_250/ "av=1" "n_veh=18" "circumference=250" "n_workers=8" "n_rollouts_per_step=8" \
-"warmup_steps=10" "skip_stat_steps=0" "horizon=2000" "global_reward=True" "n_steps=100" \
+python $F/ring_single_veh_number.py $F/pareto/av_1_c_250/ "av=1" "n_veh=18" "circumference=250" "n_workers=8" "n_rollouts_per_step=8"  "warmup_steps=10" "skip_stat_steps=0" \
+"horizon=2000" "global_reward=True" "n_steps=100" \
 "alg='PPO'" "use_critic=False" "gamma=0.9995" "beta=1.0" "scale_ttc=1" "scale_drac=1" \
 "seed_np=1409397498" "seed_torch=23558" "residual_transfer=False" "mrtl=False" \
-"handcraft=False" "step_save=False" "lr=0.0001" "wb=False" "tb=False" 2>&1 | tee automatic_vehicular_control/logs/av_1/log_n_veh_18.txt 
+"handcraft=False" "step_save=False" "lr=0.0001" \
+"wb=False" "tb=False" 2>&1 | tee automatic_vehicular_control/logs/av_1/log_n_veh_18.txt 
 ```
 - **$F/ring_single_veh_number.py**: Run experiments with only one veh number under RL training. 
 - **pareto/single_ring/seeding/beta1.0_SSM1_torch23558_np1409397498**: Output directory for storing results.
@@ -142,7 +144,7 @@ python $F/ring_single_veh_number.py $F/pareto/av_1_c_250/ "av=1" "n_veh=18" "cir
 ```
 sbatch train.job
 ```
-#### 3.2.2 IDM
+#### 3.2.2 IDM without RL:
 
 ```
 sbatch IDM.job
