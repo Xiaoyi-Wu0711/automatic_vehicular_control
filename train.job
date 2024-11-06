@@ -1,0 +1,25 @@
+#!/bin/bash
+
+#SBATCH --job-name=ring_train     # Job name
+#SBATCH --output=logs/av_1/output_%j.out  # Output file for logs (%j will be replaced by job ID)
+#SBATCH --error=logs/av_1/output_%j.err   # Error file for logs
+#SBATCH --time=3:00:00             # Total runtime limit (HH:MM:SS)
+#SBATCH --cpus-per-task=32           # Number of CPU cores per task
+#SBATCH --partition=workq
+
+export F=automatic_vehicular_control
+export R=results
+
+# Activate Conda environment
+conda activate .conda/envs/default/envs/sumo_py310
+
+# Run the training script
+# python $F/ring.py pareto/av_1/ circumference=200 av=1 n_veh=26 n_workers=32 n_rollouts_per_step=32 warmup_steps=2000 skip_stat_steps=5000 horizon=5000 global_reward=True
+
+python $F/ring_single_veh_number.py $F/pareto/av_1_c_250/ "av=1" "n_veh=18" "circumference=250" "n_workers=32" "n_rollouts_per_step=32" \
+"warmup_steps=10" "skip_stat_steps=0" "horizon=2000" "global_reward=True" "n_steps=100" \
+"alg='PPO'" "use_critic=False" "gamma=0.9995" "beta=1.0" "scale_ttc=1" "scale_drac=1" \
+"seed_np=1409397498" "seed_torch=23558" "residual_transfer=False" "mrtl=False" \
+"handcraft=False" "step_save=False" "lr=0.0001" "wb=False" "tb=False"
+
+echo "Training job completed!"
