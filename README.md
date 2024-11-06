@@ -12,8 +12,7 @@ You may find this project at: [Project Website](https://mit-wu-lab.github.io/aut
 }
 ```
 
-# Environment Setup
-
+# Environment Setup for MAC
 This project uses Python with several dependencies managed by `conda`. Follow the instructions below to set up your development environment.
 
 Updated date: Oct 2nd 2024.
@@ -74,7 +73,8 @@ automatic_vehicular_control/
 
 
 ## 3. Code running
-### 3.0 IDM without RL:
+### 3.1 Local Running
+#### 3.1.1 IDM without RL:
 ```
 python $F/ring_multiple_veh_number.py $F/pareto/av_1_c_250/ "av=0" "n_veh=18" "circumference=250"  \
 "warmup_steps=10" "skip_stat_steps=0" "horizon=2000" "global_reward=True" "n_steps=100" \
@@ -104,9 +104,9 @@ python $F/ring_multiple_veh_number.py $F/pareto/av_1_c_250/ "av=0" "n_veh=18" "c
 - **wb**, **tb**: Enable or disable logging with Weights & Biases (`wb`) and TensorBoard (`tb`) (`True` or `False`).
 
 
-### 3.1 Training Command:
+#### 3.1.2 RL:
 ```
-python $F/ring_single_veh_number.py $F/pareto/av_1_c_250/ "av=1" "n_veh=18" "circumference=250" "n_workers=32" "n_rollouts_per_step=32" \
+python $F/ring_single_veh_number.py $F/pareto/av_1_c_250/ "av=1" "n_veh=18" "circumference=250" "n_workers=8" "n_rollouts_per_step=8" \
 "warmup_steps=10" "skip_stat_steps=0" "horizon=2000" "global_reward=True" "n_steps=100" \
 "alg='PPO'" "use_critic=False" "gamma=0.9995" "beta=1.0" "scale_ttc=1" "scale_drac=1" \
 "seed_np=1409397498" "seed_torch=23558" "residual_transfer=False" "mrtl=False" \
@@ -136,13 +136,14 @@ python $F/ring_single_veh_number.py $F/pareto/av_1_c_250/ "av=1" "n_veh=18" "cir
 - **wb**, **tb**: Enable or disable logging with Weights & Biases (`wb`) and TensorBoard (`tb`) (`True` or `False`).
 
 
-### 3.4 Batch Running with Slurm:
-Training:
+### 3.2 Batch Running
+
+#### 3.2.1 Training with RL:
 ```
 sbatch train.job
 ```
+#### 3.2.2 IDM
 
-IDM:
 ```
 sbatch IDM.job
 ```
