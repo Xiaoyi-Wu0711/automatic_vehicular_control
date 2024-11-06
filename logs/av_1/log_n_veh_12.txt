@@ -1,0 +1,2958 @@
+2024-11-06 01:13:08,659	INFO worker.py:1786 -- Started a local Ray instance.
+[36m(_n_obs: 3 pid=37527)[0m accel_feature: false
+[36m(_n_obs: 3 pid=37527)[0m accel_penalty: 0
+[36m(_n_obs: 3 pid=37527)[0m act_type: accel
+[36m(_n_obs: 3 pid=37527)[0m adv_norm: false
+[36m(_n_obs: 3 pid=37527)[0m alg: PPO
+[36m(_n_obs: 3 pid=37527)[0m av: 1
+[36m(_n_obs: 3 pid=37527)[0m beta: 1.0
+[36m(_n_obs: 3 pid=37527)[0m center_reward: true
+[36m(_n_obs: 3 pid=37527)[0m circ_feature: false
+[36m(_n_obs: 3 pid=37527)[0m circumference: 200
+[36m(_n_obs: 3 pid=37527)[0m circumference_max: 300
+[36m(_n_obs: 3 pid=37527)[0m circumference_min: 200
+[36m(_n_obs: 3 pid=37527)[0m circumference_range: null
+[36m(_n_obs: 3 pid=37527)[0m collision_penalty: 100
+[36m(_n_obs: 3 pid=37527)[0m debug: false
+[36m(_n_obs: 3 pid=37527)[0m device: cpu
+[36m(_n_obs: 3 pid=37527)[0m disable_amp: true
+[36m(_n_obs: 3 pid=37527)[0m e: false
+[36m(_n_obs: 3 pid=37527)[0m gamma: 0.9995
+[36m(_n_obs: 3 pid=37527)[0m global_reward: true
+[36m(_n_obs: 3 pid=37527)[0m handcraft: false
+[36m(_n_obs: 3 pid=37527)[0m high: 1
+[36m(_n_obs: 3 pid=37527)[0m horizon: 2000
+[36m(_n_obs: 3 pid=37527)[0m i_worker: 8
+[36m(_n_obs: 3 pid=37527)[0m initial_space: free
+[36m(_n_obs: 3 pid=37527)[0m lc_act_type: discrete
+[36m(_n_obs: 3 pid=37527)[0m logger: true
+[36m(_n_obs: 3 pid=37527)[0m low: -1
+[36m(_n_obs: 3 pid=37527)[0m lr: 0.0001
+[36m(_n_obs: 3 pid=37527)[0m main: false
+[36m(_n_obs: 3 pid=37527)[0m max_accel: 0.5
+[36m(_n_obs: 3 pid=37527)[0m max_decel: 0.5
+[36m(_n_obs: 3 pid=37527)[0m max_speed: 10
+[36m(_n_obs: 3 pid=37527)[0m mrtl: false
+[36m(_n_obs: 3 pid=37527)[0m n_lanes: 1
+[36m(_n_obs: 3 pid=37527)[0m n_rollouts_per_step: 32
+[36m(_n_obs: 3 pid=37527)[0m n_rollouts_per_worker: 1
+[36m(_n_obs: 3 pid=37527)[0m n_steps: 100
+[36m(_n_obs: 3 pid=37527)[0m n_veh: 12
+[36m(_n_obs: 3 pid=37527)[0m n_workers: 32
+[36m(_n_obs: 3 pid=37527)[0m name: av_1_c_200
+[36m(_n_obs: 3 pid=37527)[0m norm_action: true
+[36m(_n_obs: 3 pid=37527)[0m norm_reward: true
+[36m(_n_obs: 3 pid=37527)[0m opt_level: O0
+[36m(_n_obs: 3 pid=37527)[0m redef_sumo: false
+[36m(_n_obs: 3 pid=37527)[0m render: false
+[36m(_n_obs: 3 pid=37527)[0m res: /Users/xiawu/sumo_test/pareto/av_1_c_200/veh_12
+[36m(_n_obs: 3 pid=37527)[0m residual_transfer: false
+[36m(_n_obs: 3 pid=37527)[0m scale_drac: 1
+[36m(_n_obs: 3 pid=37527)[0m scale_pet: 1
+[36m(_n_obs: 3 pid=37527)[0m scale_ttc: 1
+[36m(_n_obs: 3 pid=37527)[0m seed_np: 1409397498
+[36m(_n_obs: 3 pid=37527)[0m seed_torch: 23558
+[36m(_n_obs: 3 pid=37527)[0m sigma: 0.2
+[36m(_n_obs: 3 pid=37527)[0m sim_step: 0.1
+[36m(_n_obs: 3 pid=37527)[0m skip_stat_steps: 0
+[36m(_n_obs: 3 pid=37527)[0m step_save: 5
+[36m(_n_obs: 3 pid=37527)[0m tb: false
+[36m(_n_obs: 3 pid=37527)[0m tmp: false
+[36m(_n_obs: 3 pid=37527)[0m use_critic: false
+[36m(_n_obs: 3 pid=37527)[0m use_ray: true
+[36m(_n_obs: 3 pid=37527)[0m warmup_steps: 0
+[36m(_n_obs: 3 pid=37527)[0m wb: false
+[36m(_n_obs: 3 pid=37527)[0m 
+[36m(_n_obs: 3 pid=37528)[0m 
+[36m(_n_obs: 3 pid=37529)[0m 
+[36m(_n_obs: 3 pid=37530)[0m 
+[36m(_n_obs: 3 pid=37436)[0m 
+[36m(_n_obs: 3 pid=37532)[0m 
+[36m(_n_obs: 3 pid=37440)[0m 
+[36m(_n_obs: 3 pid=37438)[0m 
+[36m(_n_obs: 3 pid=37534)[0m 
+[36m(_n_obs: 3 pid=37533)[0m 
+[36m(_n_obs: 3 pid=37441)[0m 
+[36m(_n_obs: 3 pid=37439)[0m 
+[36m(_n_obs: 3 pid=37531)[0m 
+[36m(_n_obs: 3 pid=37433)[0m 
+[36m(_n_obs: 3 pid=37437)[0m 
+[36m(_n_obs: 3 pid=37437)[0m accel_feature: false[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37437)[0m accel_penalty: 0[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37437)[0m act_type: accel[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37437)[0m adv_norm: false[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37437)[0m alg: PPO[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37437)[0m av: 1[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37437)[0m beta: 1.0[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37437)[0m center_reward: true[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37437)[0m circ_feature: false[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37437)[0m circumference: 200[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37437)[0m circumference_max: 300[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37437)[0m circumference_min: 200[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37437)[0m circumference_range: null[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37437)[0m collision_penalty: 100[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37437)[0m debug: false[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37437)[0m device: cpu[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37437)[0m disable_amp: true[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37437)[0m e: false[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37437)[0m gamma: 0.9995[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37437)[0m global_reward: true[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37437)[0m handcraft: false[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37437)[0m high: 1[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37437)[0m horizon: 2000[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37437)[0m i_worker: 2[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37437)[0m initial_space: free[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37437)[0m lc_act_type: discrete[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37437)[0m logger: true[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37437)[0m low: -1[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37437)[0m lr: 0.0001[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37437)[0m main: false[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37437)[0m max_accel: 0.5[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37437)[0m max_decel: 0.5[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37437)[0m max_speed: 10[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37437)[0m mrtl: false[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37437)[0m n_lanes: 1[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37437)[0m n_rollouts_per_step: 32[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37437)[0m n_rollouts_per_worker: 1[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37437)[0m n_steps: 100[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37437)[0m n_veh: 12[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37437)[0m n_workers: 32[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37437)[0m name: av_1_c_200[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37437)[0m norm_action: true[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37437)[0m norm_reward: true[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37437)[0m opt_level: O0[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37437)[0m redef_sumo: false[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37437)[0m render: false[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37437)[0m res: /Users/xiawu/sumo_test/pareto/av_1_c_200/veh_12[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37437)[0m residual_transfer: false[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37437)[0m scale_drac: 1[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37437)[0m scale_pet: 1[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37437)[0m scale_ttc: 1[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37437)[0m seed_np: 1409397498[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37437)[0m seed_torch: 23558[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37437)[0m sigma: 0.2[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37437)[0m sim_step: 0.1[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37437)[0m skip_stat_steps: 0[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37437)[0m step_save: 5[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37437)[0m tb: false[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37437)[0m tmp: false[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37437)[0m use_critic: false[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37437)[0m use_ray: true[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37437)[0m warmup_steps: 0[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37437)[0m wb: false[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37435)[0m 
+[36m(_n_obs: 3 pid=37435)[0m accel_feature: false
+[36m(_n_obs: 3 pid=37435)[0m accel_penalty: 0
+[36m(_n_obs: 3 pid=37435)[0m act_type: accel
+[36m(_n_obs: 3 pid=37435)[0m adv_norm: false
+[36m(_n_obs: 3 pid=37435)[0m alg: PPO
+[36m(_n_obs: 3 pid=37435)[0m av: 1
+[36m(_n_obs: 3 pid=37435)[0m beta: 1.0
+[36m(_n_obs: 3 pid=37435)[0m center_reward: true
+[36m(_n_obs: 3 pid=37435)[0m circ_feature: false
+[36m(_n_obs: 3 pid=37435)[0m circumference: 200
+[36m(_n_obs: 3 pid=37435)[0m circumference_max: 300
+[36m(_n_obs: 3 pid=37435)[0m circumference_min: 200
+[36m(_n_obs: 3 pid=37435)[0m circumference_range: null
+[36m(_n_obs: 3 pid=37435)[0m collision_penalty: 100
+[36m(_n_obs: 3 pid=37435)[0m debug: false
+[36m(_n_obs: 3 pid=37435)[0m device: cpu
+[36m(_n_obs: 3 pid=37435)[0m disable_amp: true
+[36m(_n_obs: 3 pid=37435)[0m e: false
+[36m(_n_obs: 3 pid=37435)[0m gamma: 0.9995
+[36m(_n_obs: 3 pid=37435)[0m global_reward: true
+[36m(_n_obs: 3 pid=37435)[0m handcraft: false
+[36m(_n_obs: 3 pid=37435)[0m high: 1
+[36m(_n_obs: 3 pid=37435)[0m horizon: 2000
+[36m(_n_obs: 3 pid=37435)[0m i_worker: 0
+[36m(_n_obs: 3 pid=37435)[0m initial_space: free
+[36m(_n_obs: 3 pid=37435)[0m lc_act_type: discrete
+[36m(_n_obs: 3 pid=37435)[0m logger: true
+[36m(_n_obs: 3 pid=37435)[0m low: -1
+[36m(_n_obs: 3 pid=37435)[0m lr: 0.0001
+[36m(_n_obs: 3 pid=37435)[0m main: false
+[36m(_n_obs: 3 pid=37435)[0m max_accel: 0.5
+[36m(_n_obs: 3 pid=37435)[0m max_decel: 0.5
+[36m(_n_obs: 3 pid=37435)[0m max_speed: 10
+[36m(_n_obs: 3 pid=37435)[0m mrtl: false
+[36m(_n_obs: 3 pid=37435)[0m n_lanes: 1
+[36m(_n_obs: 3 pid=37435)[0m n_rollouts_per_step: 32
+[36m(_n_obs: 3 pid=37435)[0m n_rollouts_per_worker: 1
+[36m(_n_obs: 3 pid=37435)[0m n_steps: 100
+[36m(_n_obs: 3 pid=37435)[0m n_veh: 12
+[36m(_n_obs: 3 pid=37435)[0m n_workers: 32
+[36m(_n_obs: 3 pid=37435)[0m name: av_1_c_200
+[36m(_n_obs: 3 pid=37435)[0m norm_action: true
+[36m(_n_obs: 3 pid=37435)[0m norm_reward: true
+[36m(_n_obs: 3 pid=37435)[0m opt_level: O0
+[36m(_n_obs: 3 pid=37435)[0m redef_sumo: false
+[36m(_n_obs: 3 pid=37435)[0m render: false
+[36m(_n_obs: 3 pid=37435)[0m res: /Users/xiawu/sumo_test/pareto/av_1_c_200/veh_12
+[36m(_n_obs: 3 pid=37435)[0m residual_transfer: false
+[36m(_n_obs: 3 pid=37435)[0m scale_drac: 1
+[36m(_n_obs: 3 pid=37435)[0m scale_pet: 1
+[36m(_n_obs: 3 pid=37435)[0m scale_ttc: 1
+[36m(_n_obs: 3 pid=37435)[0m seed_np: 1409397498
+[36m(_n_obs: 3 pid=37435)[0m seed_torch: 23558
+[36m(_n_obs: 3 pid=37435)[0m sigma: 0.2
+[36m(_n_obs: 3 pid=37435)[0m sim_step: 0.1
+[36m(_n_obs: 3 pid=37435)[0m skip_stat_steps: 0
+[36m(_n_obs: 3 pid=37435)[0m step_save: 5
+[36m(_n_obs: 3 pid=37435)[0m tb: false
+[36m(_n_obs: 3 pid=37435)[0m tmp: false
+[36m(_n_obs: 3 pid=37435)[0m use_critic: false
+[36m(_n_obs: 3 pid=37435)[0m use_ray: true
+[36m(_n_obs: 3 pid=37435)[0m warmup_steps: 0
+[36m(_n_obs: 3 pid=37435)[0m wb: false
+[36m(_n_obs: 3 pid=37716)[0m accel_feature: false
+[36m(_n_obs: 3 pid=37716)[0m accel_penalty: 0
+[36m(_n_obs: 3 pid=37716)[0m act_type: accel
+[36m(_n_obs: 3 pid=37716)[0m adv_norm: false
+[36m(_n_obs: 3 pid=37716)[0m alg: PPO
+[36m(_n_obs: 3 pid=37716)[0m av: 1
+[36m(_n_obs: 3 pid=37716)[0m beta: 1.0
+[36m(_n_obs: 3 pid=37716)[0m center_reward: true
+[36m(_n_obs: 3 pid=37716)[0m circ_feature: false
+[36m(_n_obs: 3 pid=37716)[0m circumference: 200
+[36m(_n_obs: 3 pid=37716)[0m circumference_max: 300
+[36m(_n_obs: 3 pid=37716)[0m circumference_min: 200
+[36m(_n_obs: 3 pid=37716)[0m circumference_range: null
+[36m(_n_obs: 3 pid=37716)[0m collision_penalty: 100
+[36m(_n_obs: 3 pid=37716)[0m debug: false
+[36m(_n_obs: 3 pid=37716)[0m device: cpu
+[36m(_n_obs: 3 pid=37716)[0m disable_amp: true
+[36m(_n_obs: 3 pid=37716)[0m e: false
+[36m(_n_obs: 3 pid=37716)[0m gamma: 0.9995
+[36m(_n_obs: 3 pid=37716)[0m global_reward: true
+[36m(_n_obs: 3 pid=37716)[0m handcraft: false
+[36m(_n_obs: 3 pid=37716)[0m high: 1
+[36m(_n_obs: 3 pid=37716)[0m horizon: 2000
+[36m(_n_obs: 3 pid=37716)[0m i_worker: 26
+[36m(_n_obs: 3 pid=37716)[0m initial_space: free
+[36m(_n_obs: 3 pid=37716)[0m lc_act_type: discrete
+[36m(_n_obs: 3 pid=37716)[0m logger: true
+[36m(_n_obs: 3 pid=37716)[0m low: -1
+[36m(_n_obs: 3 pid=37716)[0m lr: 0.0001
+[36m(_n_obs: 3 pid=37716)[0m main: false
+[36m(_n_obs: 3 pid=37716)[0m max_accel: 0.5
+[36m(_n_obs: 3 pid=37716)[0m max_decel: 0.5
+[36m(_n_obs: 3 pid=37716)[0m max_speed: 10
+[36m(_n_obs: 3 pid=37716)[0m mrtl: false
+[36m(_n_obs: 3 pid=37716)[0m n_lanes: 1
+[36m(_n_obs: 3 pid=37716)[0m n_rollouts_per_step: 32
+[36m(_n_obs: 3 pid=37716)[0m n_rollouts_per_worker: 1
+[36m(_n_obs: 3 pid=37716)[0m n_steps: 100
+[36m(_n_obs: 3 pid=37716)[0m n_veh: 12
+[36m(_n_obs: 3 pid=37716)[0m n_workers: 32
+[36m(_n_obs: 3 pid=37716)[0m name: av_1_c_200
+[36m(_n_obs: 3 pid=37716)[0m norm_action: true
+[36m(_n_obs: 3 pid=37716)[0m norm_reward: true
+[36m(_n_obs: 3 pid=37716)[0m opt_level: O0
+[36m(_n_obs: 3 pid=37716)[0m redef_sumo: false
+[36m(_n_obs: 3 pid=37716)[0m render: false
+[36m(_n_obs: 3 pid=37716)[0m res: /Users/xiawu/sumo_test/pareto/av_1_c_200/veh_12
+[36m(_n_obs: 3 pid=37716)[0m residual_transfer: false
+[36m(_n_obs: 3 pid=37716)[0m scale_drac: 1
+[36m(_n_obs: 3 pid=37716)[0m scale_pet: 1
+[36m(_n_obs: 3 pid=37716)[0m scale_ttc: 1
+[36m(_n_obs: 3 pid=37716)[0m seed_np: 1409397498
+[36m(_n_obs: 3 pid=37716)[0m seed_torch: 23558
+[36m(_n_obs: 3 pid=37716)[0m sigma: 0.2
+[36m(_n_obs: 3 pid=37716)[0m sim_step: 0.1
+[36m(_n_obs: 3 pid=37716)[0m skip_stat_steps: 0
+[36m(_n_obs: 3 pid=37716)[0m step_save: 5
+[36m(_n_obs: 3 pid=37716)[0m tb: false
+[36m(_n_obs: 3 pid=37716)[0m tmp: false
+[36m(_n_obs: 3 pid=37716)[0m use_critic: false
+[36m(_n_obs: 3 pid=37716)[0m use_ray: true
+[36m(_n_obs: 3 pid=37716)[0m warmup_steps: 0
+[36m(_n_obs: 3 pid=37716)[0m wb: false
+[36m(_n_obs: 3 pid=37716)[0m 
+[36m(_n_obs: 3 pid=37714)[0m 
+[36m(_n_obs: 3 pid=37721)[0m 
+[36m(_n_obs: 3 pid=37621)[0m 
+[36m(_n_obs: 3 pid=37614)[0m 
+[36m(_n_obs: 3 pid=37619)[0m 
+[36m(_n_obs: 3 pid=37715)[0m 
+[36m(_n_obs: 3 pid=37613)[0m 
+[36m(_n_obs: 3 pid=37719)[0m 
+[36m(_n_obs: 3 pid=37617)[0m 
+[36m(_n_obs: 3 pid=37615)[0m 
+[36m(_n_obs: 3 pid=37622)[0m 
+[36m(_n_obs: 3 pid=37618)[0m 
+[36m(_n_obs: 3 pid=37720)[0m 
+[36m(_n_obs: 3 pid=37717)[0m 
+[36m(_n_obs: 3 pid=37718)[0m 
+accel_feature: false
+accel_penalty: 0
+act_type: accel
+adv_norm: false
+alg: PPO
+av: 1
+beta: 1.0
+center_reward: true
+circ_feature: false
+circumference: 200
+circumference_max: 300
+circumference_min: 200
+circumference_range: null
+collision_penalty: 100
+debug: false
+device: cpu
+disable_amp: true
+e: false
+gamma: 0.9995
+global_reward: true
+handcraft: false
+high: 1
+horizon: 2000
+initial_space: free
+lc_act_type: discrete
+logger: true
+low: -1
+lr: 0.0001
+main: true
+max_accel: 0.5
+max_decel: 0.5
+max_speed: 10
+mrtl: false
+n_lanes: 1
+n_rollouts_per_step: 32
+n_steps: 100
+n_veh: 12
+n_workers: 32
+name: av_1_c_200
+norm_action: true
+norm_reward: true
+opt_level: O0
+redef_sumo: false
+render: false
+res: /Users/xiawu/sumo_test/pareto/av_1_c_200/veh_12/
+residual_transfer: false
+scale_drac: 1
+scale_pet: 1
+scale_ttc: 1
+seed_np: 1409397498
+seed_torch: 23558
+sigma: 0.2
+sim_step: 0.1
+skip_stat_steps: 0
+step_save: 5
+tb: false
+tmp: false
+use_critic: false
+warmup_steps: 0
+wb: false
+
+worker kwargs [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}]
+Running 32 with 32 different worker kwargs
+[33m(raylet)[0m WARNING: 33 PYTHON worker processes have been started on node: 2ded74f3945908d728f9a65b53611eef3dddc0826c5076bab6cd59f4 with address: 127.0.0.1. This could be a result of using a large number of actors, or due to tasks blocked in ray.get() calls (see https://github.com/ray-project/ray/issues/3644 for some discussion of workarounds).
+[36m(_n_obs: 3 pid=37527)[0m accel_feature: false
+[36m(_n_obs: 3 pid=37527)[0m accel_penalty: 0
+[36m(_n_obs: 3 pid=37527)[0m act_type: accel
+[36m(_n_obs: 3 pid=37527)[0m adv_norm: false
+[36m(_n_obs: 3 pid=37527)[0m alg: PPO
+[36m(_n_obs: 3 pid=37527)[0m av: 1
+[36m(_n_obs: 3 pid=37527)[0m beta: 1.0
+[36m(_n_obs: 3 pid=37527)[0m center_reward: true
+[36m(_n_obs: 3 pid=37527)[0m circ_feature: false
+[36m(_n_obs: 3 pid=37527)[0m circumference: 200
+[36m(_n_obs: 3 pid=37527)[0m circumference_max: 300
+[36m(_n_obs: 3 pid=37527)[0m circumference_min: 200
+[36m(_n_obs: 3 pid=37527)[0m circumference_range: null
+[36m(_n_obs: 3 pid=37527)[0m collision_penalty: 100
+[36m(_n_obs: 3 pid=37527)[0m debug: false
+[36m(_n_obs: 3 pid=37527)[0m device: cpu
+[36m(_n_obs: 3 pid=37527)[0m disable_amp: true
+[36m(_n_obs: 3 pid=37527)[0m e: false
+[36m(_n_obs: 3 pid=37527)[0m gamma: 0.9995
+[36m(_n_obs: 3 pid=37527)[0m global_reward: true
+[36m(_n_obs: 3 pid=37527)[0m handcraft: false
+[36m(_n_obs: 3 pid=37527)[0m high: 1
+[36m(_n_obs: 3 pid=37527)[0m horizon: 2000
+[36m(_n_obs: 3 pid=37527)[0m i_worker: 8
+[36m(_n_obs: 3 pid=37527)[0m initial_space: free
+[36m(_n_obs: 3 pid=37527)[0m lc_act_type: discrete
+[36m(_n_obs: 3 pid=37527)[0m logger: true
+[36m(_n_obs: 3 pid=37527)[0m low: -1
+[36m(_n_obs: 3 pid=37527)[0m lr: 0.0001
+[36m(_n_obs: 3 pid=37527)[0m main: false
+[36m(_n_obs: 3 pid=37527)[0m max_accel: 0.5
+[36m(_n_obs: 3 pid=37527)[0m max_decel: 0.5
+[36m(_n_obs: 3 pid=37527)[0m max_speed: 10
+[36m(_n_obs: 3 pid=37527)[0m mrtl: false
+[36m(_n_obs: 3 pid=37527)[0m n_lanes: 1
+[36m(_n_obs: 3 pid=37527)[0m n_rollouts_per_step: 32
+[36m(_n_obs: 3 pid=37527)[0m n_rollouts_per_worker: 1
+[36m(_n_obs: 3 pid=37527)[0m n_steps: 100
+[36m(_n_obs: 3 pid=37527)[0m n_veh: 12
+[36m(_n_obs: 3 pid=37527)[0m n_workers: 32
+[36m(_n_obs: 3 pid=37527)[0m name: av_1_c_200
+[36m(_n_obs: 3 pid=37527)[0m norm_action: true
+[36m(_n_obs: 3 pid=37527)[0m norm_reward: true
+[36m(_n_obs: 3 pid=37527)[0m opt_level: O0
+[36m(_n_obs: 3 pid=37527)[0m redef_sumo: false
+[36m(_n_obs: 3 pid=37527)[0m render: false
+[36m(_n_obs: 3 pid=37527)[0m res: /Users/xiawu/sumo_test/pareto/av_1_c_200/veh_12
+[36m(_n_obs: 3 pid=37527)[0m residual_transfer: false
+[36m(_n_obs: 3 pid=37527)[0m scale_drac: 1
+[36m(_n_obs: 3 pid=37527)[0m scale_pet: 1
+[36m(_n_obs: 3 pid=37527)[0m scale_ttc: 1
+[36m(_n_obs: 3 pid=37527)[0m seed_np: 1409397498
+[36m(_n_obs: 3 pid=37527)[0m seed_torch: 23558
+[36m(_n_obs: 3 pid=37527)[0m sigma: 0.2
+[36m(_n_obs: 3 pid=37527)[0m sim_step: 0.1
+[36m(_n_obs: 3 pid=37527)[0m skip_stat_steps: 0
+[36m(_n_obs: 3 pid=37527)[0m step_save: 5
+[36m(_n_obs: 3 pid=37527)[0m tb: false
+[36m(_n_obs: 3 pid=37527)[0m tmp: false
+[36m(_n_obs: 3 pid=37527)[0m use_critic: false
+[36m(_n_obs: 3 pid=37527)[0m use_ray: true
+[36m(_n_obs: 3 pid=37527)[0m warmup_steps: 0
+[36m(_n_obs: 3 pid=37527)[0m wb: false
+[36m(_n_obs: 3 pid=37527)[0m 
+[33m(raylet)[0m WARNING: 40 PYTHON worker processes have been started on node: 2ded74f3945908d728f9a65b53611eef3dddc0826c5076bab6cd59f4 with address: 127.0.0.1. This could be a result of using a large number of actors, or due to tasks blocked in ray.get() calls (see https://github.com/ray-project/ray/issues/3644 for some discussion of workarounds).
+[36m(_n_obs: 3 pid=37528)[0m 
+[36m(_n_obs: 3 pid=37529)[0m 
+[36m(_n_obs: 3 pid=37530)[0m 
+[36m(_n_obs: 3 pid=37436)[0m 
+[36m(_n_obs: 3 pid=37532)[0m 
+[36m(_n_obs: 3 pid=37440)[0m 
+[36m(_n_obs: 3 pid=37438)[0m 
+[36m(_n_obs: 3 pid=37438)[0m accel_feature: false[32m [repeated 7x across cluster] (Ray deduplicates logs by default. Set RAY_DEDUP_LOGS=0 to disable log deduplication, or see https://docs.ray.io/en/master/ray-observability/user-guides/configure-logging.html#log-deduplication for more options.)[0m
+[36m(_n_obs: 3 pid=37438)[0m accel_penalty: 0[32m [repeated 7x across cluster][0m
+[36m(_n_obs: 3 pid=37438)[0m act_type: accel[32m [repeated 7x across cluster][0m
+[36m(_n_obs: 3 pid=37438)[0m adv_norm: false[32m [repeated 7x across cluster][0m
+[36m(_n_obs: 3 pid=37438)[0m alg: PPO[32m [repeated 7x across cluster][0m
+[36m(_n_obs: 3 pid=37438)[0m av: 1[32m [repeated 7x across cluster][0m
+[36m(_n_obs: 3 pid=37438)[0m beta: 1.0[32m [repeated 7x across cluster][0m
+[36m(_n_obs: 3 pid=37438)[0m center_reward: true[32m [repeated 7x across cluster][0m
+[36m(_n_obs: 3 pid=37438)[0m circ_feature: false[32m [repeated 7x across cluster][0m
+[36m(_n_obs: 3 pid=37438)[0m circumference: 200[32m [repeated 7x across cluster][0m
+[36m(_n_obs: 3 pid=37438)[0m circumference_max: 300[32m [repeated 7x across cluster][0m
+[36m(_n_obs: 3 pid=37438)[0m circumference_min: 200[32m [repeated 7x across cluster][0m
+[36m(_n_obs: 3 pid=37438)[0m circumference_range: null[32m [repeated 7x across cluster][0m
+[36m(_n_obs: 3 pid=37438)[0m collision_penalty: 100[32m [repeated 7x across cluster][0m
+[36m(_n_obs: 3 pid=37438)[0m debug: false[32m [repeated 7x across cluster][0m
+[36m(_n_obs: 3 pid=37438)[0m device: cpu[32m [repeated 7x across cluster][0m
+[36m(_n_obs: 3 pid=37438)[0m disable_amp: true[32m [repeated 7x across cluster][0m
+[36m(_n_obs: 3 pid=37438)[0m e: false[32m [repeated 7x across cluster][0m
+[36m(_n_obs: 3 pid=37438)[0m gamma: 0.9995[32m [repeated 7x across cluster][0m
+[36m(_n_obs: 3 pid=37438)[0m global_reward: true[32m [repeated 7x across cluster][0m
+[36m(_n_obs: 3 pid=37438)[0m handcraft: false[32m [repeated 7x across cluster][0m
+[36m(_n_obs: 3 pid=37438)[0m high: 1[32m [repeated 7x across cluster][0m
+[36m(_n_obs: 3 pid=37438)[0m horizon: 2000[32m [repeated 7x across cluster][0m
+[36m(_n_obs: 3 pid=37438)[0m i_worker: 4[32m [repeated 7x across cluster][0m
+[36m(_n_obs: 3 pid=37438)[0m initial_space: free[32m [repeated 7x across cluster][0m
+[36m(_n_obs: 3 pid=37438)[0m lc_act_type: discrete[32m [repeated 7x across cluster][0m
+[36m(_n_obs: 3 pid=37438)[0m logger: true[32m [repeated 7x across cluster][0m
+[36m(_n_obs: 3 pid=37438)[0m low: -1[32m [repeated 7x across cluster][0m
+[36m(_n_obs: 3 pid=37438)[0m lr: 0.0001[32m [repeated 7x across cluster][0m
+[36m(_n_obs: 3 pid=37438)[0m main: false[32m [repeated 7x across cluster][0m
+[36m(_n_obs: 3 pid=37438)[0m max_accel: 0.5[32m [repeated 7x across cluster][0m
+[36m(_n_obs: 3 pid=37438)[0m max_decel: 0.5[32m [repeated 7x across cluster][0m
+[36m(_n_obs: 3 pid=37438)[0m max_speed: 10[32m [repeated 7x across cluster][0m
+[36m(_n_obs: 3 pid=37438)[0m mrtl: false[32m [repeated 7x across cluster][0m
+[36m(_n_obs: 3 pid=37438)[0m n_lanes: 1[32m [repeated 7x across cluster][0m
+[36m(_n_obs: 3 pid=37438)[0m n_rollouts_per_step: 32[32m [repeated 7x across cluster][0m
+[36m(_n_obs: 3 pid=37438)[0m n_rollouts_per_worker: 1[32m [repeated 7x across cluster][0m
+[36m(_n_obs: 3 pid=37438)[0m n_steps: 100[32m [repeated 7x across cluster][0m
+[36m(_n_obs: 3 pid=37438)[0m n_veh: 12[32m [repeated 7x across cluster][0m
+[36m(_n_obs: 3 pid=37438)[0m n_workers: 32[32m [repeated 7x across cluster][0m
+[36m(_n_obs: 3 pid=37438)[0m name: av_1_c_200[32m [repeated 7x across cluster][0m
+[36m(_n_obs: 3 pid=37438)[0m norm_action: true[32m [repeated 7x across cluster][0m
+[36m(_n_obs: 3 pid=37438)[0m norm_reward: true[32m [repeated 7x across cluster][0m
+[36m(_n_obs: 3 pid=37438)[0m opt_level: O0[32m [repeated 7x across cluster][0m
+[36m(_n_obs: 3 pid=37438)[0m redef_sumo: false[32m [repeated 7x across cluster][0m
+[36m(_n_obs: 3 pid=37438)[0m render: false[32m [repeated 7x across cluster][0m
+[36m(_n_obs: 3 pid=37438)[0m res: /Users/xiawu/sumo_test/pareto/av_1_c_200/veh_12[32m [repeated 7x across cluster][0m
+[36m(_n_obs: 3 pid=37438)[0m residual_transfer: false[32m [repeated 7x across cluster][0m
+[36m(_n_obs: 3 pid=37438)[0m scale_drac: 1[32m [repeated 7x across cluster][0m
+[36m(_n_obs: 3 pid=37438)[0m scale_pet: 1[32m [repeated 7x across cluster][0m
+[36m(_n_obs: 3 pid=37438)[0m scale_ttc: 1[32m [repeated 7x across cluster][0m
+[36m(_n_obs: 3 pid=37438)[0m seed_np: 1409397498[32m [repeated 7x across cluster][0m
+[36m(_n_obs: 3 pid=37438)[0m seed_torch: 23558[32m [repeated 7x across cluster][0m
+[36m(_n_obs: 3 pid=37438)[0m sigma: 0.2[32m [repeated 7x across cluster][0m
+[36m(_n_obs: 3 pid=37438)[0m sim_step: 0.1[32m [repeated 7x across cluster][0m
+[36m(_n_obs: 3 pid=37438)[0m skip_stat_steps: 0[32m [repeated 7x across cluster][0m
+[36m(_n_obs: 3 pid=37438)[0m step_save: 5[32m [repeated 7x across cluster][0m
+[36m(_n_obs: 3 pid=37438)[0m tb: false[32m [repeated 7x across cluster][0m
+[36m(_n_obs: 3 pid=37438)[0m tmp: false[32m [repeated 7x across cluster][0m
+[36m(_n_obs: 3 pid=37438)[0m use_critic: false[32m [repeated 7x across cluster][0m
+[36m(_n_obs: 3 pid=37438)[0m use_ray: true[32m [repeated 7x across cluster][0m
+[36m(_n_obs: 3 pid=37438)[0m warmup_steps: 0[32m [repeated 7x across cluster][0m
+[36m(_n_obs: 3 pid=37438)[0m wb: false[32m [repeated 7x across cluster][0m
+[36m(_n_obs: 3 pid=37534)[0m 
+[36m(_n_obs: 3 pid=37533)[0m 
+[36m(_n_obs: 3 pid=37441)[0m 
+[36m(_n_obs: 3 pid=37439)[0m 
+[36m(_n_obs: 3 pid=37531)[0m 
+[36m(_n_obs: 3 pid=37433)[0m 
+[36m(_n_obs: 3 pid=37437)[0m 
+[36m(_n_obs: 3 pid=37435)[0m 
+[36m(_n_obs: 3 pid=37435)[0m accel_feature: false[32m [repeated 8x across cluster][0m
+[36m(_n_obs: 3 pid=37435)[0m accel_penalty: 0[32m [repeated 8x across cluster][0m
+[36m(_n_obs: 3 pid=37435)[0m act_type: accel[32m [repeated 8x across cluster][0m
+[36m(_n_obs: 3 pid=37435)[0m adv_norm: false[32m [repeated 8x across cluster][0m
+[36m(_n_obs: 3 pid=37435)[0m alg: PPO[32m [repeated 8x across cluster][0m
+[36m(_n_obs: 3 pid=37435)[0m av: 1[32m [repeated 8x across cluster][0m
+[36m(_n_obs: 3 pid=37435)[0m beta: 1.0[32m [repeated 8x across cluster][0m
+[36m(_n_obs: 3 pid=37435)[0m center_reward: true[32m [repeated 8x across cluster][0m
+[36m(_n_obs: 3 pid=37435)[0m circ_feature: false[32m [repeated 8x across cluster][0m
+[36m(_n_obs: 3 pid=37435)[0m circumference: 200[32m [repeated 8x across cluster][0m
+[36m(_n_obs: 3 pid=37435)[0m circumference_max: 300[32m [repeated 8x across cluster][0m
+[36m(_n_obs: 3 pid=37435)[0m circumference_min: 200[32m [repeated 8x across cluster][0m
+[36m(_n_obs: 3 pid=37435)[0m circumference_range: null[32m [repeated 8x across cluster][0m
+[36m(_n_obs: 3 pid=37435)[0m collision_penalty: 100[32m [repeated 8x across cluster][0m
+[36m(_n_obs: 3 pid=37435)[0m debug: false[32m [repeated 8x across cluster][0m
+[36m(_n_obs: 3 pid=37435)[0m device: cpu[32m [repeated 8x across cluster][0m
+[36m(_n_obs: 3 pid=37435)[0m disable_amp: true[32m [repeated 8x across cluster][0m
+[36m(_n_obs: 3 pid=37435)[0m e: false[32m [repeated 8x across cluster][0m
+[36m(_n_obs: 3 pid=37435)[0m gamma: 0.9995[32m [repeated 8x across cluster][0m
+[36m(_n_obs: 3 pid=37435)[0m global_reward: true[32m [repeated 8x across cluster][0m
+[36m(_n_obs: 3 pid=37435)[0m handcraft: false[32m [repeated 8x across cluster][0m
+[36m(_n_obs: 3 pid=37435)[0m high: 1[32m [repeated 8x across cluster][0m
+[36m(_n_obs: 3 pid=37435)[0m horizon: 2000[32m [repeated 8x across cluster][0m
+[36m(_n_obs: 3 pid=37435)[0m i_worker: 0[32m [repeated 8x across cluster][0m
+[36m(_n_obs: 3 pid=37435)[0m initial_space: free[32m [repeated 8x across cluster][0m
+[36m(_n_obs: 3 pid=37435)[0m lc_act_type: discrete[32m [repeated 8x across cluster][0m
+[36m(_n_obs: 3 pid=37435)[0m logger: true[32m [repeated 8x across cluster][0m
+[36m(_n_obs: 3 pid=37435)[0m low: -1[32m [repeated 8x across cluster][0m
+[36m(_n_obs: 3 pid=37435)[0m lr: 0.0001[32m [repeated 8x across cluster][0m
+[36m(_n_obs: 3 pid=37435)[0m main: false[32m [repeated 8x across cluster][0m
+[36m(_n_obs: 3 pid=37435)[0m max_accel: 0.5[32m [repeated 8x across cluster][0m
+[36m(_n_obs: 3 pid=37435)[0m max_decel: 0.5[32m [repeated 8x across cluster][0m
+[36m(_n_obs: 3 pid=37435)[0m max_speed: 10[32m [repeated 8x across cluster][0m
+[36m(_n_obs: 3 pid=37435)[0m mrtl: false[32m [repeated 8x across cluster][0m
+[36m(_n_obs: 3 pid=37435)[0m n_lanes: 1[32m [repeated 8x across cluster][0m
+[36m(_n_obs: 3 pid=37435)[0m n_rollouts_per_step: 32[32m [repeated 8x across cluster][0m
+[36m(_n_obs: 3 pid=37435)[0m n_rollouts_per_worker: 1[32m [repeated 8x across cluster][0m
+[36m(_n_obs: 3 pid=37435)[0m n_steps: 100[32m [repeated 8x across cluster][0m
+[36m(_n_obs: 3 pid=37435)[0m n_veh: 12[32m [repeated 8x across cluster][0m
+[36m(_n_obs: 3 pid=37435)[0m n_workers: 32[32m [repeated 8x across cluster][0m
+[36m(_n_obs: 3 pid=37435)[0m name: av_1_c_200[32m [repeated 8x across cluster][0m
+[36m(_n_obs: 3 pid=37435)[0m norm_action: true[32m [repeated 8x across cluster][0m
+[36m(_n_obs: 3 pid=37435)[0m norm_reward: true[32m [repeated 8x across cluster][0m
+[36m(_n_obs: 3 pid=37435)[0m opt_level: O0[32m [repeated 8x across cluster][0m
+[36m(_n_obs: 3 pid=37435)[0m redef_sumo: false[32m [repeated 8x across cluster][0m
+[36m(_n_obs: 3 pid=37435)[0m render: false[32m [repeated 8x across cluster][0m
+[36m(_n_obs: 3 pid=37435)[0m res: /Users/xiawu/sumo_test/pareto/av_1_c_200/veh_12[32m [repeated 8x across cluster][0m
+[36m(_n_obs: 3 pid=37435)[0m residual_transfer: false[32m [repeated 8x across cluster][0m
+[36m(_n_obs: 3 pid=37435)[0m scale_drac: 1[32m [repeated 8x across cluster][0m
+[36m(_n_obs: 3 pid=37435)[0m scale_pet: 1[32m [repeated 8x across cluster][0m
+[36m(_n_obs: 3 pid=37435)[0m scale_ttc: 1[32m [repeated 8x across cluster][0m
+[36m(_n_obs: 3 pid=37435)[0m seed_np: 1409397498[32m [repeated 8x across cluster][0m
+[36m(_n_obs: 3 pid=37435)[0m seed_torch: 23558[32m [repeated 8x across cluster][0m
+[36m(_n_obs: 3 pid=37435)[0m sigma: 0.2[32m [repeated 8x across cluster][0m
+[36m(_n_obs: 3 pid=37435)[0m sim_step: 0.1[32m [repeated 8x across cluster][0m
+[36m(_n_obs: 3 pid=37435)[0m skip_stat_steps: 0[32m [repeated 8x across cluster][0m
+[36m(_n_obs: 3 pid=37435)[0m step_save: 5[32m [repeated 8x across cluster][0m
+[36m(_n_obs: 3 pid=37435)[0m tb: false[32m [repeated 8x across cluster][0m
+[36m(_n_obs: 3 pid=37435)[0m tmp: false[32m [repeated 8x across cluster][0m
+[36m(_n_obs: 3 pid=37435)[0m use_critic: false[32m [repeated 8x across cluster][0m
+[36m(_n_obs: 3 pid=37435)[0m use_ray: true[32m [repeated 8x across cluster][0m
+[36m(_n_obs: 3 pid=37435)[0m warmup_steps: 0[32m [repeated 8x across cluster][0m
+[36m(_n_obs: 3 pid=37435)[0m wb: false[32m [repeated 8x across cluster][0m
+[36m(_n_obs: 3 pid=37716)[0m 
+[36m(_n_obs: 3 pid=37716)[0m accel_feature: false
+[36m(_n_obs: 3 pid=37716)[0m accel_penalty: 0
+[36m(_n_obs: 3 pid=37716)[0m act_type: accel
+[36m(_n_obs: 3 pid=37716)[0m adv_norm: false
+[36m(_n_obs: 3 pid=37716)[0m alg: PPO
+[36m(_n_obs: 3 pid=37716)[0m av: 1
+[36m(_n_obs: 3 pid=37716)[0m beta: 1.0
+[36m(_n_obs: 3 pid=37716)[0m center_reward: true
+[36m(_n_obs: 3 pid=37716)[0m circ_feature: false
+[36m(_n_obs: 3 pid=37716)[0m circumference: 200
+[36m(_n_obs: 3 pid=37716)[0m circumference_max: 300
+[36m(_n_obs: 3 pid=37716)[0m circumference_min: 200
+[36m(_n_obs: 3 pid=37716)[0m circumference_range: null
+[36m(_n_obs: 3 pid=37716)[0m collision_penalty: 100
+[36m(_n_obs: 3 pid=37716)[0m debug: false
+[36m(_n_obs: 3 pid=37716)[0m device: cpu
+[36m(_n_obs: 3 pid=37716)[0m disable_amp: true
+[36m(_n_obs: 3 pid=37716)[0m e: false
+[36m(_n_obs: 3 pid=37716)[0m gamma: 0.9995
+[36m(_n_obs: 3 pid=37716)[0m global_reward: true
+[36m(_n_obs: 3 pid=37716)[0m handcraft: false
+[36m(_n_obs: 3 pid=37716)[0m high: 1
+[36m(_n_obs: 3 pid=37716)[0m horizon: 2000
+[36m(_n_obs: 3 pid=37716)[0m i_worker: 26
+[36m(_n_obs: 3 pid=37716)[0m initial_space: free
+[36m(_n_obs: 3 pid=37716)[0m lc_act_type: discrete
+[36m(_n_obs: 3 pid=37716)[0m logger: true
+[36m(_n_obs: 3 pid=37716)[0m low: -1
+[36m(_n_obs: 3 pid=37716)[0m lr: 0.0001
+[36m(_n_obs: 3 pid=37716)[0m main: false
+[36m(_n_obs: 3 pid=37716)[0m max_accel: 0.5
+[36m(_n_obs: 3 pid=37716)[0m max_decel: 0.5
+[36m(_n_obs: 3 pid=37716)[0m max_speed: 10
+[36m(_n_obs: 3 pid=37716)[0m mrtl: false
+[36m(_n_obs: 3 pid=37716)[0m n_lanes: 1
+[36m(_n_obs: 3 pid=37716)[0m n_rollouts_per_step: 32
+[36m(_n_obs: 3 pid=37716)[0m n_rollouts_per_worker: 1
+[36m(_n_obs: 3 pid=37716)[0m n_steps: 100
+[36m(_n_obs: 3 pid=37716)[0m n_veh: 12
+[36m(_n_obs: 3 pid=37716)[0m n_workers: 32
+[36m(_n_obs: 3 pid=37716)[0m name: av_1_c_200
+[36m(_n_obs: 3 pid=37716)[0m norm_action: true
+[36m(_n_obs: 3 pid=37716)[0m norm_reward: true
+[36m(_n_obs: 3 pid=37716)[0m opt_level: O0
+[36m(_n_obs: 3 pid=37716)[0m redef_sumo: false
+[36m(_n_obs: 3 pid=37716)[0m render: false
+[36m(_n_obs: 3 pid=37716)[0m res: /Users/xiawu/sumo_test/pareto/av_1_c_200/veh_12
+[36m(_n_obs: 3 pid=37716)[0m residual_transfer: false
+[36m(_n_obs: 3 pid=37716)[0m scale_drac: 1
+[36m(_n_obs: 3 pid=37716)[0m scale_pet: 1
+[36m(_n_obs: 3 pid=37716)[0m scale_ttc: 1
+[36m(_n_obs: 3 pid=37716)[0m seed_np: 1409397498
+[36m(_n_obs: 3 pid=37716)[0m seed_torch: 23558
+[36m(_n_obs: 3 pid=37716)[0m sigma: 0.2
+[36m(_n_obs: 3 pid=37716)[0m sim_step: 0.1
+[36m(_n_obs: 3 pid=37716)[0m skip_stat_steps: 0
+[36m(_n_obs: 3 pid=37716)[0m step_save: 5
+[36m(_n_obs: 3 pid=37716)[0m tb: false
+[36m(_n_obs: 3 pid=37716)[0m tmp: false
+[36m(_n_obs: 3 pid=37716)[0m use_critic: false
+[36m(_n_obs: 3 pid=37716)[0m use_ray: true
+[36m(_n_obs: 3 pid=37716)[0m warmup_steps: 0
+[36m(_n_obs: 3 pid=37716)[0m wb: false
+[36m(_n_obs: 3 pid=37721)[0m accel_feature: false
+[36m(_n_obs: 3 pid=37721)[0m accel_penalty: 0
+[36m(_n_obs: 3 pid=37721)[0m act_type: accel
+[36m(_n_obs: 3 pid=37721)[0m adv_norm: false
+[36m(_n_obs: 3 pid=37721)[0m alg: PPO
+[36m(_n_obs: 3 pid=37721)[0m av: 1
+[36m(_n_obs: 3 pid=37721)[0m beta: 1.0
+[36m(_n_obs: 3 pid=37721)[0m center_reward: true
+[36m(_n_obs: 3 pid=37721)[0m circ_feature: false
+[36m(_n_obs: 3 pid=37721)[0m circumference: 200
+[36m(_n_obs: 3 pid=37721)[0m circumference_max: 300
+[36m(_n_obs: 3 pid=37721)[0m circumference_min: 200
+[36m(_n_obs: 3 pid=37721)[0m circumference_range: null
+[36m(_n_obs: 3 pid=37721)[0m collision_penalty: 100
+[36m(_n_obs: 3 pid=37721)[0m debug: false
+[36m(_n_obs: 3 pid=37721)[0m device: cpu
+[36m(_n_obs: 3 pid=37721)[0m disable_amp: true
+[36m(_n_obs: 3 pid=37721)[0m e: false
+[36m(_n_obs: 3 pid=37721)[0m gamma: 0.9995
+[36m(_n_obs: 3 pid=37721)[0m global_reward: true
+[36m(_n_obs: 3 pid=37721)[0m handcraft: false
+[36m(_n_obs: 3 pid=37721)[0m high: 1
+[36m(_n_obs: 3 pid=37721)[0m horizon: 2000
+[36m(_n_obs: 3 pid=37721)[0m i_worker: 31
+[36m(_n_obs: 3 pid=37721)[0m initial_space: free
+[36m(_n_obs: 3 pid=37721)[0m lc_act_type: discrete
+[36m(_n_obs: 3 pid=37721)[0m logger: true
+[36m(_n_obs: 3 pid=37721)[0m low: -1
+[36m(_n_obs: 3 pid=37721)[0m lr: 0.0001
+[36m(_n_obs: 3 pid=37721)[0m main: false
+[36m(_n_obs: 3 pid=37721)[0m max_accel: 0.5
+[36m(_n_obs: 3 pid=37721)[0m max_decel: 0.5
+[36m(_n_obs: 3 pid=37721)[0m max_speed: 10
+[36m(_n_obs: 3 pid=37721)[0m mrtl: false
+[36m(_n_obs: 3 pid=37721)[0m n_lanes: 1
+[36m(_n_obs: 3 pid=37721)[0m n_rollouts_per_step: 32
+[36m(_n_obs: 3 pid=37721)[0m n_rollouts_per_worker: 1
+[36m(_n_obs: 3 pid=37721)[0m n_steps: 100
+[36m(_n_obs: 3 pid=37721)[0m n_veh: 12
+[36m(_n_obs: 3 pid=37721)[0m n_workers: 32
+[36m(_n_obs: 3 pid=37721)[0m name: av_1_c_200
+[36m(_n_obs: 3 pid=37721)[0m norm_action: true
+[36m(_n_obs: 3 pid=37721)[0m norm_reward: true
+[36m(_n_obs: 3 pid=37721)[0m opt_level: O0
+[36m(_n_obs: 3 pid=37721)[0m redef_sumo: false
+[36m(_n_obs: 3 pid=37721)[0m render: false
+[36m(_n_obs: 3 pid=37721)[0m res: /Users/xiawu/sumo_test/pareto/av_1_c_200/veh_12
+[36m(_n_obs: 3 pid=37721)[0m residual_transfer: false
+[36m(_n_obs: 3 pid=37721)[0m scale_drac: 1
+[36m(_n_obs: 3 pid=37721)[0m scale_pet: 1
+[36m(_n_obs: 3 pid=37721)[0m scale_ttc: 1
+[36m(_n_obs: 3 pid=37721)[0m seed_np: 1409397498
+[36m(_n_obs: 3 pid=37721)[0m seed_torch: 23558
+[36m(_n_obs: 3 pid=37721)[0m sigma: 0.2
+[36m(_n_obs: 3 pid=37721)[0m sim_step: 0.1
+[36m(_n_obs: 3 pid=37721)[0m skip_stat_steps: 0
+[36m(_n_obs: 3 pid=37721)[0m step_save: 5
+[36m(_n_obs: 3 pid=37721)[0m tb: false
+[36m(_n_obs: 3 pid=37721)[0m tmp: false
+[36m(_n_obs: 3 pid=37721)[0m use_critic: false
+[36m(_n_obs: 3 pid=37721)[0m use_ray: true
+[36m(_n_obs: 3 pid=37721)[0m warmup_steps: 0
+[36m(_n_obs: 3 pid=37721)[0m wb: false
+[36m(_n_obs: 3 pid=37721)[0m 
+[36m(_n_obs: 3 pid=37714)[0m 
+[36m(_n_obs: 3 pid=37621)[0m 
+[36m(_n_obs: 3 pid=37614)[0m 
+[36m(_n_obs: 3 pid=37619)[0m 
+[36m(_n_obs: 3 pid=37715)[0m 
+[36m(_n_obs: 3 pid=37613)[0m 
+[36m(_n_obs: 3 pid=37719)[0m 
+[36m(_n_obs: 3 pid=37622)[0m 
+[36m(_n_obs: 3 pid=37615)[0m 
+[36m(_n_obs: 3 pid=37617)[0m 
+[36m(_n_obs: 3 pid=37618)[0m 
+[36m(_n_obs: 3 pid=37720)[0m 
+[36m(_n_obs: 3 pid=37717)[0m 
+[36m(_n_obs: 3 pid=37718)[0m 
+ c._i  0
+i 0 | klcoef 0.2 | lr 0.0001
+Saved model /Users/xiawu/sumo_test/pareto/av_1_c_200/veh_12/models/model-0.pth at step 0
+[36m(_n_obs: 3 pid=37530)[0m  Retrying in 1 seconds
+[36m(_n_obs: 3 pid=37718)[0m accel_feature: false[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m accel_penalty: 0[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m act_type: accel[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m adv_norm: false[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m alg: PPO[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m av: 1[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m beta: 1.0[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m center_reward: true[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m circ_feature: false[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m circumference: 200[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m circumference_max: 300[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m circumference_min: 200[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m circumference_range: null[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m collision_penalty: 100[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m debug: false[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m device: cpu[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m disable_amp: true[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m e: false[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m gamma: 0.9995[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m global_reward: true[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m handcraft: false[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m high: 1[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m horizon: 2000[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m i_worker: 28[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m initial_space: free[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m lc_act_type: discrete[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m logger: true[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m low: -1[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m lr: 0.0001[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m main: false[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m max_accel: 0.5[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m max_decel: 0.5[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m max_speed: 10[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m mrtl: false[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m n_lanes: 1[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m n_rollouts_per_step: 32[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m n_rollouts_per_worker: 1[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m n_steps: 100[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m n_veh: 12[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m n_workers: 32[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m name: av_1_c_200[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m norm_action: true[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m norm_reward: true[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m opt_level: O0[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m redef_sumo: false[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m render: false[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m res: /Users/xiawu/sumo_test/pareto/av_1_c_200/veh_12[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m residual_transfer: false[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m scale_drac: 1[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m scale_pet: 1[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m scale_ttc: 1[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m seed_np: 1409397498[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m seed_torch: 23558[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m sigma: 0.2[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m sim_step: 0.1[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m skip_stat_steps: 0[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m step_save: 5[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m tb: false[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m tmp: false[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m use_critic: false[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m use_ray: true[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m warmup_steps: 0[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m wb: false[32m [repeated 14x across cluster][0m
+[36m(_n_obs: 3 pid=37617)[0m Could not connect to TraCI server at localhost:63895 [Errno 61] Connection refused
+[36m(_n_obs: 3 pid=37615)[0m  Retrying in 1 seconds[32m [repeated 156x across cluster][0m
+[36m(_n_obs: 3 pid=37533)[0m Could not connect to TraCI server at localhost:63929 [Errno 61] Connection refused[32m [repeated 148x across cluster][0m
+[36m(_n_obs: 3 pid=37439)[0m  Retrying in 1 seconds[32m [repeated 159x across cluster][0m
+[36m(_n_obs: 3 pid=37438)[0m Could not connect to TraCI server at localhost:63915 [Errno 61] Connection refused[32m [repeated 161x across cluster][0m
+[36m(_n_obs: 3 pid=37721)[0m  Retrying in 1 seconds[32m [repeated 153x across cluster][0m
+[36m(_n_obs: 3 pid=37438)[0m Could not connect to TraCI server at localhost:64315 [Errno 61] Connection refused[32m [repeated 133x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m  Retrying in 1 seconds[32m [repeated 147x across cluster][0m
+[36m(_n_obs: 3 pid=37533)[0m Could not connect to TraCI server at localhost:64317 [Errno 61] Connection refused[32m [repeated 159x across cluster][0m
+[36m(_n_obs: 3 pid=37619)[0m 
+[36m(_n_obs: 3 pid=37715)[0m Could not connect to TraCI server at localhost:64662
+[36m(_n_obs: 3 pid=37715)[0m  [Errno 61] Connection refused
+[36m(_n_obs: 3 pid=37433)[0m  Retrying in 1 seconds[32m [repeated 137x across cluster][0m
+[36m(_n_obs: 3 pid=37618)[0m 
+[36m(_n_obs: 3 pid=37435)[0m Could not connect to TraCI server at localhost:64677 [Errno 61] Connection refused[32m [repeated 136x across cluster][0m
+[36m(_n_obs: 3 pid=37615)[0m 
+[36m(_n_obs: 3 pid=37530)[0m 
+[36m(_n_obs: 3 pid=37532)[0m 
+[36m(_n_obs: 3 pid=37721)[0m Could not connect to TraCI server at localhost:64674[32m [repeated 3x across cluster][0m
+[36m(_n_obs: 3 pid=37721)[0m  [Errno 61] Connection refused[32m [repeated 3x across cluster][0m
+[36m(_n_obs: 3 pid=37441)[0m  Retrying in 1 seconds[32m [repeated 95x across cluster][0m
+[36m(_n_obs: 3 pid=37619)[0m Could not connect to TraCI server at localhost:64706 [Errno 61] Connection refused[32m [repeated 89x across cluster][0m
+[36m(_n_obs: 3 pid=37720)[0m Could not connect to TraCI server at localhost:64679 [32m [repeated 3x across cluster][0m
+[36m(_n_obs: 3 pid=37720)[0m [Errno 61] Connection refused[32m [repeated 3x across cluster][0m
+Traceback (most recent call last):
+  File "/Users/xiawu/sumo_test/automatic_vehicular_control/ring_single_veh_number.py", line 330, in <module>
+    c.run()  # Assuming the RingEnv class has a run method
+  File "/Users/xiawu/sumo_test/automatic_vehicular_control/exp.py", line 425, in run
+    c.train()
+  File "/Users/xiawu/sumo_test/automatic_vehicular_control/exp.py", line 350, in train
+    rollouts = c.rollouts()
+  File "/Users/xiawu/sumo_test/automatic_vehicular_control/exp.py", line 197, in rollouts
+    rollout_stats = flatten(ray.get([w.rollouts_single_process.remote() for w in c._rollout_workers]))
+  File "/Users/xiawu/miniconda3/envs/sumo_py310/lib/python3.10/site-packages/ray/_private/auto_init_hook.py", line 21, in auto_init_wrapper
+    return fn(*args, **kwargs)
+  File "/Users/xiawu/miniconda3/envs/sumo_py310/lib/python3.10/site-packages/ray/_private/client_mode_hook.py", line 103, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/xiawu/miniconda3/envs/sumo_py310/lib/python3.10/site-packages/ray/_private/worker.py", line 2691, in get
+    values, debugger_breakpoint = worker.get_objects(object_refs, timeout=timeout)
+  File "/Users/xiawu/miniconda3/envs/sumo_py310/lib/python3.10/site-packages/ray/_private/worker.py", line 871, in get_objects
+    raise value.as_instanceof_cause()
+ray.exceptions.RayTaskError(AttributeError): [36mray::Ring.rollouts_single_process()[39m (pid=37435, ip=127.0.0.1, actor_id=52eeb78118904a94525dfdcd01000000, repr=_dist_class: &id001 !!python/name:ut.DiagGaussianDist_ ''
+_env: &id002 !!python/object:env.NormEnv
+  _obs_stats: !!python/object:ut.RunningStats
+    _nstd: 0
+    mean: 0
+    n: 0
+  _return_stats: !!python/object:ut.RunningStats
+    _nstd: 0
+    mean: 0
+    n: 0
+  _reward_stats: !!python/object:ut.RunningStats
+    _nstd: 0
+    mean: 0
+    n: 0
+  _running_ret: 0
+  c: &id006 !!python/object/new:ring_single_veh_number.Ring
+    dictitems:
+      _dist_class: *id001
+      _env: *id002
+      _i: 0
+      _model: &id024 !!python/object:ut.FFN
+        _backward_hooks: !!python/object/apply:collections.OrderedDict
+        - []
+        _backward_pre_hooks: !!python/object/apply:collections.OrderedDict
+        - []
+        _buffers: !!python/object/apply:collections.OrderedDict
+        - []
+        _forward_hooks: !!python/object/apply:collections.OrderedDict
+        - []
+        _forward_hooks_always_called: !!python/object/apply:collections.OrderedDict
+        - []
+        _forward_hooks_with_kwargs: !!python/object/apply:collections.OrderedDict
+        - []
+        _forward_pre_hooks: !!python/object/apply:collections.OrderedDict
+        - []
+        _forward_pre_hooks_with_kwargs: !!python/object/apply:collections.OrderedDict
+        - []
+        _is_full_backward_hook: null
+        _load_state_dict_post_hooks: !!python/object/apply:collections.OrderedDict
+        - []
+        _load_state_dict_pre_hooks: !!python/object/apply:collections.OrderedDict
+        - []
+        _modules: !!python/object/apply:collections.OrderedDict
+        - - - shared
+            - !!python/object:torch.nn.modules.container.Sequential
+              _backward_hooks: !!python/object/apply:collections.OrderedDict
+              - []
+              _backward_pre_hooks: !!python/object/apply:collections.OrderedDict
+              - []
+              _buffers: !!python/object/apply:collections.OrderedDict
+              - []
+              _forward_hooks: !!python/object/apply:collections.OrderedDict
+              - []
+              _forward_hooks_always_called: !!python/object/apply:collections.OrderedDict
+              - []
+              _forward_hooks_with_kwargs: !!python/object/apply:collections.OrderedDict
+              - []
+              _forward_pre_hooks: !!python/object/apply:collections.OrderedDict
+              - []
+              _forward_pre_hooks_with_kwargs: !!python/object/apply:collections.OrderedDict
+              - []
+              _is_full_backward_hook: null
+              _load_state_dict_post_hooks: !!python/object/apply:collections.OrderedDict
+              - []
+              _load_state_dict_pre_hooks: !!python/object/apply:collections.OrderedDict
+              - []
+              _modules: !!python/object/apply:collections.OrderedDict
+              - []
+              _non_persistent_buffers_set: !!set {}
+              _parameters: !!python/object/apply:collections.OrderedDict
+              - []
+              _state_dict_hooks: !!python/object/apply:collections.OrderedDict
+              - []
+              _state_dict_pre_hooks: !!python/object/apply:collections.OrderedDict
+              - []
+              training: false
+          - - p_head
+            - !!python/object:torch.nn.modules.container.Sequential
+              _backward_hooks: !!python/object/apply:collections.OrderedDict
+              - []
+              _backward_pre_hooks: !!python/object/apply:collections.OrderedDict
+              - []
+              _buffers: !!python/object/apply:collections.OrderedDict
+              - []
+              _forward_hooks: !!python/object/apply:collections.OrderedDict
+              - []
+              _forward_hooks_always_called: !!python/object/apply:collections.OrderedDict
+              - []
+              _forward_hooks_with_kwargs: !!python/object/apply:collections.OrderedDict
+              - []
+              _forward_pre_hooks: !!python/object/apply:collections.OrderedDict
+              - []
+              _forward_pre_hooks_with_kwargs: !!python/object/apply:collections.OrderedDict
+              - []
+              _is_full_backward_hook: null
+              _load_state_dict_post_hooks: !!python/object/apply:collections.OrderedDict
+              - []
+              _load_state_dict_pre_hooks: !!python/object/apply:collections.OrderedDict
+              - []
+              _modules: !!python/object/apply:collections.OrderedDict
+              - - - '0'
+                  - !!python/object:torch.nn.modules.linear.Linear
+                    _backward_hooks: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _backward_pre_hooks: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _buffers: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _forward_hooks: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _forward_hooks_always_called: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _forward_hooks_with_kwargs: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _forward_pre_hooks: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _forward_pre_hooks_with_kwargs: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _is_full_backward_hook: null
+                    _load_state_dict_post_hooks: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _load_state_dict_pre_hooks: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _modules: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _non_persistent_buffers_set: !!set {}
+                    _parameters: !!python/object/apply:collections.OrderedDict
+                    - - - weight
+                        - !!python/object/apply:torch._utils._rebuild_parameter
+                          - !!python/object/apply:torch._utils._rebuild_tensor_v2
+                            - !!python/object/apply:torch.storage._load_from_bytes
+                              - !!binary |
+                                gAKKCmz8nEb5IGqoUBkugAJN6QMugAJ9cQAoWBAAAABwcm90b2NvbF92ZXJzaW9ucQFN6QNYDQAA
+                                AGxpdHRsZV9lbmRpYW5xAohYCgAAAHR5cGVfc2l6ZXNxA31xBChYBQAAAHNob3J0cQVLAlgDAAAA
+                                aW50cQZLBFgEAAAAbG9uZ3EHSwR1dS6AAihYBwAAAHN0b3JhZ2VxAGN0b3JjaApGbG9hdFN0b3Jh
+                                Z2UKcQFYCgAAADQ4NDE4NTg2MDhxAlgDAAAAY3B1cQNLwE50cQRRLoACXXEAWAoAAAA0ODQxODU4
+                                NjA4cQFhLsAAAAAAAAAAUKiQPSLH6bym7wo9t8+ePdoonb3rpDe9CeMavd1hvj6ICy2+fO0EPfQ9
+                                dz2W7y29QEOkve9izD120gO+lkJXvhAF7z05mGM+hGL7vLKavj3QxXW8lz2OvsgJt735zxS+ymNS
+                                PleYzz0ljx2+vAhvPbbwjz08dta9Ewz9PQlIET58odG8CbtHvoq9/72XkXy++ug8vrpXEr7sRcg9
+                                szMMvgObPrw863a9Ah/lvd3+hL1ZIs69lYV5PPEibj4V5ng+A41xvZOElL0BAjE9TJICPgUKrr2i
+                                UfY9r4z6PTMVAT4Knlq9xOsfvcJTa71Z8u+9asj3vcPGNz6sMKo+Tt3XPUcrfL7xmYe9hnP4vP3p
+                                +DvHMT6+lh+JvZ8FOb27roE9to8dPpGCEL2fXRy98q1JvCkLWj0s7yc9v7wdPjL4Vrwc/Ca+OL0h
+                                vXuzrD3iIJk9XFChvTiAZbzI9xA8XnFgPc0FAr0n/t68Uw6EPt/2TLzt+L+8DJbMPSLfnr2mkQG+
+                                X71lvLcWAD09EiY967plvYDh1L3P3Ns9WwKbPUSgCr5Afig+4A0Uvr8n3z3eTLa9X+TCvmseIr4B
+                                swG+B/U7Pi0hSz2INy2+uIPQPUaUcLypxCe+33uavfaJmL3MbL89IqrautuMxj125lq+dCLaPSp9
+                                mbxtP/68cfKZO7xTVzvY5bk8o6kdPRYsAL4YPgK+U0AMvqadkz4fsji+pl0uvUfWBL6OKpG9PTfG
+                                vb78eb5u1YC9p5iYvQ+Tj7xzeY89OiKEvqGYeD3YMou95V/HvQdZar7IlNc8uyHLvCaaVT0C9sA8
+                                Aj5WvmSO1z2hqrc9Oqe3PM0YIr6YW2C+3kT7vClMw731Rzw9BbddPLpxvr0WzB8+pQhuPYgmib2E
+                                j/a9U3coPEXQ/b1aj8U9sXo1vRfG672Pve68PdlfPgOkbj0n3Nk7O1aBvTaLBL7q8pG9uLYXPgJa
+                                Er4NnBg+yZUevUUHRz1p1Ym+xaKhvQyZgj5fZrC8IfvDPXXSFr5sZs49
+                            - 0
+                            - !!python/tuple
+                              - 64
+                              - 3
+                            - !!python/tuple
+                              - 3
+                              - 1
+                            - false
+                            - !!python/object/apply:collections.OrderedDict
+                              - []
+                          - true
+                          - !!python/object/apply:collections.OrderedDict
+                            - []
+                      - - bias
+                        - !!python/object/apply:torch._utils._rebuild_parameter
+                          - !!python/object/apply:torch._utils._rebuild_tensor_v2
+                            - !!python/object/apply:torch.storage._load_from_bytes
+                              - !!binary |
+                                gAKKCmz8nEb5IGqoUBkugAJN6QMugAJ9cQAoWBAAAABwcm90b2NvbF92ZXJzaW9ucQFN6QNYDQAA
+                                AGxpdHRsZV9lbmRpYW5xAohYCgAAAHR5cGVfc2l6ZXNxA31xBChYBQAAAHNob3J0cQVLAlgDAAAA
+                                aW50cQZLBFgEAAAAbG9uZ3EHSwR1dS6AAihYBwAAAHN0b3JhZ2VxAGN0b3JjaApGbG9hdFN0b3Jh
+                                Z2UKcQFYCgAAADU5MTY2NDA4NjRxAlgDAAAAY3B1cQNLQE50cQRRLoACXXEAWAoAAAA1OTE2NjQw
+                                ODY0cQFhLkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+                                AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+                                AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+                                AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+                                AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+                            - 0
+                            - !!python/tuple
+                              - 64
+                            - !!python/tuple
+                              - 1
+                            - false
+                            - !!python/object/apply:collections.OrderedDict
+                              - []
+                          - true
+                          - !!python/object/apply:collections.OrderedDict
+                            - []
+                    _state_dict_hooks: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _state_dict_pre_hooks: !!python/object/apply:collections.OrderedDict
+                    - []
+                    in_features: 3
+                    out_features: 64
+                    training: false
+                - - '1'
+                  - &id003 !!python/object:torch.nn.modules.activation.Tanh
+                    _backward_hooks: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _backward_pre_hooks: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _buffers: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _forward_hooks: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _forward_hooks_always_called: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _forward_hooks_with_kwargs: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _forward_pre_hooks: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _forward_pre_hooks_with_kwargs: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _is_full_backward_hook: null
+                    _load_state_dict_post_hooks: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _load_state_dict_pre_hooks: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _modules: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _non_persistent_buffers_set: !!set {}
+                    _parameters: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _state_dict_hooks: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _state_dict_pre_hooks: !!python/object/apply:collections.OrderedDict
+                    - []
+                    training: false
+                - - '2'
+                  - !!python/object:torch.nn.modules.linear.Linear
+                    _backward_hooks: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _backward_pre_hooks: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _buffers: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _forward_hooks: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _forward_hooks_always_called: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _forward_hooks_with_kwargs: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _forward_pre_hooks: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _forward_pre_hooks_with_kwargs: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _is_full_backward_hook: null
+                    _load_state_dict_post_hooks: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _load_state_dict_pre_hooks: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _modules: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _non_persistent_buffers_set: !!set {}
+                    _parameters: !!python/object/apply:collections.OrderedDict
+                    - - - weight
+                        - !!python/object/apply:torch._utils._rebuild_parameter
+                          - !!python/object/apply:torch._utils._rebuild_tensor_v2
+                            - !!python/object/apply:torch.storage._load_from_bytes
+                              - !!binary |
+                                gAKKCmz8nEb5IGqoUBkugAJN6QMugAJ9cQAoWBAAAABwcm90b2NvbF92ZXJzaW9ucQFN6QNYDQAA
+                                AGxpdHRsZV9lbmRpYW5xAohYCgAAAHR5cGVfc2l6ZXNxA31xBChYBQAAAHNob3J0cQVLAlgDAAAA
+                                aW50cQZLBFgEAAAAbG9uZ3EHSwR1dS6AAihYBwAAAHN0b3JhZ2VxAGN0b3JjaApGbG9hdFN0b3Jh
+                                Z2UKcQFYCgAAADU5MzU5NzQ3MjBxAlgDAAAAY3B1cQNNABBOdHEEUS6AAl1xAFgKAAAANTkzNTk3
+                                NDcyMHEBYS4AEAAAAAAAAID4Bjz4Aj2+cNq8O5j1cL6uBpg9cZxkPmhhEL5PRBs+OcZAO7Fx6b0I
+                                h0W9b8nvOvYjLz6kfNY8MmlkvtNuL76lpAi+W+cqvuDh470l7Xm9yE44vh4Xub0mY569U/7EvKRr
+                                IrxXtjW98QrYvSAHHT1jYse91vmWvqC2X73Umzo71KIkvXPFmb2RmXg+iWZ8Paj8tr3QsRs+pTdw
+                                PbZhgb2nHpM9aIWGvcn7FL34vLG8Zd+IvlmAUD4PJfu9ioVmPjAKoryHEwy9yO9AvkQZ7D212Yw9
+                                mV7HvM12pjxyOvO9W38hPRcpFj08Izs+Gz1NPXzlxTyzulK+GJHmPVMqMD2KNcQ9G8ENPVS1czwh
+                                ZnA9i+sHvpszLr3vi208aA5SPtgAUr4fn629rfkTvqRbKj7QS8A8tBsBPrQpZ7w/ON+97EfmPJQV
+                                lz2dCZy+VVrBPbh8Sz0Px5Q9mqcBPa3dSj6Rp6q+H3YoPutVhb2XowI+eoZRvpYfZz4WVIM+DbDT
+                                vWdyFb6+S/A9A/K9PC7l+zyI6Tc6yMI3Pqyf7b1Cx4u9/HkuPkSryryI2ZS9N8IPPjVoJr5rJQG9
+                                mpSSvH/EED16v3Y9x4/FPVfCvD1Jo+q64eJfPAR5cL1QU5c8pP3jPdPLlb1eW0K+xZDOO+3rt72/
+                                XVc++LHDPT49qTvPwle9eCRBPfMfHr34s9O9qBUqPcPDJjzNuye7IvPfPeLqwr1qkii9K4ErPqdo
+                                Wz2oVJs9dTgBvQ+BCD10dSo+uXuHvrGZND1wmZm8HLEXPsumGj2Tz46+zstXvXps1z1et0E+KQ8u
+                                vok/aD12ONg9zKUHPjOIvD1Ssg69FMM/Pdy63r2Ern8++cvAPX7OFz0Yxly9plEWPlMT5D0ToqO9
+                                6vJLvUPkdr2GsOu8zi2UPt+IwDwWBZE+Zp0TPgJv2T3RL9U+JczdvEpG+T0z1xW+UuIePhKqNr0B
+                                LTy9pIgOvl7xFT3YoZm8V/lHPSJVK729AXy8R6vKvGBLgjzZiU494jh+vM4OYL1AlQc+VnemveQR
+                                Wz5f7jW9aj3JPV4GnT55Zlg+uXXEPKpkTT6TYeS7HS1rvAwKvL0QycM9HEVxvC7Ft72Uh0C9TK8x
+                                PZ7RxL3abyg+qvk6vp45qDufDpo7pH7uPXJvoj1XdLK78T5EPc7O5z3SLbc9g/dlvgJLkryAwOu9
+                                Zw7LvZlagLzpzsY9lEXSPZUb2r19bjO+R0oHPvo4I70+f0i9hOuuvTHBvryK2ew9loo0vaEFyD1S
+                                m0e9EaFHva32nDyHrQ6+SjG1PqjiUL7yq0a+mnYgvpm36r0NLOi9/lBYPv1ZRr0tozc+Ut8WPK9z
+                                Qr7x20S61Z70vHsArb1kmIO8tigdPbZkfj0S5dA9ulLlPB2xJ72W1RQ+F36Cvt9p3r3Hb4s9XWKR
+                                vfnlib34tlU828GiPNyPmT3w6YA+4vUZPHeHH73Gyrq9V/AhPU51Ab5OzRO+UaYtPq4JSrtaKeC7
+                                kAICvaIHjTwb8Ze9yKwNPtlLMj1kvPO9RGwzvsrGY77aoIS+2hU9PkTkBD5lal2+5aSZPfC/m7ut
+                                yoM+j83zven4DL3eJhu+eBxJPnl6ir2kufU7ko6VPF+QUT7TcLi7WXzEPclqAr6THaw93u3svSCo
+                                Tz7/5fc9CUdPPs1Xvz1+k4677jzbu4vLQT44ZU4+7dS4PcqNVjw5h4C9T7NlPY3dhDyByQi+BJ6K
+                                PINTaT1XKmQ+iUgzPbz8TL0a2wA+QoQEPsfsl77y7UI94oNTvTiDVD47wOU8lHj/vEeQm73hY4S+
+                                P3wpvpB82b0rPbg9eCR8PbD1jr6eJyq+oUA6PnMguD1/HoE9XAVvPaOHs72rZz0+NsiQPHEme70M
+                                ndS9EmvdPEiGVz5pVww++neWPXE0jD2w19M79ffbu7O8lr0Bi4s+ZB3ZPY7NCL2yi8I9AVsTPcHa
+                                TD4oxwK+m7GxO4BSBb2Yqw6+JktFPZPLKb0Z98E8VTlJvmf67L3iwX28QpdkO7IEtr3yFdM9ljDF
+                                vL/OiD5oL7U9xgW7vYGzDT2eqU8+hacDvm1hHb7/36u81tiRvu25CD7mGTQ+Zf+LvJQFOzyH3FG+
+                                I4EkvnMR6D3MTQk9AdupPUKDdLyKrmE9bpNIvt77GD4nGKW91/YdvVJHo72dDHg9RqVbPJxakz3/
+                                Mau9cwDQvclsmb22SFO6m3zPvAD1Jb45lgu8XTKYvZNNLj6Y/a09tJfIPSuOlj4nfoC+jkjjPZjo
+                                1L3+rVc+dxpmPbJg6LxSrFw91LLHvVHDwL0pZIa+aNrjPYCZzz3fE2M9zjP0PIfeAT0EYw6+sK2u
+                                PSKqDb6FI/Y66tuZvO6cuj064HO+T6xAvX40Zz4zwtK8vXNnPXcaVj1i/gw+iRWHPSeTVT2p9yS+
+                                iXF1PRIeKD69d4o+0CEMPm6ygT2K1ac9iXVivKJ9hL7JJkg9tiwqvouf8706UMw8JL+DPf44IT4t
+                                CCs+FGWBPgJYCr69YRu+1dPivEHOAD6sSZQ9keNavRff+L3m1YS9RtiRO9BM1T31M20+ycklvrjz
+                                cb5fGY+9gV6SPdSH973rqMU9NUgjPe/p072DfQg+Nn8gPUmSwj0+k609aGG8vWdAAD4KD1m8cz2E
+                                vY4zZr6sj+Y8xrqIPQj/dr6HXLg9eikTPpoHLb7GDo092HPDvRtZaT21TA6+DWEdvInxhbwQVYo8
+                                ibdjOzJwqL0QSyM+plnqvYuT2j17fyo9AyHsvKdFmL3wMNY9ScrgvbXPu72gZi+9/trxvTqNb709
+                                AIE9XuNOvrhfUL7OahE+sZJVviX3Tj6cV3K+aZf/vZEqkT255Qy+Jl8FvvUlsj0Y50C+X3fvPQEG
+                                QDxGKxa9zQzzvVm5/bwJYyg9Kz7wPYaUqL5q7Li9rnVCvXWJSr4xDO291ts7PiyD7TywpJC9H5Es
+                                PJvEDL5VhpO9HqALPRU/lj3gYOW9G+8pPlr+ObwwVK69+8vBPN0GorsfMNk92YCNvs/vlj3UlUY9
+                                sf64veUQLj3HuQy+Qpo4Ps5Igj3NuqE9RzFFPacom70GoBA+unJNPjIxUr2Iccc+nC3CPGaiBzvA
+                                KBA+vTD5PQrpgj1vUyK+4LF6PhiekTu+KCo8Tv4HPri3QD3NK4g97SEJPvMGVzwtrOq8F3xUPoDN
+                                hbxyHo29sYgBvVJOBz6tYcC9D6L9vdrewr0fWyC+fcmjvMWFMDyjGHW9CfSaOw07sD3vtA+9iXUe
+                                Pq7YIz690RU8q6vdPPQRKD6MYBA+KEL9PUUFQ7xDxW69pKA5vvuCFT3ryPm8eOJFvs2mg7xiXSS8
+                                ajuoPbpbkD15Kgm+s/omvfMkaDzimoK96jtJPtARLz7BCLu9e2RSPtNNlr4c4cW8B+6kPTpeaz0O
+                                rvU7pNy0vOS4oj57lAq+ZwpqPudCuryywaC9Yk3xveXZor3vXBW+vBkJPWNGTb5WB6c+0ofrPTxP
+                                Nb027d49rSVwPh0UBD4m8Y47f7rAvGiijb2bgA09mRRpPusxqD3ggyK+TV3nvXqg1L15s268DEQb
+                                vaxkoz0LJ9Q9BE1Kvm/HZr19LSC+wuyyPH9FJD2QA4E9cPDOPfr+pzwDW8W8HJG6PfkkXL1ZgNs9
+                                mHkBvhxaaL6D1uK8vHSJO2zl1D17Erg9BVk6vhhPLr5YmTk+fpEJPtHuLruGO7g9m2CSPtt4Ez7o
+                                6wk9O9CdvVfK+716fZg9hUcjPs2g3b1V2Dy9HSDWPe7Mp72QjJm8QVb4vd9/bL6m8+E9onbuvWKW
+                                fj0Nkjs7uENFvaAS8L011Ju9KG57PuNgR75mzpe+XYKYPq5F670+h+w9sfgRPNSTrz1K52A9Lgwe
+                                vhIGrz0K4zw9YCBoPEzyI75bH4k9dUj4uUpFID3tKOy9LkmgPddWCj2bC6i8JbZxPP6sBD4Oojw+
+                                vnGFvayCoz3LJB09+UKaPglat71I4Bu+AnnFumw8grwOvdG8DqSGvWMVzT0a6ug8v67DPT3adD6a
+                                ome9IjPRu22xRb3Xj7A9SrIpvieDir7MfTc9CD4VPrBTpz22EKC9xJH7vfmgHD4V7ca9jnIuPaZO
+                                yb0d+4g95R0oPXs4Cz4gnrw7f9WLPkT30b1xIke+E7DjPYMwvb0HIJI90PIjvX48/Lzq66e9or6u
+                                PVtFbL1cUhs9LxNDO91QNz7v94Y9Jk03PqV5z73D7IA9Ej15u7ltnz1n7hE+gnZKvgmAOzw+cpC9
+                                cDb2u5QIfj0cwWE9SraAvvcaKL4iDFW9VLJfPR/na72uiRU+kFj0vSxhhz74D0M+a27evOQ3LL5n
+                                +q+9GKQvPUrAVzxuTmC9tdpAPf68nj1RDLq99jVmvHrlOr6Geos+YyZyPa3K/L0XtwG+ze0Mvpq+
+                                uj2ofxG+b7emPT+OmD3ZGHe+KoBNPdJKaT2FzS4+pO9BvnnlFL7pfGu+037Du4Eanb28pC490WpF
+                                vMCHhb6mVlg+LV6mu7wJJT6CPYq+FFTPPaYd0T2OQ5c9+4K5u5HiB77u1OO9M1grPFMFM71OPWi+
+                                wDkjPhIlKT4UyKe9B2cRPr8Uhb1pelI++ZmuvaOtur1PRKs9bQsTvtozzbyIKt49ScZ6PvuvLj2S
+                                34a9B0W6vb84pj254fY9X7z+vcWpz70v+x8+JDICvsU3kL38fxo9/RfePRAyNrwYYOw9ueogPVRW
+                                Dz6eC509pm4gPmuUk76zaKS9/jlbvWiJCL4XstK4zKgSvrBYwT3sgcK8TTyuPBvERr0C/cW89CFP
+                                PgZfhL05/Vi9xak9vGdoBr1/IW67U9mGPJ5+ATuQDJY9UZOFvaiZGbtp0Vu9rglSPqHRRz5IwaY+
+                                zM1uPjPgOrx8cO08jNQRvSAoAr76Ziw+li8KvB4GTL6S4SI6qpXBPXbNoD3TsxC9vmU8Po2nor2Y
+                                CXu9osQFPmVH8TyOiz0+2mkdPWxVgD1v4ae+9bO5vbekcT0IfdU7jwAJPTBY2L12AXC+P6uAvo5Q
+                                C74tlPK7jwsPvpwFzjw4Ylo+nK0LvVSbXb4HeRw9/BSTvcP+nLymHYi9qPYZvdXP1b0t+m+8zdUQ
+                                vgMclD1x3X89SG7mPdrWnz0xSI29/++oPXsGVb3w7189I5WHPrzU3b0CtJC8Rr9zvJY5Gb0VYhk7
+                                WKInPXJdsT09l/O9UVhBPfgi4D2WuQ++ekKGvaDyuL5TWEo9us1evStesz3MlQk+okUZPgWYDL0f
+                                V5W90AbDPRUce74egiY+tq3pPej0GL0rEam8Zb3kvYsUzzxsqy6+cpFaPf08eT3oBUU+paYnPkm+
+                                Az60UC4+0GBVPRPZab2k0K086EsCvl1gk714ChW+wMzJPbS+tb0QJue9Tat0vfXw2b3Rq1a+gx57
+                                PbXglzticIG9gZwAPn08Ej4DoKe9KxlivslLCT7vfYy9B34ovtTTQz4fGOY9R0hMPpEFJL13pYo9
+                                do1zPhQwJz5jlzq+gKQ1PYxB1zyWRwO9pBoWPbWnnb1c4o09gzDtPGo8azyfKwi8TTjnPb7sYT02
+                                Itc8ru5Fvpq1l726NBW+ueJhvaR7dz71pD+9oblFvfrytrqJOXc9gKjqO21eej6IuEU+92kpPund
+                                273ep/M9BqALvgr+ML7h0Ga+2+3TvVf0Pr2e7JC9t3BVPo3VqLzxkXK9cPyxPQKTlLxOooG7Ve2Q
+                                PGnfVr4x0qw9CWUevpmYBDsw2O29UeeQPoh90b0+1Dw+HRT+vVbgQD1HRVe9QeSmPWwEmj013qC9
+                                UYMQPJIkUL5ak5w9BMyivpbkOj4PFjc+BY2OPRv0oj3GhAi8qojFPT2t0zztBYu+jABDPhPnMj4+
+                                sxi9NSoKPQ4UbL1gkZK8CamnPYKVAT6XNxC90tkjPtiKBDuuYOW9SqOHPbJHbj6mlso8etbbPNW1
+                                Dj7K+A08MdLgO92qvj09kA6+GTjBvUPtrj7a+oC9/yRVPYzltb0Toyu87QbSPIZgWb20k0i811fW
+                                PQZKhjyOjpc991z5PSsJcT2l8M49cy+FvtWOBb48TAm9qgelvEtYmT2i6b29oHhMvi0yMr1Lp/y9
+                                6vb9vfN6fDxUII++RrMKvsdGw7wYoWI9d9hiPYvegb2tWz69AXDvPXXATT0/coU+iEKLvTisiL6S
+                                7Yy972NGviSAXzz46KM94vD/vRrGRr0D5Cq9VsM6Oy2AUTstNUO963gruminh72vdGy+WiNUPq4G
+                                37udkLa911cJvR6sIT0HmCG+zyfvPQyH6z3+3Uu9A1gAvj5eir26kba9VyYdOyCJ5T2uZZa7wz6c
+                                voPIZD6gATc9+j8bPacQWD7pOuU9HVFoPWWdvrySBiU9XvdivRC8zD0csas9WB8WPbL5iT7f06k9
+                                amMGvj/mID7j2pk9nEORvWh+Kj22CCG+d98EvhZoQr5Ybcm9nOCQPcdIyj3/7OO9YcMwPhoD0rxi
+                                Fno+YVTWvUAzfD6j0Vg9kRb8O+RWIL6/1dQ7ZbZ4vm5+SL5R9z2+ic9RvSmXhT2DnZo9jq6FPgKh
+                                WboSvDG9wZuBPclVO74Cs4y9J0cvuk2lTj46at49tYTZPQDaE73JO5E+SPd/OzFCGb7PjZs9ySqa
+                                PiFvVb2488O9jao8vlC0eD3xWEQ9Ihy1vephh75jXms9bK2HvRBc0r3QmfU92rM1vQfyQDaLqsA9
+                                IpNLvuySlbzcEya+GJK6vIWR+7wmk1u9FO4DvrlLBD6VtCw+Ac5pvl7Nzj2nNzU8ElpSva1mTz0z
+                                II69ChQGPtfxLz48rMy63sAKvm1NAj5nGrW8cdwcvdI0Bz1oXgW+nZM1vi16mj2s7Kk9GaeHvRw9
+                                Yj5ZVnG88K+QPVZiPD0KqOW8j+YSvhmkxj1oglA89vRQvcDwAb4twO+8+VLzPJJUEr7hzQg+9wZJ
+                                PiQtjj69QAC+KvYTvkUn4bs1f4Y9IC7CPS6/uDzUqIs+4AG1vbHbDT3p8Xc+zzhGPvT4670Uq34+
+                                wJz/PUFj6D3diwE+i1znvS0Bbr5EdIq9cWw5vallLr6OEM+9Yb8qPYOEE70Q89S8AuOwPWw7Jr0p
+                                EAc+TVEIPqkFxLxLwzC+Uun/OqBmHL1CgSI+yBqlPW2llr2yI5k9xuQQvuoBSrwiwQu+fHWPPpS2
+                                i70tHgy+GukbPc/FnjshkgM+oXjDvFF2Cr4pJQ2+J6ykvYg4ST0Wd+m8szEGvhFbsz3ETyK9fKDL
+                                vWdLKz4Y8QK8xFZIvfK2zrxqCGS7cKzTvW169DhNkwI83YbSvVi5lr65Ow0+8+CDPSBgHr4sgCG+
+                                sANKvj2xi7zGuey9J2Z6vmtNCj5RnRa+Ex2hvesEbj4e07i8QD2WPYhtfL7omgW9DUV3PTm9d73t
+                                9CK+neblvArdI71aSo89nMnvPDMxtTsEaBG+qkCEPQJ5gz16eYI9+SSZPR46Fb5rck69XkT4vTMj
+                                br6iWTg9TFcoPuAZaz7l9Q4+O5hHvcI8hz5ZxSs9u7JaPSnJFr75jJq8BZ4HvjogRj5XJ7u9IH0q
+                                PvTcp73lSdo9sSybPR0GjT1/OJA9mxstPT6qCb5yX7k8/2fGPSLFAb0e8Ya9aOFbvaS1QL5H8IS+
+                                VG/tPcTxJL64Yhi9YO1nvvWTYD4aOny9Y1cCPlSasD2OLHW9O/lwvpspkb20lrE9pRgyvRqNmr2M
+                                Zdq9fae0PVspgD0d2R6+OwREPdekbr3TDbs9mj29vfOGZT4/4Q0+hXOGPkGIdb5Wt668O7CYvSZF
+                                FLuVXNu9bytTPeaMtD1yims97hFQPT5xXD4aPQQ9qCsAPcMA2Tt5nsS9wYGlPf5LgT1D7kS+wnEu
+                                PsCkPzzz4fy1k12qvcRrpj3EtTC+9zakvtjpIL1+NYY97Yl1vadDcT3CzZQ9onh3PIldBr1Icoq9
+                                JaaEvmXqUT6gAlM+vAoKvnSJeb06gsO9CGdfPEADar3IqEs9tZuKvTyGGL6CuYi8WPiiPjQw4bts
+                                WS+9mihivrXfLj4Ch7i8qDrxOk3QPT7dKoi855qXPdOxDL59rxA+uIe5PZPOvrzTr2y8UU7Ovd2+
+                                /z33x50+xWL4uw5hvzw4R+4811V1vaYSgr48F/49gyJcPZ6D07v4cew9dRxEvZ9FGD71VfQ9u2gM
+                                vjX2qL1DAVc+c23Lvc7LYz33m7Y9MU/3PSYkA77vF5U9rIJ0vc9c9j0wP6O9gqZdPgOwjDy+xUW+
+                                MUCYvDOznDxEj8y35ioPPomjez4IpkA9REAHvbpRTj7/3xK760a3PV/e9rtDAS+983IYPPgRsz22
+                                zlk8Jo5PPsHL6j0xCo2+IsAlvYz2KDxmyV+92yc/PT1nTLzBzxy6ztZKPZ+4K76WS2S+lV19PexH
+                                lT3EbSK+bxZRvkdGND69JdC9JB/HPWxUoL7bo7a8Fi9JPHKXAT4aZbq99T0UvjOyEL54yGK9eXcR
+                                PnlLKr2DzIE+T7/1vXtk/7x4Q1Y8Wn23vYwZRr2v0Yi9cbX4OpqcBz5KWoY+SoA4PGHYDrwpw/69
+                                jw5gvlzG6D0J0Di+O9CQvFVymr3WqyG+KvFmPQeQ1bybAZy+RgCXvrSGYj1hxXk969k0Pex/Ij6h
+                                7Dw+bST1PaoZDr06N628L7KDvR0oZb1DnIy8Z8FdPQfrh70A2EE9fNBZPqTfOr0Y+yE9MoaWvqBY
+                                uz1mjSq+1wJSPCWeJz6bYOe8EOW0Pa7yVz3OdkI+aL3IvJYODbwCqZG9tM/vvaoWTb3Csb281kJ9
+                                voloDz55ps09OpNRPhqsJT4VSYa9AEQKPfucSb2GIPa9XFLgPLf3bT3HHTE9OoK1vcGcUL2Odu48
+                                7XbEPbdqsbzKsCw9XW+3umXwbj7facm7wss5vCfIlD08K3Y8JPLrvXwUmL01vUq+mCO8Pacofb6j
+                                F2w+cjNSvOC1jT1K/0e7lKTavYlNZ74FWi69iaiIvcTDdD6b5IC9u7x6PjRMPbxJw5c9Fxhbvahe
+                                yjurkQm+KRaiPR6WpD2eWfM9E+GFva4a1zwrijM9BJdSvoFaHb5rLPa9PO0yvfb68Ls3YpS9PD9W
+                                PFcVFT5ov2Y8KKcwPcVQL717iTk+zSx7vkhsK778YRq7no8LvmUxrb3s+5i9+jQYvkvrMT5JhVM9
+                                YuOIPkjQFD6oMhy+xyiNvoBIVj5BuuM929AKPQRRSr2xRxi+SiEivQVGODuI4wk+GcxjOzS3kL2J
+                                /FU+SpxQPjtGTz2NMA49R1ZcPM1Y9T1tMm491FgPPltiur3Rd6u9aet4vjPXkD2bsmS90E42Pm5m
+                                mz3Sexi9g682PsdI8L3KjrU90dA/vlsEPz4Pxv49PUOEuwlWAL4EtgG+2MFtPj3mljwG/Io9/AYs
+                                PsuL+jxM9ia9w50Avoh+mzvWjAo+THkbvg2Kvr4edSu9BLjSvaMrCT2iEYW+Tg8JPa3nvju5Or27
+                                cW+uvU30k71oLwS9XzvFvUEbM75iyoc7eCWqPbHfdz3/MhM8biGnPNXd4D19GAu++uTNPahyhj1Y
+                                4oM9CxYTPnv4sz11UJ29A/0MPptfID5X0ks+Z8Q1vTUNGz5qR4c7D0cLvr3U27xF7H4+7OXxPM40
+                                VL2/j9W9DE3jPdieMD3EcdG9F1IzvplN0byyz/89QOMUvqdhyj2A7Ko9xRqPPl4UDj7GMDu9OMzj
+                                PDfeCb5r4g094OLkPGV1Zr549Ka9To4BvrK4qj2Xn4C9rOAEvtmceLzUUBy+DY4oPsQhsL1Ys9i8
+                                pXIuPQpv8b1siWk9Dregu9gtBz3ypVq+F27HPSDJRj34GSs+CnAtPVYXEz1rHe48QFHavSQogz7b
+                                yuY98W4vvoTRrLzFqlq90xMwvQpJXL1FPIs+byWLPdBdDD4ANMM93u2HvRuZJr4xLkq9m6WOPu4F
+                                gj1Luae9pbNMPZrbB70t3O49M8GJvoZ+Wb7x2Zq88M/uPfR2CD760IY9yG2UvUP2Ab0ltTM9rGEZ
+                                vqPvJ71gyA0+NrLJPcfo5T2ivMI8iGSDuiKUXzqVTAK+UYHgu9IpfD7mPKc9KgvnuhMpZL2Xlys8
+                                5zQWvrnM7bsw3iA+2QNRPtUDEr7wiwa9Me50vU9PLj5hhqW9wIpJPsGWBr6NhDg9qZ46Pa6OHL7m
+                                n00+ut0aPWFUEL2EWCa9w6IuvixyA76R3+69F1GPvoqiKb01tia+8nBvPSrvBT7I/by8J1JEvU+P
+                                vTy4PSm8CiafPhaUYr3Ft6E9yxJuvrVXFb16SCe+p0IRviDfCj0dH/69nchNPahJwD07no88z2mi
+                                vtvuNT51BBa8InJRPg7ckr1+vsO9/7KcPYIAvz2o8jg9xF5xPh9udL0iEUS9Ds8GvvblGz58uZI9
+                                lZkBvJ2b4D3zjB495iyuvfL2ob7RiKM9a2DjvfJtmDxjBkO9KCVjPOXe7j1tkTM+tA1aPkbL6j3B
+                                tYm7YlXhPAuuED7IsMs9QQo5PesqK7xg1c+9Kx5lPV7w4Lp8eIu+gfgIPZcMo73m+Gc7ve5uvgvD
+                                mD3HMk6+4W4pPhPLnL0uvh6+NVA3Po+Fm72idMe7brTmPfKGFz09Z3o+88HkPSX8+jyCql4+WzqR
+                                vRn2Rj1znr277neIPjyLNjxh6Pw8KCtPvQtSZT0xalC8DrU3PQFexL4JbY49WhXDvnWR6j24Txg9
+                                WignvTehobzbpHC9Sm3AvX6/gr3fPgo+vi1MPQ0xZj1hyXs9YzsYPYvhlj2ut1G93z7VPK9N5z3H
+                                IsO8QQUePgaTPT3fbWM9o/l8vTVIvD0fFx68JH4ZvQCu7bzjAqc9HFjIPRrpSr1AEPC9dB6sPT3n
+                                Cr72L7Y7b/qWPfZlaTwMeCc+HX/pPJKsETwsj429WyqPvh0RUL2qC9S9T7dJPssgrj1+WUC+43p4
+                                PuVaDD7fLJI8nesKvAT0RD5AbUa+g3o/vqO+b7zISWq9o331OuKMJb32ZWG9M92SvsMqez25yhk+
+                                ZpZAPbhU3D02ipW8TmH6OZ7oVT7O7X4+KD94Ppo+GLu6wNq9mSnCvH0doT0ghiE9xtcvPYDkar7z
+                                Hcm7nPmjvUezE72Ygpg9ADnQvNqx8byMYtQ8SOevvqZrJL7vSUe+97xavt09JL6omFQ+L+cevRop
+                                P72vc189vnm6vZA5gT5dHLK9AIu0PcNRvrwm5Y88n7gQvkz9ur0KSNs8Hk7nvZlsQD0J7l+8jPBy
+                                PTMeRr1FIZO9GVuiPSiiET5cRT49IyibvQ2DGT5BQJo90cPVvbp1/r295Ay8izqMvSmOTzyaepK+
+                                qlaOPZJ2njsEOqG82fNEPi/+Lz28GoO+c2CXvO60ub0JAh2+DHh2PdPOxrvsaqW9it+YvZmgkTy0
+                                Va89EkhRvdT3/r0z/Xm9nYgHPhqPgD2w3oU+lkA9Prqq+j3EJy4+zN9+PmIEBT3rBci9jSyJPDdy
+                                Nr7MdcQ99vKLvi5W4T1Adqw96224PQlRHr6oirw8qWcCvj7Bpz0gG748/c0avvIo6D2B8Zk87XCV
+                                PRNSgjrVvd68XxdJPEhh8TzbxCI+PtC7vUL7cj6/kDQ+U7gdPs1ANT5/6Ak+eFoFvnvNvD1o7DS+
+                                qGKkPCnKgD5PqBu9tzUUvqPYDr2CLAa9z9KevZ8A972xiVc9NPgiPvF7vD3XUGi+Ez6iOyeRojzP
+                                dKa+hNBaPrC3OT6LLNa9wTQCvaQC173/1Rw+78kfvTCyUL2vgfC9OcLjPFW0Kr7CNa89S+7ePfMH
+                                DT38VpQ92FFYvsGm2rzamuq8VdY6PYgoar25At07Ig/wPfErCz22FpQ9PVUQPlovAT2xJCM+S45L
+                                Pu8jgDwYZIm95YXoPGoTSL3KoXM+v55wvWp7n77etfy7b/HfPWPL5zyTi2++QcK2u5jZfT7bKW29
+                                pspCvHD6J74r3To9/UM1Pt7+fL224F++LJdrvRdsqb37I/w9YFOgPeSDw7vTsfi9pkjCPUaKbjzx
+                                uG89FtuAPjUj0Tx3Vhs9Fh6QPfNkBrzEeQM97g6LOxVp3L386gE9rWlGPE1Idz7aiDQ9ud49vQH9
+                                7T3Y6Yg+XpSEPEZzBr3HQaW99w/dva6CGz7jCgk+IscTvqqlRj32XNG87iypvNR8tL1tL4c+ckYS
+                                PSw+BD41ijK90tsgvlDa0L2GbwC+bf9LPuYOUj6AOUW+EPfJvJGwI75EHkk9e4cXPmEVoT1iO5q8
+                                dUUVvgMcAL5rpJO+UOpRPuy5xTzEYZW9E+S5PSLxJr22G/K8/VIcvmrzKL2njyy+0yTTvVw/Vj7/
+                                aHC9uB3HvdhDEj1ogYc9WtNFvodQvD0/goA94S4ru33HDT4Nmm09jMxRPqh6j71WmqO9nGCsPKcX
+                                U73HVkI9xfjCvVw9aD5iIp48MLCcPfO5Jb7W9o08cWOpvR/lJz5f/Eo8fydkPZHuJDsNVEG+P3Ox
+                                OevOJj1nHJq73xVxvXwtoz0xFV+8pq2ePnyRZL2ReAG+A/rEPVBr/z1TUEk9ElgRvvk/kr3rJBu9
+                                fZ2ZvSX+hr2E/fC8zBsmvAS0Hz2TFWI9EfLLvPhEID6Xxfi9Y0E1Phq40jwKR7E9CImKvbFHwzvy
+                                LTA+pBWIvde0zD1Bk4w9b/giPtSpo75OrBI+EZOZPXuS9j1TJpU+sN6cvk9/wboPBUM+RUnIPfzz
+                                Hr5i9wA8hD9WPqcoHT12wu09JfsqvQY8Gz5QYjy9AtqmvCLzs77PpD+8lRYTPqplcr793kC+gVdp
+                                PXNJu7uU7vO8Zpoyvkj6271i0RA+qAtxvDgDy73hcHQ9kS5avZAZh71Zt9Y8p8Ebvgk4e77Du1S9
+                                2IzrvP/dtb29dcC9tCvMvWiGFT6Llmq8E8tYPVoI3L3/FPQ9oApDPMBKSzuBke29fPSRvRQ/RL6z
+                                91i8b5b9PdXQf74HN/i9nzzzvcFX0r3QRvO9qbsGvcLex7vt7469TdooPQJnjL22Lj4+JLcLPQ+R
+                                GT7+nwI9Sp+9vKTMTL7mU6O9R3GZPRZ8Sz1hCQi+AtrXvMfjkz7bQ3a9b5tgPsDWQr5J27A9k9CT
+                                PN0a1TxczKW9vxojvm/Sfr03/0c9k+oTPhOSgb36CAu+VCBVvrby9D2bJAq90NZPPXtTLz1rowU+
+                                sBySu3oi87tLtQ69tgz0PYNBvT0Y+Dw++eELvh82/b3aeYi9Ha88vSEXMT6CJPs8cJPVPZc5ED2I
+                                0h4+KBevvTqgDL6Nw6Y+Je+FvqxoMzs2tS89zuePvf9FPj3v0xi+P0GFO1Lcwz32dhO+HUY8voMr
+                                fb2po7o8KATHPTKxa74IMT29kZtnvjQ7nb5RpxG9ZJFAvduu0r15VBa+DeFzvgwvmb0efaU9lLoU
+                                vjH06r2vPbA9zEzfPQFCOz0QjCM9t6zfu8rBy7z+yww9FaiLvaLUir5IdSW++fbKPGwZrT2pIAC+
+                                mhkfvoGgrr1hLnS9HQuSPI6jgD49UX692EoMvnUbIDwMIZK8cENwvUkNjL1Wh9C7MQ6rPdQ9Kj2U
+                                feI9eaWWvAjZ+r3JTW2+AEVnvQZYKb0ytiE+/hnuvb/1GD6y+Ai+cEjLPcyPkD7secY9a6yuPjZS
+                                PL4Dan49w10OPoHsPTta60i+OfxwPAc+2jyoyRY+J/FFPmVvE741S7g9uxOdvUwYsr1WvcO9HPdD
+                                PM77Ib7iyxo+01sWvvE8rrxuLvA9X3cnvVq3hj1JjxS+64RFvQ/D673hMeM8nKW9O+b+CD6vCgW+
+                                p2iDvf4usD3Vyq28vZPgPergcD52MCK8h2K4PWX97j257+084HUPPidlo72Shzc+bTvaPaKylb1D
+                                +xU4j7nQPaVhhr0+tgY+NTlDPhfdVrz/6yE+kECdPcJdwL0CwQ++o3a9O/6pQT051CW9Q8btPSGy
+                                IT6Ua3u9O6RhPuvgG74hAIe9cAqwvY4+dT3d008+iPhUPrsp2bxHOGY+StPGvYulFr5RNdU9sqwS
+                                Pg/gVL65p12+V7rdPAtTkD0aZh68frGkvf9Gfz4WwCc+rACZO/WsKL64oTW+aDOIvLRjNDxInFM+
+                                7SX8vdPk7LyCPbo8p+a+PZBGKz71Bfa8IYosPuhehT1VnxC+js0XvpoGXTzj4y4+ONStvVahX757
+                                Aws9FXbSvaa3aTv0p+29GMsKvllJQj7nEws8VTE6Pi9VN775Lf+84ALFvVyX371KuVC9S0rqvZ5K
+                                mr3wyBE+dL54vc4viT6D4oS+CKLIPdLahj1YY0O9MLZ7vaAXaT3jguC98PMPPfCyL74hFTa+LO8x
+                                vWmHMb64CFk9xQmNvGW3M777yGO+1xu7u1vgkD7Bk7o9AVU5vLCc0T1Fl1s8dJTBPWtVmT2WEZg8
+                                LXigO+vKhbsqN/u9KRdNPFjhfL5cgNO5Egc9PWiDB74hg0K+b8z4PcMpjL2+/k+9K3fBPXkAaj2W
+                                WyS+moAsPbz+yD7gQpe+kxw4PZFDCr4rzxm9sjNAvay0dTxcmss8S1v8vV6fSbtZGrG9NOFIvtXe
+                                oT28vmy9ufqpvf/jvDx9h+M9E+3+vD6+Zr20jLK8XG7dvZWvKz1R+mg7jrjbPa0IOT67J2A8nnOW
+                                vS56Ub2Opcu9XGZYvG1Wiz4VRW89TldUvWXRXTmg4ui9elYdvpduwD38lBm+kj/eOxApBT4LC4O9
+                                qIpivs9G6LxB+Le9BN0vPQ6KRz2aHpW+n3UlvrNuuj2/7C2+2o4jvPy+17wKfRA9o2kMvkDSzb0k
+                                8h++8Dkjvk8DnT0nIyY9gYsdvs9LTz7MGQe+zPVsPnDP+z1m6oM+hBHyPVuVRD5ZxAe+f5bnPf0h
+                                F77ja8I8FLUuvg/HAL6zSNE9mGu8uxjIGj5vNAy+9xDgvUFQYD3L/GW9JDePvRja0jwBLpe91YGj
+                                PWokLb4Ahjc+FbABPkCgv7sMYJ496XwdPm3bybxHSWY+AU6cPPiKLz4JXY69vu+Nvdrnozx2leW9
+                                9eGNPa6FPD7+kJY9lVeiPXRIzbxntzS+XlUgvhLZjj0gIiK+PlE0vSfbiT3y5ms+PwnjPS3RKb6a
+                                0xg8rRqcvQfikL6c9F09xAumPcTDdru9SNk9/S4SvgUFB76Zqcw8OQbuvZCaWj0ni4O9F5I+vdXe
+                                Mzoaqu68ed7mvX2suz3jfee9uzObPU3V4z0V2LO9mM0KvdI8Lb62XAo+V2YJvspSoD06xrs92zRe
+                                vcLlAT43uWw9/xsGPREUNT6LUZG8G3+jPnueD75QXwS+tW/EvYLSrz3M/d29EJYlvSRWoTxsFi++
+                                ABCXvbuZ6b27LtS9QjVEvjpdj72MGD89xOCOO0SsEr5Rkus9yMGiPVvcF76pyco8iDI7vnSCGr6u
+                                BUo9Q4QpvumerT2Ha1I+88H4vZLhyb3f98y9UHgrPgo8WL2gVau9bEn1OzaxP70yI7C+vr6mPIC9
+                                Kz7Fw8S9kJW6vA2Vlj27s2W+d/VaPn+4DL0kmiw8LyMiPnRgKz6kn7e9jEghvhU/GbsW0Te+5Dki
+                                PSfVEb6qQB2+Jpg3vZkLsT3fAZW94eZVPbj3qDyFb5G9hE7dOkStiLtX4Ae+K6/SPZdYOL7mXhq+
+                                lhlZPRNAQb4/mIm9DeqbvV+Ug70bJ+k99iezPOm05L0CxeS9fxKEviIAtr2gMBk9LJPCPJ3v3j1H
+                                Pq89fl+8PQJ2Gr7BoE68CbmWvvjpjj4G+mG+djJOPX6FY75Dve29LWrFPLeu47zR2c08wdegvRld
+                                nb3mdBK9M735vdnJkr3+aMi9/ENhvT3wyr20JoQ+xFnFva5QML5Pr9Q9uEtKPmOGDL77XYs9tdZg
+                                Pifp3DyOD0A+0znxPOjf8TzD3Iy8vCo7Psl/vjvo/6S9rd05PUMOg70zBjK8kMeKPoKLrr6sw1s9
+                                HO4PPQGaWb6BKgE9LbsmvTPRhD0RLQ09uBYePsOlUj37YgS+NGVsvqQAsr2Bgdm8PxGSvRW0DT6P
+                                Lm29416HvVYAuz1PnRi+S0afPbHOw71q1609Uu8ovbRRbz2eh4W9ox2OPdtQbL7TTpG8sfuyvRyN
+                                dD5pZFI+SiuEPrUAFL5G3be9Tim6vXVDgr32LDM9Js9Nvk0VRbyRjg0+SmgkPhZppr1OXiY+rO5X
+                                Pask1jtubTs9Ak4UveiLZD2KjvM90CXBPTeUGL621Kc9yAS2Paj+C752oTQ95nIhPg7KPz5ETLu7
+                                Yg1Kvm+jWT2I9ws+4KE8PWYGMD6zFx4+km46PDgb3jyZYqC9K7xPPuTLOL38Hhi+/5RmPAXafL6G
+                                mEE+2daIPl9LQ7yTBdc8ScJTvv4Wjj28V/U9E2nwvMwOhj2hn4U+fuk8PfXSPj5lWmK9c/VEva0/
+                                lj3+s5k8hxxOvfDRa75exuC9wFPyvN8QGj6AkjC+nrFKvjsQ5jzH9PS9HDhdPXOUhj7FQJm9hNAC
+                                vq3SVr34/Vm9LVE0PS7/tj1r/vG9Aq0QvFZkAD4RSBQ96lllPUKrCLvSjIW8MF/zPc0pv7vZG+A9
+                                ZuGKPaj4LD0XNmS9ajCPvJOFmT0tHqg6osOtPocx/Tye9KC+mwQ3PrQMRT5mfoi9FmBePUK22j1N
+                                vrY+IxCdvO8F5D2dO/Q87aVQvFCRm70K8bq9H5KovAGvi73JBUI9W/WgvRB5oTxzEia+l9/uPEtm
+                                Vb5B/ts8evLfvDW1jD23eSA9f7Y+vjlogL6Iuwo9jUIqvupYU71NhHG9jmZfvKlsFr75I/m74SYM
+                                vDdh/z1f79M9O1vqPScvJD12ddC9vvgJva51ib3GWBI+likTvseBRb2gdCo+onsnPrNGyT1cvNq9
+                                d8Fyvus04L29iwm+DzmevPEfl70UzKU9rwTJu9GYmTxSb0M+MqomvphXDb1wcWM8m8CMvs8DqbsV
+                                Bq28yJsGPKG3Ar7PX1k9u54VPRRnID57nuS9+u7SPXA2970qyZU90f6dPbvCkbwiHzE+Kr4vvn/0
+                                Hj7y0KM99YQTviP/Dr7g0EY6UeXtvPJH/r1gH5s9o1zoPRFn0L1SgR499+07vjJMYz4cX+O93Mph
+                                Pm1e0b0ibty9yERtPl/4kztn7Ta8/gXBvS+kFT13IkY9tKcWPQPBHb2Hc2c8HjJfvdf37zwXIP48
+                                AUaVvH/D1b0qSJQ9PaEvvkE/FT66qKU+V//EPY0SFD6NIJE+LPXAPId4b76Z4H095FBCvnTk/T2I
+                                lmq8KqYVvloM4jwD0gM9LqHvvfP1+ztShzi+Qti1vVKQ6Dw7fs29lKcJvhvAsT20hDk+SbgEvgMs
+                                KD0Yo9S7jWJNvfnJRr1uqGC9SRvQPHljzL1+VyQ+Sjq7vJWAoDxogVE+8BXvvRL3LL441wW9mnFs
+                                PSHh4jzIUyy+OspfvH+jhT1pgBA+AF5hvDphWb6E1WG+OWh8vdUNAL6y6f69vtUXPljM1b1MIja+
+                                l7Vtvd/cgD3udfK9L8+JvqthED2zhgm+PEcGPpMcCr4JSYC9bt4tPkO9Jz4uo4g+xB6uPfYYc74J
+                                YKu9GSdCvnNoyL12WYW9wHhtvcIU3z1IiNo9tviZPbtUVr3qHRQ+EZgfvQ1SlD2tjlg8MGLsvQkr
+                                6z0BU8g9eotnvqtIhb3RtbY9jVvcPKiAsTx+bzs+aS0qvmUIg7z1MjK+KFUePtxkmD1uw8A9rnmj
+                                vFUChj5jbe28MuFJvYRil73cYke+sbgkvqHSTj7h3gA+PC12vS6x172JSpU9Lxpfvv13KL6m34s+
+                                oqfpvB+dkb0dOpq7mOkMvb5FaT53Hxs+/QbYPC1U+L3MOaa9B9VlPt+69r1JaEG+mdAmPddEKr7T
+                                eia9FSl+PfSZs72d4FI9ZqICvi2pOL7L6F+86EwovrD6FL0WBAc9kiH0vXsmsLxFC7k+UD65vdCs
+                                n738c6q8AyqKPuJuIr7Ss2k9zjTiOt+HA722ipm93u5kPlmOyD0cDEw9I9aYu64PPT6NJEU+nncq
+                                vfU5bL1w1gy+wmjtPPSV4btUc2O+yKiNPd5Fn70zhyg+dLeMPUtz9DxZkes9KB1JvWUaeL1OHrq8
+                                nT47vkHhYDxcu789dNKgPacQ3T3HWQo+Dw7+PSpbNL3aWI89WjsdPi6tFLuMQFu98I8/vjnv+70S
+                                u6q9BllZPsKrtzv2m2c7Bg/AvABDIz4xG109W3gyO0cqx70aEMY9K1CMPcKT6z0mOEE+TP+4PR7J
+                                hr4pbB2+OFjiPaaUOz2+jDE+Q2E5PVHqyz0Yuca9MmsYPYvT3j2QZcm9ep7WvTiT0b0Kc/W8I5hF
+                                vi6Iv7xe1SO+NP1HvbV54zzc4Mi996MgPvW+bD7e5YA+RcgOPjCvdTuykfA72G9EPhssBb7rHGM8
+                                dc3BO7oYDT0dYj8+2WKZPtH/sz1OsAy9Fo/FPb1fTD2OHYK8epBRvlngBT6GuSc+Fl2Pvfy6Gb2t
+                                VAc+bVevveHEJL3Y58g9k0RLPmtJJj1GyhK+PkGcPpIatL1DJli9n7OxPdt9Nz48wk+7EgzLvemJ
+                                wj2dTgi9Zk0GvnAhAD77oVK9EHyrPUUYFz2zLCa+tlCdPXvMZj0tWT4+ylgtPnlAED54eFY+uvx0
+                                PZTtxjz6pYi925GJvZmox70GGcU9bjoRPiYh5L06teY9+DQCPWeIvT1QawS+vgP9PeCgZr61NeI9
+                                oJUwvragTrwiZ7U96sEIPkf6pb2oaDW9WtbPPBn2Y73mpxM+MReIvZM+Dz7QS5s+OzCZvbreO736
+                                4iQ+Z/ISvu9pKL2E3rY95yAcPL0GHb6jP6090iK6vZgMCr0/jk09LHf6PTaboLw5kyY+6vR/PTgk
+                                gT2R7Pq8aXKSvTi7i7vxd6g97ZCJPdK/Jz6NaVC+ULfaPQYrYD4Wo5u9bLs3vgay072KKRW+UyAi
+                                Pv+Vp77/FRY9neq9PS6gRD4eJx2+9G2HvctNYT1HbCM+gxwxPhJpBL1WLyG+sL9lvlwgM73+Wh2+
+                                pgkiPT/GhT33E/m8HKpYPiCg5b2ZCDa+qfJOPngDcz1wLRy+sdAkPuTJA776Hku+uSzbvbDEOD36
+                                cXu8NRGsvZDOo7wgvsW9xCNNPj0elz3KcLQ9uZtSPef3+zxCRy29noDKPhuOJL7mOs49LD/1vZqY
+                                eD2ViIC9EhwpPsFEuz0BD/O9hHJlPYdZ0z3YeSq+c28fvaAMrTx9iCO9GUz7vfbaxT3c0gG9RwZW
+                                PmPX7T1IcYW9UJDlvR+pkD0Rjx49NUbyvTDE2r0uvBa8o9uFPOaZQL7/ph09OE3zvCQDNr43wRy+
+                                V9+BvUyLub2H5S2+inDpuwN25T3GfH8+jvEqPqipmD0BtR092/kOvjkL8T225NQ9FxpJvY1Fpb0Y
+                                9pc83dqmPBR7zj2ooKE9Bd9Dvuv7QL6ulRM9BA+2vcKQgL0GHC4+lUYSPcDL7z2EwjK+mt5ePisH
+                                2z2Kp0q+l8aCPEWaNb0ruw++t399PSdfOz7tTog+NNu/PKqppb0XRUW9O4gyvvzkY71bMww92eBV
+                                PedTX7z2ZfC8w4MlvrJsGL716w6+0gtKvmNvEr3XEmm8LCkhPqj3Lz5SgqW8KiSVPdFsLL6HHkS9
+                                8GZmPonbAz1/nkM+vuW1vB6tLz6eHsu8HYGFPrJMij0lA7A87ACZvs1Hv7wt+i+9ScUqvHS9TD7h
+                                xBg9GGOUvYM7cj6GMi8+Ub11ve3UUL7nY4i8XxEZPhCNqL20tkq+f7e+vYD8qL3XhYC8U4gHurkU
+                                Ar7v2BY+sPcGvs7bTb6IAvi9x8KJPcn2aj0a43a8oSxvPUNlGrwkZKu9oXkevWdv/73d9ja9GWwy
+                                PnjNej4bvSa+Zwi/PQMXsTzgmOW9/mYlvm9vSz5r97y8Z7K+vUMEPr5V4Jc9bpr3PBHwUb3AXY+9
+                                +okqvXJaVb6wZva9ZiexPAxj1D2xmwW+gI+wPZYUlr1IHnc9HqsAvYwDLj5Dz1M+fRkIveAaGD66
+                                yxQ74CGqPfICgb2YGDo+HRimvVDpXb6M5ji9el+LvuLQ7T13jte8giIWvqEIWb7VxU6+daxAvWLX
+                                V71EZCQ+5yqlPXtpnj45pC08RyIOO6tCOL2Cjko89dcqPlH7Tz7isXK988ujPBq5Ob5M4RA+ce2e
+                                Paa02zuuYoo80bw6PSfJH74djTU9U816vH0Cpjt4YnO9WApnvtGTFb4Mwmi939j/PMwHWj1iV+S8
+                                +fPDPMqqrb3cn8Q9zx2Ju0AP1j2eOWA+iZrHvLb+Sz6eUsS82+oTvYsxnz4qGuA92UiXPWYtAL25
+                                7gA+bP8bvNShtz0ShkA9/vOSPcnT0b355nY9C/+IvdoMd7y7XE49jQJcvZFym77AZgY+I5HRPZSA
+                                G76qWaw93UGHvVW9OD40VF29aBs/vkghHb7VJpe8inscPl2snz5b5su9Z8rTvRzyhT6Jonm9TXye
+                                PbjbjzuhaYe8moPiPGIIS742x6C9HgL7vbNR3D2ZA8U7Ctgivm5sAr6Ecug9fzeavaBXuDvKVuY9
+                                22BXvpa7Tj6B//W8qV2qPEHtOT1Naaa9b7cUviKhIT3Q9EO+q9qWvDngBD6cWCO9lkyfvEHLmr0s
+                                iTK9wtH5vUERhT6sfjO9S71lvrW8aL3gVW29QpuavRq6JD3ioXU6Ar0oPshNvj1DscK9EKPLO7az
+                                mb366MW6IZGVO1AhPb4526I9TgJOPRh2Fb6xfY89kL8cvu11nDy+Ggm+jo1wPt3JDb0kGCg9P8nj
+                                PYxnNr4bCTg+XEIXPgFDJL3nszW98xbAPeMnhLw6nZG+pE11vB2eDD4mMX2+9qIMPrqxlr1g+eW9
+                                coc0PGFHpbzR4Tk8CCIwvsFvcb1KwYI86DqxPvrVir0jCz++WibFPXukCj314gg+KkqoPVgOvL0v
+                                jDq8A+MRPCRkKz6RMWy9kJCOvA2jWz5K3le+JEc3vN5Jb75QStw94ngNPtTcyz10hXI9NMITPvKL
+                                Kr0Y9KG9TZzfvWaMlLwaI++91dDLPM+07b1VeM88A24qPppDDL44I3i9+AyHPaFhST7+aQk+teYh
+                                vqQ40T0hdQG8s6FCvoJ6K72SSwQ+JA3HvZDTYb2FJqa+MkEUPjY88Tzdd2k9cQiXPRjmNT5Njbk9
+                                N8SoPRJRPz4ROYe+DyEYPrQ/3D38q9W9wvEhvUvEJj7LT0e93S6iu2enkz3HUeq97qJcPmttazwe
+                                oaa9q2VoOy3em72WwU4+HwZiPQrlDT11I5Q9PaZDvoCbGL65/By+63rKPFsQUTvyWyA+Xw2bvWvE
+                                Ur0sbsm8CH8FvnZ1k715XmY9aOKLvNawVb6MzyQ+73IavvaRA7720wc+EGJEvgw7l72AXhM+pyv2
+                                vZcLNr36xT2+rmEaPZL1Dr7Mqys+UQe1PSk4wz0pHIa9e96NvaMOer0/xza+bTwHPQ7Mkr39THu9
+                                1/sQPrszmjomM0A8517nPUgjUL7kG2q+znSCPT6HpDu2QAU+5yAbPp/ODL5jqCQ+zstdPum0mr5k
+                                UNu86YXePW2fGD5u4Iy9X60MviFDPLzSgog81fBsvA77Wz7YwEO+MszfvVi+Ez5DL8o8AgKQvT3H
+                                aT1jSgA+ze2kveDnjj46VgY+U4uEPRMoQr5bdM6939IZPcJOFr6JDXq91LWgPe3pbr07O2I8EH2I
+                                vbdzEr4ffQ28dZl/OvP/WTwaFm++RRxoveAxJb2QGAC8oqqrvT6bDD4HkAw9aGqhvWbdEj48M7K8
+                                QhROvTr6072psk88TtosPsoXML3OrzC9MxTDvZtCfzx4aYY9yvPpPba8rT0uNCE+Ttskvhs2KDwL
+                                tcq9KWCMvsoVZT1oAoU+DQCgPjEEtD2GzFo9ipDzvD4Qd70jBgA+h6A8vLUO0b2tsDO9vC/CPfch
+                                j76yDwW+P/9MvvZAvT2oDGC+7NCBvgmSbz51Y7I98fMJPQUoDj5zx1u8Hr9jPXcdfD1KbDY+IynS
+                                OwCPsj1Fxwy9uzCMPDaZR71gsjS+QDwHPAoVhr3SIoO9gSoSviaeIr0=
+                            - 0
+                            - !!python/tuple
+                              - 64
+                              - 64
+                            - !!python/tuple
+                              - 64
+                              - 1
+                            - false
+                            - !!python/object/apply:collections.OrderedDict
+                              - []
+                          - true
+                          - !!python/object/apply:collections.OrderedDict
+                            - []
+                      - - bias
+                        - !!python/object/apply:torch._utils._rebuild_parameter
+                          - !!python/object/apply:torch._utils._rebuild_tensor_v2
+                            - !!python/object/apply:torch.storage._load_from_bytes
+                              - !!binary |
+                                gAKKCmz8nEb5IGqoUBkugAJN6QMugAJ9cQAoWBAAAABwcm90b2NvbF92ZXJzaW9ucQFN6QNYDQAA
+                                AGxpdHRsZV9lbmRpYW5xAohYCgAAAHR5cGVfc2l6ZXNxA31xBChYBQAAAHNob3J0cQVLAlgDAAAA
+                                aW50cQZLBFgEAAAAbG9uZ3EHSwR1dS6AAihYBwAAAHN0b3JhZ2VxAGN0b3JjaApGbG9hdFN0b3Jh
+                                Z2UKcQFYCgAAADU5NDI3Njc4ODhxAlgDAAAAY3B1cQNLQE50cQRRLoACXXEAWAoAAAA1OTQyNzY3
+                                ODg4cQFhLkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+                                AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+                                AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+                                AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+                                AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+                            - 0
+                            - !!python/tuple
+                              - 64
+                            - !!python/tuple
+                              - 1
+                            - false
+                            - !!python/object/apply:collections.OrderedDict
+                              - []
+                          - true
+                          - !!python/object/apply:collections.OrderedDict
+                            - []
+                    _state_dict_hooks: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _state_dict_pre_hooks: !!python/object/apply:collections.OrderedDict
+                    - []
+                    in_features: 64
+                    out_features: 64
+                    training: false
+                - - '3'
+                  - *id003
+                - - '4'
+                  - !!python/object:torch.nn.modules.linear.Linear
+                    _backward_hooks: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _backward_pre_hooks: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _buffers: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _forward_hooks: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _forward_hooks_always_called: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _forward_hooks_with_kwargs: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _forward_pre_hooks: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _forward_pre_hooks_with_kwargs: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _is_full_backward_hook: null
+                    _load_state_dict_post_hooks: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _load_state_dict_pre_hooks: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _modules: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _non_persistent_buffers_set: !!set {}
+                    _parameters: !!python/object/apply:collections.OrderedDict
+                    - - - weight
+                        - !!python/object/apply:torch._utils._rebuild_parameter
+                          - !!python/object/apply:torch._utils._rebuild_tensor_v2
+                            - !!python/object/apply:torch.storage._load_from_bytes
+                              - !!binary |
+                                gAKKCmz8nEb5IGqoUBkugAJN6QMugAJ9cQAoWBAAAABwcm90b2NvbF92ZXJzaW9ucQFN6QNYDQAA
+                                AGxpdHRsZV9lbmRpYW5xAohYCgAAAHR5cGVfc2l6ZXNxA31xBChYBQAAAHNob3J0cQVLAlgDAAAA
+                                aW50cQZLBFgEAAAAbG9uZ3EHSwR1dS6AAihYBwAAAHN0b3JhZ2VxAGN0b3JjaApGbG9hdFN0b3Jh
+                                Z2UKcQFYCgAAADQzOTM3NjgxNDRxAlgDAAAAY3B1cQNLgE50cQRRLoACXXEAWAoAAAA0MzkzNzY4
+                                MTQ0cQFhLoAAAAAAAAAAKdwRN1BvTbp7zAg77AgWOcTSnLl4wUE6QN3yudj3XTqLq7W4BAU/Oca8
+                                UrrGweK6e2erubwSELgPeom6haOut3u4jTl4u9E6ybBguquqZzonEUk60+9XugJuXjrq3To7cgN5
+                                uY8kbbv//CC7OyK0umXgjDni5S86jGbauhfAvLrCZhU6xXgvOt21lLm5ggi5PNqsupaWjDppS5c6
+                                E0MHusWMXzrJllW5YZqpOpBzI7oV6TK69y3lOSGtH7qnMAi5azFFO4wQn7r3Dvs5h0qaOQV6iLje
+                                vXu7mF+2OkxITzpB0dq5bmMsO/ZulTqma9e5K0wnOpOfgjrYpHC5GU4rugKhpDqT5rg5i0iXOmnq
+                                zbcVte04a7K+ugRjZrr7Jpw6acZJOpwHTLlDgmw6ueMQu70O9zlSzjU7O9UoOV70K7qUtmI6qnjV
+                                Og9dijq4YVK5YvuNOcrJkzp5x8I5gdYVOglWVbohWXM6YtIAOWVE27rEYaK6mFoKOueISjrbN8K5
+                                sx/VOhsQ1rompqo6JDtauEkXHbnESCO7bS0cOgD1CLtYMd26i2e1OrsMb7p9SQu70rkzOxsjXTnh
+                                a+e3aoALuxdVB7rIMQS7pe7QOgnAr7lKtqS6wDCuuO50CTuih6S6O43iOJr8E7uJmog5Yv7cOcOx
+                                +jqS4ga6WeJSOAY0WTo=
+                            - 0
+                            - !!python/tuple
+                              - 2
+                              - 64
+                            - !!python/tuple
+                              - 64
+                              - 1
+                            - false
+                            - !!python/object/apply:collections.OrderedDict
+                              - []
+                          - true
+                          - !!python/object/apply:collections.OrderedDict
+                            - []
+                      - - bias
+                        - !!python/object/apply:torch._utils._rebuild_parameter
+                          - !!python/object/apply:torch._utils._rebuild_tensor_v2
+                            - !!python/object/apply:torch.storage._load_from_bytes
+                              - !!binary |
+                                gAKKCmz8nEb5IGqoUBkugAJN6QMugAJ9cQAoWBAAAABwcm90b2NvbF92ZXJzaW9ucQFN6QNYDQAA
+                                AGxpdHRsZV9lbmRpYW5xAohYCgAAAHR5cGVfc2l6ZXNxA31xBChYBQAAAHNob3J0cQVLAlgDAAAA
+                                aW50cQZLBFgEAAAAbG9uZ3EHSwR1dS6AAihYBwAAAHN0b3JhZ2VxAGN0b3JjaApGbG9hdFN0b3Jh
+                                Z2UKcQFYCgAAADQzOTM3Mjk3NDRxAlgDAAAAY3B1cQNLAk50cQRRLoACXXEAWAoAAAA0MzkzNzI5
+                                NzQ0cQFhLgIAAAAAAAAAAAAAAAAAAAA=
+                            - 0
+                            - !!python/tuple
+                              - 2
+                            - !!python/tuple
+                              - 1
+                            - false
+                            - !!python/object/apply:collections.OrderedDict
+                              - []
+                          - true
+                          - !!python/object/apply:collections.OrderedDict
+                            - []
+                    _state_dict_hooks: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _state_dict_pre_hooks: !!python/object/apply:collections.OrderedDict
+                    - []
+                    in_features: 64
+                    out_features: &id005 !!python/object/apply:numpy.core.multiarray.scalar
+                    - !!python/object/apply:numpy.dtype
+                      args:
+                      - i8
+                      - false
+                      - true
+                      state: !!python/tuple
+                      - 3
+                      - <
+                      - null
+                      - null
+                      - null
+                      - -1
+                      - -1
+                      - 0
+                    - !!binary |
+                      AgAAAAAAAAA=
+                    training: false
+              _non_persistent_buffers_set: !!set {}
+              _parameters: !!python/object/apply:collections.OrderedDict
+              - []
+              _state_dict_hooks: !!python/object/apply:collections.OrderedDict
+              - []
+              _state_dict_pre_hooks: !!python/object/apply:collections.OrderedDict
+              - []
+              training: false
+          - - res_shared
+            - !!python/object:torch.nn.modules.container.Sequential
+              _backward_hooks: !!python/object/apply:collections.OrderedDict
+              - []
+              _backward_pre_hooks: !!python/object/apply:collections.OrderedDict
+              - []
+              _buffers: !!python/object/apply:collections.OrderedDict
+              - []
+              _forward_hooks: !!python/object/apply:collections.OrderedDict
+              - []
+              _forward_hooks_always_called: !!python/object/apply:collections.OrderedDict
+              - []
+              _forward_hooks_with_kwargs: !!python/object/apply:collections.OrderedDict
+              - []
+              _forward_pre_hooks: !!python/object/apply:collections.OrderedDict
+              - []
+              _forward_pre_hooks_with_kwargs: !!python/object/apply:collections.OrderedDict
+              - []
+              _is_full_backward_hook: null
+              _load_state_dict_post_hooks: !!python/object/apply:collections.OrderedDict
+              - []
+              _load_state_dict_pre_hooks: !!python/object/apply:collections.OrderedDict
+              - []
+              _modules: !!python/object/apply:collections.OrderedDict
+              - []
+              _non_persistent_buffers_set: !!set {}
+              _parameters: !!python/object/apply:collections.OrderedDict
+              - []
+              _state_dict_hooks: !!python/object/apply:collections.OrderedDict
+              - []
+              _state_dict_pre_hooks: !!python/object/apply:collections.OrderedDict
+              - []
+              training: false
+          - - res_head
+            - !!python/object:torch.nn.modules.container.Sequential
+              _backward_hooks: !!python/object/apply:collections.OrderedDict
+              - []
+              _backward_pre_hooks: !!python/object/apply:collections.OrderedDict
+              - []
+              _buffers: !!python/object/apply:collections.OrderedDict
+              - []
+              _forward_hooks: !!python/object/apply:collections.OrderedDict
+              - []
+              _forward_hooks_always_called: !!python/object/apply:collections.OrderedDict
+              - []
+              _forward_hooks_with_kwargs: !!python/object/apply:collections.OrderedDict
+              - []
+              _forward_pre_hooks: !!python/object/apply:collections.OrderedDict
+              - []
+              _forward_pre_hooks_with_kwargs: !!python/object/apply:collections.OrderedDict
+              - []
+              _is_full_backward_hook: null
+              _load_state_dict_post_hooks: !!python/object/apply:collections.OrderedDict
+              - []
+              _load_state_dict_pre_hooks: !!python/object/apply:collections.OrderedDict
+              - []
+              _modules: !!python/object/apply:collections.OrderedDict
+              - - - '0'
+                  - !!python/object:torch.nn.modules.linear.Linear
+                    _backward_hooks: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _backward_pre_hooks: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _buffers: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _forward_hooks: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _forward_hooks_always_called: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _forward_hooks_with_kwargs: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _forward_pre_hooks: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _forward_pre_hooks_with_kwargs: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _is_full_backward_hook: null
+                    _load_state_dict_post_hooks: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _load_state_dict_pre_hooks: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _modules: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _non_persistent_buffers_set: !!set {}
+                    _parameters: !!python/object/apply:collections.OrderedDict
+                    - - - weight
+                        - !!python/object/apply:torch._utils._rebuild_parameter
+                          - !!python/object/apply:torch._utils._rebuild_tensor_v2
+                            - !!python/object/apply:torch.storage._load_from_bytes
+                              - !!binary |
+                                gAKKCmz8nEb5IGqoUBkugAJN6QMugAJ9cQAoWBAAAABwcm90b2NvbF92ZXJzaW9ucQFN6QNYDQAA
+                                AGxpdHRsZV9lbmRpYW5xAohYCgAAAHR5cGVfc2l6ZXNxA31xBChYBQAAAHNob3J0cQVLAlgDAAAA
+                                aW50cQZLBFgEAAAAbG9uZ3EHSwR1dS6AAihYBwAAAHN0b3JhZ2VxAGN0b3JjaApGbG9hdFN0b3Jh
+                                Z2UKcQFYCgAAADU5MTQ2MDg5NDRxAlgDAAAAY3B1cQNLwE50cQRRLoACXXEAWAoAAAA1OTE0NjA4
+                                OTQ0cQFhLsAAAAAAAAAAoNxHPair0bv6BVe9CDejvfObW76Z0Ti+P7g2PguSXj3s+Y4+ZUkJPtFN
+                                wT1ZJnG+ABEYvjVDBj0pYr2900vevSgZRTz37OK9VAFaPTU2pzuWO8+9VLXOPaU1272FENK8Rw0N
+                                PDHKmjwnB08+KkiWvSgPOz68r6m9NDJZPSMryDzLRaY8IYplPm5r1jzLaJa9V84aPq7BMr0l6sO9
+                                pZoJvCLsOz0fDiG9V7c1PkgsQ779Qqg92cwWPTaAhTx3wL29qmKMPmc68r1bpug8OV6tvRSoyD2J
+                                t4w+hYBVvTDh0L0LOw0+njFTvqE+X705MDU7IYDIvFQjzL1Ot6K9ijRxPK3BB729tQA9DoY8PnHE
+                                Rz4VQMg9XXlkPpFDDD4wV6E9byHKPbYJEL7Uh3C9GO4xPkyV5T0MDRG9KoaGPr94TT0QRW69i1rD
+                                PQ1iPL5TORo92Tv5vXwEub2kr2m+MHyLvYiWJzufNwU+pCwiPaY/C77cGgO+j+IavFlRjz1pOxQ+
+                                2wzPvVkj1rwzL9Q9n80TvgOw7b3kbQA8levLvNdt570I3T0+mJfMvIYfKD3SFJ08MTQgPjaimjw3
+                                NWc9yGDgvEz94DqHYS2+kD6PvYWSQb41iAU9fZFLPCmeiD12fFI+Oxv9PbnjKz75n6K+4iqWPUOu
+                                Ob5IkyW+ClqlPJaj0j37gba9x9nuPctaor2iLGs9p9FjvuIfsb32nZ48GzgHviPsSbu10BC9B/zz
+                                vBeM5D17kPO9FqUKPGRulz5++wu++iyKPvUXo77RFzA94181Pcn+vz271fk8vl2uveJ97j2AISw+
+                                l7QVPrNZhj5gZxu9dTaIPsCo1r0PxQS+HsTjvQdDpL6Kqna9SjOSvOw6yj1tACq+/4zsvRKxMT6H
+                                Vd88fHuqPRpECL0MZYc+92NoPenT7b2N3Ly9Bu8bvfPW4L39M768XuAXPsxRKj32op89AZX1PZ+1
+                                3b2bFxM+5//EPU+Djr3d3jy9NCgaPcQIy7wM4GS9h6ORPbKoQD0SB+A7
+                            - 0
+                            - !!python/tuple
+                              - 64
+                              - 3
+                            - !!python/tuple
+                              - 3
+                              - 1
+                            - false
+                            - !!python/object/apply:collections.OrderedDict
+                              - []
+                          - true
+                          - !!python/object/apply:collections.OrderedDict
+                            - []
+                      - - bias
+                        - !!python/object/apply:torch._utils._rebuild_parameter
+                          - !!python/object/apply:torch._utils._rebuild_tensor_v2
+                            - !!python/object/apply:torch.storage._load_from_bytes
+                              - !!binary |
+                                gAKKCmz8nEb5IGqoUBkugAJN6QMugAJ9cQAoWBAAAABwcm90b2NvbF92ZXJzaW9ucQFN6QNYDQAA
+                                AGxpdHRsZV9lbmRpYW5xAohYCgAAAHR5cGVfc2l6ZXNxA31xBChYBQAAAHNob3J0cQVLAlgDAAAA
+                                aW50cQZLBFgEAAAAbG9uZ3EHSwR1dS6AAihYBwAAAHN0b3JhZ2VxAGN0b3JjaApGbG9hdFN0b3Jh
+                                Z2UKcQFYCgAAADU5NjAxNTA0MzJxAlgDAAAAY3B1cQNLQE50cQRRLoACXXEAWAoAAAA1OTYwMTUw
+                                NDMycQFhLkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+                                AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+                                AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+                                AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+                                AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+                            - 0
+                            - !!python/tuple
+                              - 64
+                            - !!python/tuple
+                              - 1
+                            - false
+                            - !!python/object/apply:collections.OrderedDict
+                              - []
+                          - true
+                          - !!python/object/apply:collections.OrderedDict
+                            - []
+                    _state_dict_hooks: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _state_dict_pre_hooks: !!python/object/apply:collections.OrderedDict
+                    - []
+                    in_features: 3
+                    out_features: 64
+                    training: false
+                - - '1'
+                  - &id004 !!python/object:torch.nn.modules.activation.Tanh
+                    _backward_hooks: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _backward_pre_hooks: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _buffers: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _forward_hooks: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _forward_hooks_always_called: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _forward_hooks_with_kwargs: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _forward_pre_hooks: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _forward_pre_hooks_with_kwargs: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _is_full_backward_hook: null
+                    _load_state_dict_post_hooks: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _load_state_dict_pre_hooks: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _modules: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _non_persistent_buffers_set: !!set {}
+                    _parameters: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _state_dict_hooks: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _state_dict_pre_hooks: !!python/object/apply:collections.OrderedDict
+                    - []
+                    training: false
+                - - '2'
+                  - !!python/object:torch.nn.modules.linear.Linear
+                    _backward_hooks: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _backward_pre_hooks: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _buffers: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _forward_hooks: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _forward_hooks_always_called: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _forward_hooks_with_kwargs: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _forward_pre_hooks: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _forward_pre_hooks_with_kwargs: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _is_full_backward_hook: null
+                    _load_state_dict_post_hooks: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _load_state_dict_pre_hooks: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _modules: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _non_persistent_buffers_set: !!set {}
+                    _parameters: !!python/object/apply:collections.OrderedDict
+                    - - - weight
+                        - !!python/object/apply:torch._utils._rebuild_parameter
+                          - !!python/object/apply:torch._utils._rebuild_tensor_v2
+                            - !!python/object/apply:torch.storage._load_from_bytes
+                              - !!binary |
+                                gAKKCmz8nEb5IGqoUBkugAJN6QMugAJ9cQAoWBAAAABwcm90b2NvbF92ZXJzaW9ucQFN6QNYDQAA
+                                AGxpdHRsZV9lbmRpYW5xAohYCgAAAHR5cGVfc2l6ZXNxA31xBChYBQAAAHNob3J0cQVLAlgDAAAA
+                                aW50cQZLBFgEAAAAbG9uZ3EHSwR1dS6AAihYBwAAAHN0b3JhZ2VxAGN0b3JjaApGbG9hdFN0b3Jh
+                                Z2UKcQFYCgAAADU5MzczMzE0NTZxAlgDAAAAY3B1cQNNABBOdHEEUS6AAl1xAFgKAAAANTkzNzMz
+                                MTQ1NnEBYS4AEAAAAAAAALA14L37Apg8AtGcvUnubrwnOae9hI1yPvp+lr4uIZc90+8qPkJclT1l
+                                ywQ9MVUqPd61ebqWPcy8bu28Pe2OgD3okEC9pPNovnoQ9rxVcj+9aA++PQq6f76h+UE9vneLPnBE
+                                cL3LjtE9Rld7vJieyT3B4Ns9p0VBvpoIgr2TGaS9FHvkvPZR8zztkkK9HMiVvUacSL121Mo9KPFT
+                                PUBWLj5xu3Y+7PTKvd16hzyV+G66EbQcO01O1T3+ty2+izPAPYfG+r07Wz6+jjaHvK/3UL55fkm+
+                                uu0fvCHW4LslWiG9FFHQvIaGgLzZ8Y29SrCnvjnDcD6Jc6a9E4ymPRbJwT0ybyO+V3G/PdmhLr6f
+                                dEE+bYuKPAE93b2SRRo7GFIOvahDgj2QmgM9nxisvWL7hr3tZlk9uxyKPqpVYr5o25+9mcBTvSbT
+                                BT6kOIA9NfATPbRvsb3C8rC9ho+qPRluHL1oMN29LJ3cPG6BFb2/4d68OXqovZU/A76GrlU+BPfc
+                                PIgYF75bo6w8q31lO3KLQrxTw6U+c3DrvJVlUT0D+z8+0JGmPp56371n/RC+GqDhvacfAb4UzVa+
+                                j3M1PRfshT2WUfa9N+4yvB/Dwr3Cuw89zmpHvlMed70eaww91NpqvfVpdr2w0D09P/GyO3+RJz5b
+                                OJK9pPeQvb3jnjzocq2+gRwHvSWqnz3EJaY9HO96O/GcKL71Hgk8RSxFvu08kzx/myS9a+aWvWVc
+                                lz3AAYS92U2Tvf+sIT7MBoi94zy5PcyqQzrj0PS9QtnPvd7Rvj1TOrc96oGEPdFLvz3agw4+X9uU
+                                OKmKTb0xvAk+PTWKvq4J4D1GF4E9xZzIvf9IS73Yy0m+by4SPu0pv70R59O9RFnVPWiYm74CVBs+
+                                TWEpPTpCE707HRi9P/GaPDHsKT7wDt49xUcaPbVkkr2YX3+9kDOCvlM3kD6Dbyc+nFYRPlbahzxa
+                                Eny9szhPvhCscD5r6fO9nXpIvhnDuT08Cxo9MMolvreL6Tz+SCQ+1hkzPZyvPz5phe88ieJ8vXds
+                                aj4ZCCc++ju1PQ1KjTzIi+09U3ktvbCyjT1ZDLi9uB8gPu0H/71xo+I941GAvjnQ8jyrVLa9zkOQ
+                                vGd5BzwSCcu9bv7TPW4ycb3qs5G9tVqTO7FVrb5Wo9u9nKWxPpUptj4h2IQ9yCT9PXNdUT2MDFo+
+                                NxMLvaz37j3e61+9NnkdvkJknL2tcbY9a3KHPEMvkrxDUsO8eE4BPWFVVr2nRTU9IfstvSDBojxY
+                                NlG+ihXyvfCKJL1+xdg9xQyCvW66lD1CPgY+pFJLvTxW4L2cTDO9E8gtPomT+L0otdi9fDeLvMeb
+                                gDzjMTw96AwKvjnAzTvpAWe7XAQRPsnvNr5t1Lo90w1qPSuazb2x9Qs+GipQPWgNh7wZnSk+PmW/
+                                PodC+D3LZK69kEXIvQmuHz5SzBy95n9YvShWvr1trPY80ChXPqFLvT2BrZu86mHKPM6FSD3t6nQ8
+                                dEXcPF6YSr0crbO9ViX4vRhXk710xYS9VpE+PcfnOL6iToI9wfokvswKKz1CYqQ9fJWwPsPOhjzz
+                                OA2+5BHlvSXatTyD9BW+GPp3Pv0b7rxe0O681PgePQ7lu73giou+bX8RPiaTRD339ZK9NCK2vRtM
+                                4r1T2nY+7ue/vIclrj0jn8E9VBwVPlKmCz1DYys9SeLBPTStMr47VrU8mLAKPvNGJr3wlkk++qUK
+                                vvVqgL2bXfE9UyEzvTEdkz2QWGI8/fKAPmfoMj6rkMy9XYgWvrzOnz0K4Di9dI5uvNmbxr0uSOw9
+                                7gVGPhgvLr4utMc9JLsPPpyddj69P4K+SAjHPeWBhLxw8ma9GPMzPjjVUb4Ro0w9M/NGPXbUr770
+                                P4k9FtfLvFs8Ib6qfF+9SFRcPaDoNT20kJc9rcOTPXp3Bz7WIrS9YmN8PawEAj3Tso69ifWHPeBP
+                                RD1VsXq+HgjjPEQzTj7BDj09VRXIOkoyDrvFBca9oNt5vcbRpD1VwT48Vm0WPvyY9r1H7r+9AfEy
+                                PRgkbL6fXQa9TQGPvI/mzr19vRm9il2bvPGzuLx5A7c8Pxn+PeaAWjzV7hm+5ugnvr6K3r2jINc9
+                                rHyCvU2WBj6G6Zs+TJaXurUUCT4mhlG+54MWPtCcND5CozU+RigYPlEIEr7PB26+0pb8vbHMu73m
+                                Iqa8T64RO5TWTTwjJoY81mRLPYQiE70PpQG9NOpaPQTtfr1Txwg+QvFnPlC+qT1VT7A9QIWEPaxc
+                                270CCHg9N29CPU09tD33kDy8tLnPPEbzuD3TZoi81TG5PLCxdD0pQVc8fDZAPg/9A71zIaQ9MnfJ
+                                PPodJb4E5sc9YxkRvvXKKL0R3Jk+/ryXvqGJDz7GyUw9iauAvmMCC74366w+sjUBvv39ND2not89
+                                XKDFPX/zYT1Djqs9kZsFPotGmz0DckO+lIHXvEHqbr0dqam+yogxvhtCFj5axZs93pgJvi6tyb0k
+                                rJk7X5twPTOGl7xJ4ZK98o1/PX6sX722xC+99a4Dvr2YNz5wQke+iVK3vbcKyr07KlU9LksWvj+h
+                                mj610kE9KgmAvccIVD2J9/M7NOQrPoeNrr0trCC8EM8LPndMF7670yK+s+ZivkcZVj1E7oO9yBx6
+                                vW+8MT5FZQY8URDsPFJYCb0Irza9u96dvZvX2Dvkb4m9k2/pPS+rB745wu29As5qPltRFz0rQAS+
+                                eopQPdFaSD1446q9CRG0PMEHEj7YYh4+T1a2vWOz/72n6es8r4hEPVKjCj3gR6a9iut7vSVRkz3/
+                                fTQ+m1ULvmPk/T2GdKq9M+gcPvSS+72mhbg92gZHPhJQdL7350O9swWiPZ9sYb1dk6s7NT+MvfVM
+                                IL4omiM9XMcVvmxCyrsZ9569FEMmPQtlkz1aLY+9GMTKPesMkL5VbUi7YajGvc4qLr42P12+qWDE
+                                PX/4Iz6TxeE9TdjnPC4a7j0JQ889b7R8vhYLTj6mzTM+0dfovFYNF773rZ09vsaUvbBJhj1vriE9
+                                7bcgPEnEiL7qUxQ9lr/YPfPoQz7tCOY8ODw1Pr0DXT1nOoY7QANXPksRAT4IJMM9r8lSPiuILz1l
+                                fkm83xA2vrSSP74O9m+9adw5PVHlCb0WGD09XkSovX3E0z25rqO9hHiJPdYYbD4wTiu+xPknPuXK
+                                ir3wJfQ9wmFIvVzGMz2pnRk+K8QpPpHyhTulcJ+9DlqrPWhlhD4abNu9YgJ3vPyP2LxmwBQ+sZf/
+                                veqkrD2RTiA+ljwGvtac0z1+pMg9txAPvWDrFT6BhMm8gukCPYy7Ar6ovhS+wA0zPu2lmz6S6KQ+
+                                hXM/vaDjUTuZ3Iu8ndDnPBW/gLxZiSK+iLCNPmkX2r1J8ss7C2ttPS9TBz6Zdsw93ueTPZ1VdLxE
+                                rhE9ty1cvVC4QD0Ad2A+jNeVPlEqp703whq+I38vPpafQr0Bto4+BTetPSmZ+r0ocpe9bZd/vkQh
+                                aL0by+49+1WaPU1Mvz1Zvhs+5+FLPeNVF7w/AZQ9A8anPY/FuLznWiw7Xs5PPozrSD0L7vI9GXU6
+                                PpvpyD0p2qc8rN2ePH41jDx/JDS9MgWvvR73fLv8yaI9GXw6vZyuN75Dtn49fydQvra0SD6bPNY9
+                                EOpLvRHbsr0FL929qq+nvZGT8b3i1Zw9br0qvuQudz1q4go+pOcBPbbqeT6gwx48hcDdOc0NSb1S
+                                0IQ+J5GNvbD2F7zZKRm7pDqtPSPIFb2kSIw+QEsOPehmgL27/4484ABhPNivsTzvKa+6cbqFPYRt
+                                1bznrvm81nrGvYKlRT5tVqu+H4IOvkZ+iDz9V0S+mXpFPBudlL0YIFO9KZGWPaiheT6dJh68TpCr
+                                PlJkS75i89q9jS8MvhBcaz5HE1s91NN7PTtfkz1IFDU9eX+kPdP1wz2bXKC+bDMevp81+jzxHKA8
+                                auuVvZ/MtT1QJ5k96O2ZvSQqIT0Co5G9+bXKvRlROj0RHRY9O+zDvPkScj64xJU+KBUUPWqUML2f
+                                Q4G9i+dJPM6gGzxBR4i956nzPQpyH7yHnFq9JaccPFz3LL0wH4c6WmkoPWpG9bwni7+8sMzivdjH
+                                yD1Wj5i9x9CHvrUenrzgj5C9/ZDqO5eOOL2G+vo8La2CvbDR7L3wrCi8jCwnvuCAP77DAr+61IIX
+                                PlP8gr7wQkC8jXMavlTbpjrOmVE+mUnrvanbMLzbvT8+3lvLPV7xtzxeYyO+zr6AvoVnIL5FWR0+
+                                PFZ/PKhTAjuaY449dAKHvR74QT7rC948KIy9vCRnor27gRK+juuIPHTz1L2u9fK9dvZ6PjwembwX
+                                3gc90c1lPIfCXb349Z89B0i4PT/KFD6OxyM+7OyYvSwDaD488069hdDdvI8kE72dKN6+xvocPWyj
+                                vT3/kR4+eXsNPkDfKT0Q5Yc96paPPScUsD2XSPy937HUu957hD0K+tq9iRgNPsam37tdiW08Dlca
+                                PmmkZz0woSy+YdpzPrEE/D0rUJu9hophPkexBD1yvQ49xmrZPYkiCj5e9Ks82t6sPV++a70V0L89
+                                ZTrGPLDb1z0132E+nwhsPr11jL0Wz+C92L8ivqb6tDyme868DB8ZPiFJRj3KNZM+GzxNPmLD3z1y
+                                gU2+g8CBPv4iGD00kKo9QLUpvhVzCr6cMTK+JO7PvcAXbL6pQYs8+aEgvlXYmrwQrDA9CyXNPQK+
+                                Ez0tVyO9TXaIPefcmL3IFZI9meE5PB9YPb5z4Pk9RWnWvYryRz1uzWE8CumGPWmULL4VBIA9cpI9
+                                vDT+rD3C3a49L4hvPX9XO77eSbG9aOxMPvkqqr2JW0K++XElvsnmpT3n202+KOZUPmssrz2ZjoA9
+                                /IQaPqF+Cbzkyl8906xXPW44KD7t9/I8n6thPWICeT5nq/S9t7upvOiBp70v8tm9ZxlkPTSyML7W
+                                ypW9FU0jPcmSDT7Zdw8+DUZcvh1fgT1q7uI9NAORPUpYar6/h608Fq+6vTmHGL4f+ye+kRWTPWRb
+                                hD6Fw6G+9ruVPLzBoL1nHJq9KZ8TPjOnwbxnC9S9Hv5duzYnQj1pP4+9QAugvT3gGz7Zbuk9Sf4F
+                                PkoK5byCRI+9ki7Evaw2gD1CZOk9eAEXPiN61bzljH4860ChvC62vD0ZAvE9rt7cPbY+mrs7dvE9
+                                aKsJPqB5Ej2KgWq9V57EPszFEz28M8k8ugcQvayB+T3EiNg9UJOYvfXMsz3mZ5A+Fpa5vRTb2D1r
+                                nLo93kZHvr3Ofj6ZwiG+lskXveAF1rz6Bk8+c5yNO4AxXT4kQZs9qRMuvt47V70Vy8w8sO4bPtZJ
+                                Aj4cgrq9Kn0nPnkoMrwUedo9CwzpPZ/REL1LZgM+Kg9OPIg51T3uTpG7/D4iPt1sdrwDIxA+KzAU
+                                Pr85T76lPO48ehQoPlbwLbnqnCI+xFIFPTvcwz0ORKw9+ZvUPXjUHb4FukE94GmNPQ2f+b27dwu+
+                                FuDWuZb75Lu0/Nm8BZ2UvTDi8z2hpdA7c46kvOddZj6q8xE+WZ0AvEarzL1KpK289G8GPhhCST7A
+                                hJM+nY/NvYZI8b3svSs+RMVOPSgE0b3pSrS8KQ0gPqE5FL4yUIO9JpFXPVfJf7xyMtg8c51JvThX
+                                DL0PBke9CzBlvi0UkDwigCE+ygosvu8ga75lDZo9RJTSPFPGNDqZfek98S+5vO3ipD17Xw++kBjR
+                                PeXGL77mDgG9eJ3ZvQ/DqD6B1o+98rI5vp4vDD6KUuo9uep4Pb7Lgb5BGeo9Uw2jPLhdRrsyMWy9
+                                7eQqvdMRLD2iU9a8aIsMvgXTvjyKxI+7iOUmvDR+Sr5te24+rfByPgCwkT0e1CK+h6GSPOEEwr3+
+                                X2c+FLExvexTmz7DQBw8caXGvUWJwb2wnUU+Pnc6Pd9Jv7zTCCM9Ai//u5Wg2j1LOGo+G7lyvvjq
+                                NjxX1Ua8KtSHPvQV0DxkrLg7u5qIPebJJr5B50G+JukwvM0LPD7qkGi8g39MvSUI7roixHm92tKN
+                                vcvjvjwUX4u9L596PvamJD4ha+w9rfMlO1o8YT7zIW0+qxEtPhQn8D2unzO8qQh8vCt2sj09sUa9
+                                674iPrg3qDyUJ6G9TpgNvmcNI72yo5m9uBxUvYd2mj0o2Oe90cSnvbIqhjqKOW48i21FPYcoSz6c
+                                zq298XI1vWus4D2oRNK8aGjVPbGkjr1aBVG+2iFhvqZbuz1Wj8o9jKzmPVczqL4Crws+IsUwPfP2
+                                Mz37Sye9hOpWvUu5ir5cQfE8zyY4PVtRIj5fwgg+GHWqPX48f7xi3/W8UCwUPsjMp73yAkw+P4m6
+                                vSxoJb1IjEk9lQinPQo9qTyfiVk9Z99FvgW1S76wQDG9/LVTvrujtDwgjzY+3np5vg7MTz1wgS0+
+                                mHl0vJDQd70JlFa9SZmFPIcnE70zXc+9Fer7PFPaNz56+Co+xi4jPoUP6jttZyQ+m0yRPfXyRL3D
+                                B0s8ubk/Pmn2A77YZe+8Q4gTvnbxkrphuUW+hxiBPRpOMr3rNB49qNmWPW7QFr7CkWi9xSuCvazB
+                                OD7Tr746SkSAvR9U5r2IMfO9D6KyvRg2VL2ewRW+OQrtPAsphL4Snim9mdy7vctAGb6VSAW+aYAL
+                                O+Mf2j39oVS9x8IlvXCPZb06RRU+6T55PZ5wJL3ejBU+CbnLu75E2T2ePrq9v6vBvbJTZj2lazu+
+                                NwmoPe9GiL7MKH0+2SdcPSbPTr6HWl2+gdRnPXNKer4scrM9vo3pPSIsvT086+0951qQPXYRXT1X
+                                BFG+ALiHvv8+XDzOUZI90Z0yPu77az1bCeo93HOWPSkgZj19cR4+0V4lPlcZWj6dlZk8R4ppvTOT
+                                TT2rlng99+eLPhxQMD2avZI9H2ECvmN6Db62JKK9LmyYvCNZEb8egwQ9a+ipvT7v5rx6jPg90xVM
+                                vV5M8rqCYQc9hT+TvORegrxyExu9Agb6PTALBT0S7Gi+lasRvXquWj6zveO8kGU1vsa2Ar5WAgG+
+                                w5RevZJHYT6k1qo9guwxvUqAAD0muZ08ktC6PT5UOjzPngO+ClbFPNPvFrxrtpg9E8JxvtcDIz0M
+                                c2E9y+s+veLLELzMMrq854mWPYcL9juRRqu9pm/lvap7zb086UO+gUbLvdAKOLzat4K+L69QPZ62
+                                L71lyk+8DM4NvVDTNb34aw6+Hbasu/2XN73Gxwa90FzrvTtUcTzZxVE+BXgXvo3YBr7EewM8QuzM
+                                PTND5j3rWBy9MpHRvXrcsD1W21I+yeLBvfBehL5jc8Q7YxMePqWClz25WIE9cFFOvjUXGD7qo2i9
+                                IHmQvoB5oD08Rlm+6qbMPUkw6zzUnjO9ZdbzPahMTT23xha+ZFqCPmb5ML6tHwg+kJT4vQWPA77M
+                                A+I9MNlmPYO05D26gZa9lb63vd44LD4rlhg+6042PVb0wbxRNO471BQYvrgY6Dw/z909UGzvPd4X
+                                /j1IcDi9ATclvr03Lz7Mqse9NpDRPK4/d7w2hG8++JTUu3fO8L2nkCK+Z1fjvflzobzMko68pg69
+                                vPMSvbxTFAS+TAKSvdrapz1hCrQ9XAaDvnBHbz4JKBE+Z1EZPbRWab6FakS+LB6DvWG1Qr0Mw8A9
+                                +9G5uyUSLT5v6iG9wygYvW1Z77w9kkA+1XmsvcRvnzwNWpQ9kiV+vQFtCT54gR6+ES3TPVEISr5/
+                                Y6Y90e32vc5JUz4+Hik+uFZvPR/+iD4f+6Q99Q7APCULsL3AE9K7v+TZPUNLkj4Fh+o9cB8PvMxV
+                                971t2jS+L2gRPiLquL06F4k9hX82PoerDr14Ohu+UzbFPePYwL3zYlq9EWDtPMIymD3TpWo9JvQD
+                                vqnKQjsd2x2+b/99O/tMkz1lsyS9BSEEPv5xHz4bLFE903mSvdT/8r1Fjgc+XdCfvq446L1uBjG9
+                                07ugPTSRiD0qRYk9qqtWPq28Ir1V5To+S6/EvSUn4z2EhYQ9WeNCvaVbHj61FSc9LIMoPahsHj6e
+                                cWo+68grvZKKDT0vsfs9e68LPmCMyD0vDY0+8bD8vGVJhT1PEYk9W/fpPY6rFz6zyfo9y9daPkmI
+                                xj1aQK47Dnc1PVtwHzxqV1Y9jfFZvmuXoT6gMpA9aX0lvnYWPj0OL9S7egWRPJKamruiO6I82uEJ
+                                PUNtRL0kN6W9tL6jPdmR/j2sJxE+5iEWPZldez28E7i9clKPPtpOpb2z6Pa8V0aDvTiPRD7quYI9
+                                3nfDva+GKj12wYG+Jc16u+jmLT4a6ZU9gag5PptWqz3amf28jb8OPg8JirqzdJ8+hiQOvbAlvLxZ
+                                wqo8VjQJvq3hAb4Vidy9T6qjPRtIqjyjupU9ptpEOn/8Sb09eZQ+vZvJPYLvHj5p3vo8l1cBvm0Z
+                                MD4GKNM8ivKtOmIxaL7Tz+Q9GH+SPGGBuLxFxWw7QiB3vfDZ/L0vhZS+vO5ePvhGjb2Sd1+8CQju
+                                PIaT0r367iQ9VPf0vVzZZb6Yz1U9sV8SPnVpGD6U+PG9ws0NvRkIoDwMPaO89JlYPe5wZ70zUxQ+
+                                lz95Pmjl2LxfBEU+OnL6OhqecT3ggh0+BdVqPbuXKb0JXTU9uJtoPt3PSr2uLHI97LrJveI7sr2K
+                                DfS9LHaoPA9B4j31GQm8NUgHPen8cTxNxPA8XwBEvNa9/T1Gl7S+CV30PUWTLz5QsfW9FsFxva0S
+                                EL6ZwLG+4temvGkNQL6iBBG+n8sYPnlWCj0MpgU+505Rvt7SET0OsVA9ZnL+vd7d5D3iyog9kKdW
+                                PbBTID0N08271GFTvpMtqr2A4XU94JegPR+aiz3Gh2e9tlDNPVs6yD09DCQ+YmdePaFhIT4pO847
+                                Rzn0PfGEIb2jmtm8u3HmPbMjdL5l3zu9KbgLPin+2jq/h2c990nqPftjGLre4Oo80wF8PtD3Br10
+                                CmE+E2bTvACKQz1Ux6e9gmY1PlEwFr2XQ309Iw3LPXO+L76BUkU9hmaMPYg+Nz7XyBs+1+cSPgPm
+                                Lb5twLO8P9BbvIDTFj7PCOk9BVThPQt/I75JPmW7Vm8hPs5hZz2uNoW9IfAoPV3OGDzvu5A+xd+a
+                                vT4pOz4HbZM+upsnPu0ihr4UoOI8FgQHvVN2Ez78zxC9Gn7gvEMYTbyktNC9UtTfPXM4Ir0Q7FY8
+                                XmgvPSRtOj4y6kI9MKToPXobT77M+zQ+2fmdvVZIurxtlsY9W5FTvuF1Yr7imWg+L7hYvSoCIzzk
+                                tqA9AyZAPdKGtT2ckYc9eoGCPAGElzzJYy49JgpTvvCLM70Am4S+xGHoPQ2cUDuiVgQ+TkRCvCzt
+                                Kb75C0291e7CPVzxhz3gYki8voUCvYgOAb20WZe9KoYSvl+pET46wjm9PTw2PhyuN7zb34+8log/
+                                vhTAALy0+va9M7qlPszgojz7cgs+7vUlPmua170+PhM9JEiovZLEMD4zb4a+r+uiPLgtcr0yHTE9
+                                FkivvS9fpD137j089y7qvbsTsr2vLkY8eGesPNZLk7ynkYE+eJODvs5c9D3bmx4+j9jAvEC/+j27
+                                yc49rPPevXqrQT5Gt0Y9MnQKvkyjZD7rUIG9+I6FuzUHa75bxgc+Ae8zPDwuDD5MqaU8Y2DIvRvh
+                                Fj1NW989iAObvWvGnbw1ABq+7n6mvCWXrD3KDxO8TQnSPN5OZr2zNJw+ILlfvUTxYL1AD7+9sP7Q
+                                Pa7iCb53/tm93AWTPSgYcD01OVS9E4e1PXrFpz3ljSY+uKP/PQWB1D29HJa+ydbTPLH0cr6pVhU9
+                                h3yovIRJyz1JJCW9WOnSvWa5cr1yrzK+EEy+PQ2Vfz0sfiy+oGCRvUOuBb5qANQ9C6vHPMongz1/
+                                9XW+mh77vPfyBD7IGXY9JbMCvqoUgz1OPju9MCkEvsA4/j0/qpM9Iwz7vR8BoD3aTjk+Hn8YviX3
+                                PL7TfRa+rbANPs4XL70Z9Z2+QBWcPWNgR77uouE9G9jAPeh6J75ZhU68pYwaPefifztjTBO+foMH
+                                Pv37ND61dBY+MeHdvc50Lb3Kd4A9sKdXPq3Nrj49Qpw91i4UPh94er5y64M8o+xSvSMhBr3LSSu+
+                                s40mPV0k1L3Lfkq+G59lvaeAdT3yhNs92+LjvLyWlDwSLvi7lM8gvkYQ870qi5S9QT1SvuA4Cz16
+                                wDW+OKxsvtaeDbvb8Fm7e8UdvWHrxLuMoYS9H1NuvcI2ND7uHJU9XqIKvcjkhj0tfGU8I64TvsAU
+                                4Tw9YzC+4l4BvXq6+72lGJA9/Z5dPkblGz6abJ+981cdPn2RGr6O2lG+DX3/vSOO0D0kZAQ+ZxMQ
+                                PaYqQD4MLkO9M7a2vftVPD3Lqk29bh7nPOXPDL62YAg9QZ2jvJAi0z3wqhc+ONOhO7UN6T2SaSE+
+                                izF5Pg/FErxPiDC8RYUsPcFCID7Nd+k9fRLDPY7QFz4AGQ6+twrqvVnxC711dBA+1584vOUHG7yf
+                                isK9xVlOvkrdfj1KpJe9xvkLPcCvXzwH0AS+xLJFviG8Bz7oBni9q+rJvZJLAL5k4F2+WVg6Phtk
+                                Wr5wHRc8kF8pPBJ4rD2fLce9uJ6+PctKUzkyu62+873YvG8wQD5BnPC6qcTCvNd5gr6ZVoK9FPWP
+                                vXsNHr5AYzW+1t8wPoSZJD6i/SW8gNASPuKKnL1wCZG9nUYuvg3HyD1Blby9+n44vVtBQ75kHfG9
+                                OQ40OxSEGr6RIjW+l2fYPZ47Rr7ZGhE+Z+3nPfVT/j3y1K298JwYPSysh77VSW6+G68EvsvJuD2E
+                                Zy4+EJH3PNzWp7t45Y29Aa35vVvBzz2nRbM+/c6fvWZ62j2t0p28iLMGvu0OFr0xkYg+ukfrvdSb
+                                iDwdfyA+i8vpPCrTsL1zjOe9DqWjPBdALT4P8Kw9p9ynPM+qXL02eBS+8hfPvTGQYD6eGeE9HGsC
+                                PCPzG70Efl69Hu/pvUZ1YL0/Zm0+xqxAvbUcc7y3Iy69+aQAPgzv5LzgBvi86reyvPiDALw48s29
+                                t58IPT482j3GXkG+gI2cPibBfb76xlq+9IgAPjdYnr2qUUA+QN9APZztf71UvRM+7pGHvQXsvbwr
+                                cwI+OhJ2PQrBpb1FOvs8QGSEPTcF972vHIw+5q3QvMWDITsolwQ+6JTHPe+w6L3etJg8AZ4KPlPA
+                                6b3oyaw7qakNvGMFIL35L8y8M+gOvcNDST0dO4o9e6wCvsFNl70DwUY+sL5Rvop06D2LJs29tL8g
+                                PqaM0T1Y5Qg+30GLPQVr7T3098k9hNJdPmVqQL2vnac9tkFpPm0OR73JAnS9qDDDPdPD5r2DN0m+
+                                8vshvo7YKbzn3Bc8zkG0vXwcXr6auVQ7VIytPNVU5bupHw+98r4ivgw5/j2MJiw+Wz1WO009gD19
+                                3Ey97ZGAvRc0ar6gDTM98O9BvWBNLL6NBrS8rqCrvcCji7uHE18+GzhFPi5MvL1hR6y9BYxGPuU1
+                                SD7e6CQ9lE2vPXOdFD0D7FQ+UkycPOBzV7vBDva9hmUvPT/htrx8XgS+INWCvvosJD6wna69Tf6c
+                                PR7fDb71Drq93zYUvXJgSr1EAhW9vgn5vFnA5b2A7ze+BIegPBsYyT1Q/04+iBq1PCHBQ768sTy9
+                                rXKIvjmhO77AjnE+pvRhPUI5HL0rpUA8JUJYvv0k8bvMC5O9izVxvnX22z2csW29cQX5vBw0lr2L
+                                T9q9SqQuvbDwDD4msaC93S47vg7cy7yG43064fNoPYhDQr0jZtE9GjshvV4Q1j3AmIC9B6aAvqQy
+                                RT6g3o+7lNPnvTtIJT71j6W7gfiNvruuF72o1Xk9YF4SvmQCHb6Pzqu9E3rjPPtNnj0hNCc+B3CG
+                                PvuvU7510229eimkPAy2g77d8ui9pylbPWy8tz1a91Y+yLPCvWMEPz7QJ2y9aVyKvXhELb5YRZq+
+                                wFrSvfEGJr3AeZa9wDrbveJLRj2zCnm9dCA3vTCYZzqg6Ie9dXQwPjSLJj0wzdo9b3RNPrCFDbtL
+                                6Yq9hksOPoM4Dz37J4m85N/pvS0inL0lvZo87BRyPt/Thb0iSBy+Zkh1Olb/VL4Yf/Q9YDzAPTAy
+                                Qb4cIi++0jAAPqXDLT5ra7u9MnAFPtj6nb1t7369E+nsPD2Sez1ZqIC80yiCviKeoL0HNis9+tg3
+                                vPX6Lb7hUTq9z1g0PphaUT1HDUw9pJSKPc+rpj0ipU6+YLaWPqDWHj61snk9EgPoPXVlzD0y7TG+
+                                Vk3svdghAL1wUSG+QXr7PdR5urvB6eW991eavVKKpL2FK609ysFtvv7kMj67ZwK+4hSLu02jtj1m
+                                8kk+Hni5PSU0oL2RDPW9m3GOPesenj1uaF69Qe4Vvb3OTrwy0Xi+XYtYuwzyXj0yhyc8a6lAvQps
+                                Hz7Im7C8zRkDPhw7n7xw9cK9kXUdPQsuAj24Ca090a8IvgtyBL4/pTM+Fo3PPVeAVL3xWFE8yU0C
+                                vpFhEz7hHRY8MBQcPtyOwjsOq2g+Y8/CvWJTyr2BpFI9R54BvKlUpz3/Fbw8JxixPfrWLj4IOBa+
+                                IYGXvfx6/D3ZSP89AEgHvqxZnDxRJEs+Mj9SPtrdiL2A7Co8Ug9FvBkWuz3oU5O9ovylPNVtBz5H
+                                bgs+K+6OvhIWez0wcju+GZ4EPV6NOr1EOES+HQ+lPfX8db53G209qiVLvk1BuT0RSFq8+pJXvlHH
+                                SLtNMhi9KAvWPYyeQb5XaCG+Sj2NPovpvz1CChk9tW62PZwe5b1EwTO97H+pPbpPKj4GBjI9BdoN
+                                vq8ig73t9h69SiYRPpyPMb2B/ws+r2SdvZsnuz3KF6c9MwSOvWIFbz2cSE688y25O0i0Vj466nW8
+                                zay1PGIQrz2r6K2+3hEnPu8hBD0Tsjm9SZjRPZ3PY75rv0W+ybjaPNsxHz7Jcw89rwBfvIC+r70y
+                                sn091bM6vjvJHb54ML29cZmBPXEWgr3AXbM9I9qfPaZJVL794EG9M6+SPY4Gnz1q7Dc+JZ+APrvi
+                                kr3FhSG+/ogZvdMH/T21rea89oj+O3ZQ970+Zjo+ZvwovqtGUD4Bn22+8AMmvqjpAr6HpPA9pia1
+                                vix7jT62UWA9Fz9uPfJVpb2o9/s9+3dgPLBKGb1VsQ+7gcmwOyz8yTpnw7E8Ew2aPViMor0KWPa9
+                                zg67vQY11L1dOhC+Wm+vu4dEvT1jYRC+6alxPrjghzx01ti92qdfPWkkfTsWo0g+8JxDPU/Lnr0+
+                                hhi+h0ypvU4znr1eCYm9NiQuvYcZ8r0Pw0C+tFp6vuW6mD3Y5mG9TWFNvq0sBD66J/O889IGvoP0
+                                E750xh++2JALPtUV5jzkjyS+c3J0PoSkb71VQqk91FwBvkC/bDwca/e9YI3DvWbNmL3affK9P1Wn
+                                vXpB3D18mLy8PYopvibWZT7nj5g9JgGGvYFUHT7mf8E9b8I/PMlcVb5k1wQ+IcpXvuNL0DzxWI29
+                                rRBJPEJOtr3bvoe9046nOCgQQT5VRf+8fWuRvOlizz2IyPQ9/+Sxvb7nt73h1Yu9obYFPqTjDT1e
+                                IKe97qz2PWhw9D2Egh6+j5jYveHxPz7Ar9C8mygBvQzS4j3MdZu9ZiqsuByUh762w669/z5RPvMe
+                                B765XCO9g/h3u/m1yL1bqiY+uuVLvprydb4CGWI+AbuAvhVSZ73K3Ym8MX/hPGvgKL5Vi/k8+o3o
+                                vEgvGrxzR8W9VFcbvVhO0764+zm83xOHPf97hbv2Dew8yxY6PZmw+Tt5o9M9Z4YyvU0XJj02PbK9
+                                0wpZPRglCz27SBs+3M/evchfCD4m7Ti9yQi3O8+tOr45iIy9QIl5vWccj7x7bFA8qStVvLS5hj3G
+                                S009XWyevRtkej5jtzO+83LoPdfvjr3OH8Q7gs0APf9QWj4a+dE82pPqvZgtoj0WEZi84KetvPxC
+                                kD2ABaI9YkS+vL8ALj7+ik6+TBywvrbmET41gYS80zW3vfwi9LwC5Bi++nwqPbOgAz5dItq9IR3z
+                                vf9L4DtV7b49QfCeuJvbKz5iEAq+vHZqvTO+aT78FxU9+Zo2vBu+8b1/Mhw+Z08VPsMFjj7eRAM+
+                                eVmgvv+lx73f0te9Z9q1vY6Msb3cIs69zkh0vfRDoTsjQ7C+1FBAvt0muL1Csi09VnITvumzhj08
+                                1pq8yVXvPeiOPb5lJyg8/YToOktC0r0/dae9ZaWgPSnJ1L05h3C8s5TOPSNUdj4y7b697pNGvV7h
+                                sD3k9eq9f44bPnupIL2Ql+08x/0RPmMM3j0TY4k9rd/BPYYsPjsV94Q8RSWyu1HnEb6SlVi92R0k
+                                vSzVXD3ICps8h5pQPSTlW75rSAc+UR8XvuRI9T0vFyI9ZHlhvVhYCj6IQK4+ttOMPZDygj7MHTa+
+                                MTJMvfn79D0ataI8YmX3vV5J7b15BMC8QKrtPEp1Ez5Nlia+c8QPvupze74D5rk9GgMLvQMV+Dxq
+                                Liw999HWPSLt7T0OXpq+wwhuPLJ+671n5ou9nA9KPf9MNz2ApQ++SsgePmda2j2g+Q4+T6NMvqDL
+                                Sz6utqk9fGGEvTVSib2daDa+iC0XPu4amT0XqTI+koDXvbFc/T2e24M+b54pPc+aIr7wrUm++/aD
+                                PZjKa76rDoA+5HEmPjtokb0z3X48WFAzPn0LdD2S+BM+UjI4vkmhaDu6W++94T4MPbEXQL7TQky9
+                                fhXnvZShHLwKnIC9/lubPRUnbj1/Kt49RGAQvrw/NL1jEfO9EUeiva71JT1lSwg+1yH2PIWx472Y
+                                JY09c4JcPMD7Cj7vJ1W9eK7GvUTYRz1uA2U9WWmoPcAQpb0vv+k86v4Zvur3cr2t89a8/2ZMPYXj
+                                Bb7ybO09e5i1vZPVITwZjVW93pG5Pj2a8j1Bx0G+TiSuPf8+Mjzhba099ZsWPbqRH76wwKk9dqg9
+                                vU2FvT7Ti5s98vNjvVCU1j1OqoS7NiecvSUaB748Afc9b8cFvr0Knz18fm68dJz/PZFelL22RfC9
+                                jd0+up8psDzo5O69bw8bvnqPbb0TWLs9dTrkvcrBNz1TwTG+F3ZPvUw9Hb7wWwo9mq+HvDwQJ775
+                                cJq+o1RvvNvWmz0BGLO9885EPiZBFT41lro80LVEPsG6rD2ZT1e8GxJFvv1FH744meo9XquDPf1r
+                                wj0htoY9hx2qPdOMGr4WXi290tDLPRKEEz5jRH29qKYDPZqzlbtmrSk+SyYUPOKsTL15oJS8Bw6s
+                                O2/5FL7Uqx2+RcyMvUPBwrzALwm+1ifZPZoQij2GkYk9MBYBvq41TD4s6IK+CQLrPHPQ5j0w4Ky9
+                                rhxBPsmuvbw2f968wqgrPsIuw70997w9u9MXvgefl7zJRaK9tCrIPP+kqb2vo+i8WFyFPr5vb72Z
+                                MXq+oUo/PnEOmr2TNtM9MuZTvfSuCr1vFf+9OKm7PpITkjyVrtk9zsvYvUhDNT7xJwS9lHV7Ph2S
+                                QT4MJam9nrkOvE5qtDxGUry9bkI5vi/+AD4g3Mo8Xa/gPcmwdzuGYhi8R+4FPOpdkryJmVo9MBhJ
+                                veJvprsAYSc+sNwlPpgVrD2oC8e9gT9SPB9Bs73bsIS7b1WZvS4wL76Zg/k8HbmSvWVvnrw8AP29
+                                ZDzxPSkmWLsY4XA+MqBxPvUkLD12vAe9jJb8PT/8Kb4dWzC8SiYkPk4Np74oHZW9SMEXPQ98zz0P
+                                nhG+AKFQPnQwpD3pp5w7bA4DPswxZT2xlBW+SLnIPYFhBL42M8E8E5RLvlG8+b2uYIA8etoCvjGU
+                                vD35sHi85E2vvUsPor0oiMS+Tmsbvj2yIz4y41A+7HMHvWOde7weKBe+0cljPFQiGL6jtN+9yDlm
+                                vvAwtjxfYKk9ZEpaPvaa5j0EGwk+MZravYKPizxgRUM9T25tvvS6kz66FUS8SYymPKSkkz67lKM9
+                                T+gNvYMWRL5eQDg99j/LuzXDB71O/CW9EMYvPgLsjD1nnxw86hMHPgq5tL3Y6kU+6C/avcZp0jyX
+                                Gx4+FanWPVCc3b0cLQy+AQQJvj+uhTz/ywE+NYZAviscn74esyY9Q4YEPZTKyz1DO/A8w/DcPcij
+                                MD7y5Gi7V0GDPb5XTb5xuAQ9CGiMPVrT/z1Phya+02whPflslr2Po1i9KVwwPs+A170HJmm9z7i+
+                                PfSHDT3qbMK8Snagu8ffhj2Mo/e9V5d2vdeVor1FVoG+RwckPYoIvj2UPJU7WAhDut6tV7wgvkq9
+                                uBqyvRO0Pj076OU9otGaPa+kaLx3q/o8Aw4nPpZ8gj18dvq80lBsvaZRIr4mBCe9YYCEPVFUJ72d
+                                GxG9GDkZveY7C74/0AK+ynvUvR4zFb4Wksa9wnhuvZkkeL31KIs9GjXiPZ+RfD4ocoq9gciZvQZH
+                                EL2bru08DstbvH1TjD43ubQ+2Kl3vjjEhL3gBZa9uloPPvdvIb7G0Sm+vatMvWpLhz3c9IY9reoT
+                                PkkMAj6LiV86zVfdPLmkqjySQ1g+jZwYPp+hZD5hPaW8a9ZHvftNkb5MUUo+QbzkPWmOAb7bF4i8
+                                l71YvhqZ8bxzHIC8fM06vTs32ru9/mm+cgArPfPn7b2phuo9aEuuvZxwir10sIw9Fr3wPMzB9z36
+                                rQg+Vcl4PqcIJj05CJq9pibrvXOvlzy7oBY+w35vPZUL37z0gXU9S0w/Pde9Lj4t58Q9vF2wPAij
+                                yT3veIk9vJeCPWgZK75NNaC+aQuhOy40VD2aGnc+09ATPeF90rvcNLS8QtMUPLLXkz3NYgK+VmgW
+                                Pazq172BKIS+Xzb3vUYDIT2SbC89INZBvYXBYj5yNEO9P1gEPkMTijzVJNw9MC1rvnuqrT0TZb89
+                                p3sOPdowzDxGYyM+imU8PhSorz4DcQU+NPNvvJtHDb6+gh29Bdg1vnbKEj7SQCK9GKlBu9UAWz74
+                                4hm+aBAPPhS1Jj1EN6S9AHR5PqkwHLuVKAA+Lg8EvN8dIr7qalo9ZOQGviFIOj1GT1K+G7QOvi6v
+                                Ez0WXUE+bDyBvPQml73/0F49YUYtPmwvmjsDjZk9eRAxvl+YBL6gpHE8s3rDvdhqWD5n4os9lqDf
+                                vSuyUr2HP1k91pwWvns2Dj104fW9Hd1avuFdUL2T2lg+3URYuwlFIr6PQRM+5JX6PXmUEb329qy9
+                                XtRuPZ+TiD2uNgk+nOtVvvuWFj6KBls9mi8/vbxEJD7Wpli+9lJkPuNgK71wjLy9B4HlPB1FOr6k
+                                Xei9jeUPvjoVaL7gC8U9M3cZPmGIgb04GMu7myiSPVxSDL76ilQ8wtxEO61eb70ED2u9CM6wvEfy
+                                mD2lBg871ZCZPVtkDD795oY9+lS5PVazIjxuYMc9b1WVvhoaF75n1g4+iPm3PSGa0L2kRyu+cXQ/
+                                vjBDFr5n4Bq+ZS3pvab98j3s6SM+7wmRvYIRwjwdTk29uWhpO8v0ib2NCIq8sUcFPmVTOr4fOMw8
+                                Izj8PJYT7T2uMLs93gmovRsdbD7lxwk9LSGLPflFcb0lWhq+8AuIO4AZNDs0W909qsTgPTLfv7s+
+                                xRs+e1eoPji6Jz4PX5c+K9LVvQODgz1VOWs+xodEPkoUUj78z7E9lh2svRR/DT64fDi97H47vofC
+                                hz4326i8swd9vg4GsL16ubU8TZgQuht06T1wpEG+Ya+EPD5Whb3pD449LOANPq9UgDy6gci9GugT
+                                PJk7gj3bdlE+Y9kavr3T+TzVvIA+EiofPU2miT1QlaK9kq4hvZCUOb1/SHs9FBn9PcK60TxOL0E7
+                                Db6DvR5M+r3+4DM++dEuPgp/njzSFkm98fsWPjPhNbx8vK29TMMPPZBWcT3PhAI+dFh/vpIy+L0E
+                                V+W82Ut1ve9AGTyb4xy9+0sjPvMmpr3LkMg8or0nvEw/Bj02tXI9lGO+Ph2DxT3V8Gs+9ZuqPMpv
+                                pT0nin8+JIkPPn3JkT01Xim+Y1MZvr/Fnb08k6k8PAj8vRRePzyeaYI+jWFUvZu01r3VppO+ezvS
+                                u2/iWL4KRIY+SNKaO3qWJj6VLL49gy9ZvcXYzD13dAs9w+YkvrCLzT3Ae8694nsMPbBdNr2VZ8g8
+                                rChGvceFzb1425G9G7SsvfunFT7+7v89C0GRPWvOpD389Ug+wZkYvQ22Mj2Bi9e9Ew84PRrYYL24
+                                OBO7Vey6Pd0Icjzp9A0+GO+8vQn427wlIoY9O20ZPm6nD7xyliI+ODA+PjUK7b0LvoQ+Tw+9PCoH
+                                9734QbO9JTQ7PYCt9T1mZzk+HtAUPjRr2b1wzH2+H+YEvmc/2jyuTjS+rwLzPG/IDz6yCeO9GfIz
+                                PjGQgj3Lzgs9G54TPiicSL262l6+EYJfvYEF173MxZK9uvGeOxfudr7PiTC+2PtUvXVb6j0HREU9
+                                xpwZvh7rAT7dznI9HNELvtOZ9r2pMYE8r8VsPVv2hj0c8tc8W97hPD3+171ImjE+cc+APnJot7yi
+                                Ad898uiVvu2eozsfYEe9/ljWPVZxmr2vPS+8EpwRPntZID68kPS8Dw0OPeXJrb0A1jw+7Cs6vnT4
+                                yrznFTg+w12rveHYKLygGpg9LQkmvq0b8bxaZi++if+zvbTlmD1e5VQ+EOmpPQA1Br0O9sI9qKrV
+                                vbL2sr5qj1E+sghWvKAYwr1aRpW99yLivanxkrwwHNg9M9hqPiD/Jj7ruBI9eU5JPfhgKr1OFlu+
+                                t4tGPjOy6rxx58W9ICFJPtieKj3Upqk8e9emPYmN5TxBbCs9jwwwPXnCbb06wA693TVUu/RITr1U
+                                g4M8crtyPQI6kj24ucO9nOlLPazcHr7dTuw9Y4rCPOSFhj6bw5c8iY40vtwh2T3GnB+95opHPpdh
+                                lT1UGv67WP2fu5DSmD3QGvm9hcNNvpnZnj2br1I9v1BUvtWg3j3Tzhk+C7BPPqeMUb4UQKw9rhUK
+                                PqOlIL4+A6M82/DsPYErNb4iUQg8Z1ZYPaZi/T0k3Aq8l01lPmmSED18Uha+weutPZ/+ob3cExQ9
+                                fZ5IPbiQhD6qVLG8ql02PS3xBb6nXBe9SoBZPf+wzD2I5AM+JQtAvgs/u70tJty9dmJ8vkNNOj4q
+                                8KY9Ek+CvHVzhL7L6LM9kuj7PCuqLT6Vvvi9uyN7vFnKwjs2pwE+SuAXPba6HL7W5Ee9FIWuPfWT
+                                iLzJvmy+hFb8vbd1ir0FwAC+SGdFvhS0Kj38BTm97Q6JPFlrPj54id48+vtUPsveQT46ci68/9pn
+                                vk7IBL72jxK6+w+vPdKqhL5/cQk+OwTivBhnoj3s8ao8WkXuvB+rKD7AA7K9xXJXvRMXdr65KoK9
+                                d0IevAsQbTyb4lO+NQSrPU6GHrx+AKG90ar6PN3cAD4mbSS9h0LSu1eNhzzuSrm9iN/YvMAFBb6D
+                                sTu+OyoCPk1Q5b0r/yo9k2fUPcRLozx325w8G+opPpUARz1VELw8o7V8vDRE3j2ONqe9aILnPZAO
+                                Bz7ZD2M9J29Avmwo/jyE7Dq+jLuOvSPQTLjlnxo+GxgFPktmED7ihFg+boLbPQS2Wb73tdc8qKJ/
+                                PmFbN7sIoow+ar0qvgSFxD2nrVw82W0avmHTlj1u4ne+FptRvfdJZT0XkwG+RjdWO8PfrL3EBmI+
+                                fwy0PFKfqT29J4m+6EsYPlHaDD6sIAY9o28HvnlTEL0xIoi968GNPb+Isr7NSa89hm6WPU2VFLr2
+                                /Ga9dPZNvmpGBz5H30K+Z5DFPaFDRj4dNMe9/HFsvV+EDD4PFA+8vGPgPDjaKr2NOLI8Y/QHvVqH
+                                570ljFs+naHOPNnjir0dmoG9+MirPnUIIT7jIPs7AkRdvkvGtLw+rDc9XBugPB3hj77JJDw8GimM
+                                PYdzMr6xmxY+uKO5PT9oXT39o8y9Vr0Pvde+lL4qmi8988HJvS4+3rzA1aq9rPacPSw0Cr21rao9
+                                1a9SvVMWmT0TlQg+1bQ5vPXbjD1yT/A8Qjd5PmvoRz1LHUQ9SeKovYOhjb2VsCa9YQSKPSJdaT1K
+                                4lA9M3GSPAmuk712SJg8VRcbvRA5db3GdeI9ut5QPinrRDwqS3m9OKtQPppnPDocVBc+VCzjPckd
+                                OL7yBai+0/iXvWpay73TXcG9M6UvPszzQz2BA3K+g8dHvfFFJb3EKbG9vCGwPX8R2zy/zZM9MVjG
+                                vcKEFD3AXyG++ccBPbVcsztKicC9ElNiPoAqHT73f9s95SuGvanaaL1f3jS+bMfqPdZPrD2538G8
+                                4AYOPsrN3z0WWo0+WV1UvVhQ6j3Fpoe9ofa7PpwshDzghFC9uQxYPU7k2b3Cq589mpStvfzlEj7O
+                                cSY+jxmIve9Fmj12Ki2+n0iaPUFlsb1Kcna8XRnpPQ2wST2gKJu9zHugvj9pXL7KhO+9epJmPRnH
+                                or3fQwE+bnFvvviiND3XASU+99gFPrnkoj2hPfU8Q3yRvEX6xjsi2668CYFJPmHPrr0wuWG9ZxnD
+                                PPOfJj6mupG9SuEZvU4md76Al8C9E4DavALbKT25NZy9k73BvS7toT0xpwy+8KB3PQWMkDwXvBE+
+                                C0UUPQfzDT0KrVK+E2k0PnpkwjzDMG69bLSWvSQpHL6Rklg+J7qIPSWT7D3l7eg9JwtJvQ23Cz7A
+                                IvA8deH2vM4GU74Okmg+WU4TPtV74rvcZii+hGw9vpFoiD5lMqk8Nk94vaftuLzGim496a8DPTWb
+                                Ub1dj7e9p+S8vVqLxD16h489aadzPoxStz2pYk09x9tPvuQ0MT1c3Tu+vc9HvmrjcD6ZEt49BnD1
+                                PAz0ij344Yy8N1LlPeEKoTy73G6+E9wFPpCaHL52hTW+e/IXvs096Lyjh3q+8F6avNj5oj27Ag4+
+                                oN32PSKsor1p4CS+ILBSvu2qzT3NiD2+KkVZPSXMlDw81ge+PK1tPDwZ/TzLjoM9p0T6PdEUrD21
+                                U1O+G/spvduzvD2KGHa9uDQgviRLWb7Pe6M9+a+1vd/Wzj16miU+64g6vfRoBz4G2QI+BPLYvXDf
+                                rbyDvZ49omALPSqQXL6n2NI95x8KvGGLOD4pstC8oViOPbxodz5miZY9vLb8vBp2Kr3eZws+61Qg
+                                vTfKBr4L7es9Zjf7PYDWMz4Ox6S9Z/iEPs9HlD3bpqG9jbEdvv8imj0Yr5S+ngncPIdB4r2dixE9
+                                CcQBvpFniD1NdA++WxyuvdyjRr3THIg9LbpGPrW5i75uTjO++Isxvt7TRr5ibAK+4WHRPQTLhz29
+                                AwS+TeLkPBjndD34xx4+g0GTvWIUI76IlEs+aiOOPcRPHD6G9pS9NtyHPRy6xr3SgkA9WZtAvRY5
+                                CT5BMEs9YhtnvefO2TyHN829wHpePt8J/zyzmaq9SQ7rvX7+hT0SPJq9wF3yPU5Wxjy6K0O9sxmm
+                                vREcJD1zRB8+6JX3vVnGzr265o897/ylvRfaPjyPOQG+fB5Evb2CEj0XfIC8N8qPvnN5k767LKY6
+                                rOv4vdY5Vb0uLTW+K7ROPkOyNr1Wxws9fOnAPXPpy7xflpO7si8yvZURA75Ejre97ZjdPTcykj4W
+                                D/u87QEDvML/DTsqbUE+NEz1vbypq7367PI8nBXYvVTXsT0A3Iu9wJO/vXctTj6cdjE++UQsPsbd
+                                g76RqaU7rmtNPekwbz6KGpm8cVQKvWSjiTsLpkg+u+jqPfJdur38gBe+B188PTIdX70ue+E9qsiK
+                                Pk9yqL0/xp888uYDvjJmFDzJxW++Fi6KvYvBcj1q2rq8/FitPaaFEz6iO4M9l7auPe0WBD33l5W9
+                                sFmCvl/zxjzylKg9jhjhPW/zTrulZDA9eEKqPTc0ML0FjIe9XlrHvV8iBD5HAo+98L56PX6GA73H
+                                uvQ9f0V7PRLG1r27vBE+q7Q1PhRmsL0vuxo+5icUvjHKLj5ltaa9GyOUPWRAET3y9dE9FIzfvEES
+                                Yjy9S288PZR5vrrCp73J7tA9bYm4Pb8PKj5/WDy8FfL7OxFYND6/TQm+UspfPbZnCbyeD9q98lPW
+                                vouzc76ZX/a9HKDAPRHakz5T8ww+eQLOPMQmuL0M+AS+qlaxvFIT0j0=
+                            - 0
+                            - !!python/tuple
+                              - 64
+                              - 64
+                            - !!python/tuple
+                              - 64
+                              - 1
+                            - false
+                            - !!python/object/apply:collections.OrderedDict
+                              - []
+                          - true
+                          - !!python/object/apply:collections.OrderedDict
+                            - []
+                      - - bias
+                        - !!python/object/apply:torch._utils._rebuild_parameter
+                          - !!python/object/apply:torch._utils._rebuild_tensor_v2
+                            - !!python/object/apply:torch.storage._load_from_bytes
+                              - !!binary |
+                                gAKKCmz8nEb5IGqoUBkugAJN6QMugAJ9cQAoWBAAAABwcm90b2NvbF92ZXJzaW9ucQFN6QNYDQAA
+                                AGxpdHRsZV9lbmRpYW5xAohYCgAAAHR5cGVfc2l6ZXNxA31xBChYBQAAAHNob3J0cQVLAlgDAAAA
+                                aW50cQZLBFgEAAAAbG9uZ3EHSwR1dS6AAihYBwAAAHN0b3JhZ2VxAGN0b3JjaApGbG9hdFN0b3Jh
+                                Z2UKcQFYCgAAADQzMTcyNjc3MTJxAlgDAAAAY3B1cQNLQE50cQRRLoACXXEAWAoAAAA0MzE3MjY3
+                                NzEycQFhLkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+                                AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+                                AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+                                AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+                                AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+                            - 0
+                            - !!python/tuple
+                              - 64
+                            - !!python/tuple
+                              - 1
+                            - false
+                            - !!python/object/apply:collections.OrderedDict
+                              - []
+                          - true
+                          - !!python/object/apply:collections.OrderedDict
+                            - []
+                    _state_dict_hooks: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _state_dict_pre_hooks: !!python/object/apply:collections.OrderedDict
+                    - []
+                    in_features: 64
+                    out_features: 64
+                    training: false
+                - - '3'
+                  - *id004
+                - - '4'
+                  - !!python/object:torch.nn.modules.linear.Linear
+                    _backward_hooks: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _backward_pre_hooks: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _buffers: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _forward_hooks: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _forward_hooks_always_called: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _forward_hooks_with_kwargs: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _forward_pre_hooks: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _forward_pre_hooks_with_kwargs: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _is_full_backward_hook: null
+                    _load_state_dict_post_hooks: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _load_state_dict_pre_hooks: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _modules: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _non_persistent_buffers_set: !!set {}
+                    _parameters: !!python/object/apply:collections.OrderedDict
+                    - - - weight
+                        - !!python/object/apply:torch._utils._rebuild_parameter
+                          - !!python/object/apply:torch._utils._rebuild_tensor_v2
+                            - !!python/object/apply:torch.storage._load_from_bytes
+                              - !!binary |
+                                gAKKCmz8nEb5IGqoUBkugAJN6QMugAJ9cQAoWBAAAABwcm90b2NvbF92ZXJzaW9ucQFN6QNYDQAA
+                                AGxpdHRsZV9lbmRpYW5xAohYCgAAAHR5cGVfc2l6ZXNxA31xBChYBQAAAHNob3J0cQVLAlgDAAAA
+                                aW50cQZLBFgEAAAAbG9uZ3EHSwR1dS6AAihYBwAAAHN0b3JhZ2VxAGN0b3JjaApGbG9hdFN0b3Jh
+                                Z2UKcQFYCgAAADQzMTcyNzAyODhxAlgDAAAAY3B1cQNLgE50cQRRLoACXXEAWAoAAAA0MzE3Mjcw
+                                Mjg4cQFhLoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+                                AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+                                AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+                                AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+                                AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+                                AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+                                AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+                                AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+                                AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+                                AAAAAAAAAAAAAAAAAAA=
+                            - 0
+                            - !!python/tuple
+                              - 2
+                              - 64
+                            - !!python/tuple
+                              - 64
+                              - 1
+                            - false
+                            - !!python/object/apply:collections.OrderedDict
+                              - []
+                          - true
+                          - !!python/object/apply:collections.OrderedDict
+                            - []
+                      - - bias
+                        - !!python/object/apply:torch._utils._rebuild_parameter
+                          - !!python/object/apply:torch._utils._rebuild_tensor_v2
+                            - !!python/object/apply:torch.storage._load_from_bytes
+                              - !!binary |
+                                gAKKCmz8nEb5IGqoUBkugAJN6QMugAJ9cQAoWBAAAABwcm90b2NvbF92ZXJzaW9ucQFN6QNYDQAA
+                                AGxpdHRsZV9lbmRpYW5xAohYCgAAAHR5cGVfc2l6ZXNxA31xBChYBQAAAHNob3J0cQVLAlgDAAAA
+                                aW50cQZLBFgEAAAAbG9uZ3EHSwR1dS6AAihYBwAAAHN0b3JhZ2VxAGN0b3JjaApGbG9hdFN0b3Jh
+                                Z2UKcQFYCgAAADQzMTcyMDEyODBxAlgDAAAAY3B1cQNLAk50cQRRLoACXXEAWAoAAAA0MzE3MjAx
+                                MjgwcQFhLgIAAAAAAAAAAAAAAAAAAAA=
+                            - 0
+                            - !!python/tuple
+                              - 2
+                            - !!python/tuple
+                              - 1
+                            - false
+                            - !!python/object/apply:collections.OrderedDict
+                              - []
+                          - true
+                          - !!python/object/apply:collections.OrderedDict
+                            - []
+                    _state_dict_hooks: !!python/object/apply:collections.OrderedDict
+                    - []
+                    _state_dict_pre_hooks: !!python/object/apply:collections.OrderedDict
+                    - []
+                    in_features: 64
+                    out_features: *id005
+                    training: false
+              _non_persistent_buffers_set: !!set {}
+              _parameters: !!python/object/apply:collections.OrderedDict
+              - []
+              _state_dict_hooks: !!python/object/apply:collections.OrderedDict
+              - []
+              _state_dict_pre_hooks: !!python/object/apply:collections.OrderedDict
+              - []
+              training: false
+        _non_persistent_buffers_set: !!set {}
+        _parameters: !!python/object/apply:collections.OrderedDict
+        - []
+        _state_dict_hooks: !!python/object/apply:collections.OrderedDict
+        - []
+        _state_dict_pre_hooks: !!python/object/apply:collections.OrderedDict
+        - []
+        c: *id006
+        training: false
+        v_head: null
+      _model_output_size: *id005
+      _n_obs: 3
+      accel_feature: false
+      accel_penalty: 0
+      act_type: accel
+      adv_norm: false
+      alg: PPO
+      av: 1
+      beta: 1.0
+      center_reward: true
+      circ_feature: false
+      circumference: 200
+      circumference_max: 300
+      circumference_min: 200
+      circumference_range: null
+      collision_penalty: 100
+      debug: false
+      device: cpu
+      disable_amp: true
+      e: false
+      gamma: 0.9995
+      global_reward: true
+      handcraft: false
+      high: 1
+      horizon: 2000
+      i_rollout: 0
+      i_worker: 0
+      initial_space: free
+      layers:
+      - 64
+      - tanh
+      - 64
+      - tanh
+      lc_act_type: discrete
+      lc_av: false
+      logger: true
+      low: -1
+      lr: 0.0001
+      main: false
+      max_accel: 0.5
+      max_decel: 0.5
+      max_speed: 10
+      mrtl: false
+      n_lanes: 1
+      n_rollouts_per_step: 32
+      n_rollouts_per_worker: 1
+      n_steps: 100
+      n_veh: 12
+      n_workers: 32
+      name: !!python/object/new:u.Path
+      - av_1_c_200
+      norm_action: true
+      norm_obs: false
+      norm_reward: true
+      obs_clip: .inf
+      opt_level: O0
+      redef_sumo: false
+      render: false
+      res: !!python/object/new:u.Path
+      - /Users/xiawu/sumo_test/pareto/av_1_c_200/veh_12
+      residual_transfer: false
+      reward_clip: .inf
+      rollout_kwargs: null
+      scale_drac: 1
+      scale_pet: 1
+      scale_ttc: 1
+      seed_np: 1409397498
+      seed_torch: 23558
+      sigma: 0.2
+      sim_step: 0.1
+      skip_stat_steps: 0
+      skip_vehicle_info_stat_steps: true
+      step_save: 5
+      tb: false
+      tmp: false
+      use_critic: false
+      use_ray: true
+      warmup_steps: 0
+      wb: false
+      weight_init: orthogonal
+      weight_scale: default
+  env: !!python/object:__main__.RingEnv
+    _agent_info: null
+    _step: 0
+    _vehicle_info: null
+    c: *id006
+    rollout_info: !!python/object:ut.NamedArrays {}
+    sumo_def: !!python/object:env.SumoDef
+      c: *id006
+      dir: !!python/object/new:u.Path
+      - pareto/av_1_c_200/veh_12/sumo/0
+      port: 64677
+      sumo_cmd:
+      - sumo
+      - --net-file
+      - pareto/av_1_c_200/veh_12/sumo/0/net.xml
+      - --additional-files
+      - pareto/av_1_c_200/veh_12/sumo/0/add.xml
+      - --gui-settings-file
+      - pareto/av_1_c_200/veh_12/sumo/0/gui.xml
+      - --begin
+      - '0'
+      - --step-length
+      - '0.1'
+      - --no-step-log
+      - 'true'
+      - --time-to-teleport
+      - '-1'
+      - --no-warnings
+      - 'true'
+      - --collision.action
+      - remove
+      - --collision.check-junctions
+      - 'true'
+      - --max-depart-delay
+      - '0.5'
+      - --random
+      - 'true'
+      - --start
+      - 'true'
+    sumo_paths:
+      additional: !!python/object/new:u.Path
+      - pareto/av_1_c_200/veh_12/sumo/0/add.xml
+      connections: !!python/object/new:u.Path
+      - pareto/av_1_c_200/veh_12/sumo/0/con.xml
+      edges: !!python/object/new:u.Path
+      - pareto/av_1_c_200/veh_12/sumo/0/edg.xml
+      net: !!python/object/new:u.Path
+      - pareto/av_1_c_200/veh_12/sumo/0/net.xml
+      nodes: !!python/object/new:u.Path
+      - pareto/av_1_c_200/veh_12/sumo/0/nod.xml
+    tc: null
+    ts: !!python/object:env.TrafficState
+      all_arrived: []
+      all_collided: []
+      all_departed: []
+      c: *id006
+      edges: !!python/object/new:env.Container
+        dictitems:
+          :bottom_0: &id009 !!python/object/new:env.Edge
+            dictitems:
+              from_routes: !!set {}
+              froms: !!set
+                ? &id008 !!python/object/new:env.Edge
+                  dictitems:
+                    from: top
+                    from_routes: !!set
+                      ? &id007 !!python/object/new:env.Route
+                        dictitems:
+                          edges:
+                          - &id010 !!python/object/new:env.Edge
+                            dictitems:
+                              from: bottom
+                              from_routes: !!set
+                                *id007: null
+                                ? &id012 !!python/object/new:env.Route
+                                  dictitems:
+                                    edges:
+                                    - *id008
+                                    - *id009
+                                    - *id010
+                                    - &id011 !!python/object/new:env.Edge
+                                      dictitems:
+                                        from_routes: !!set {}
+                                        froms: !!set
+                                          *id010: null
+                                        function: internal
+                                        id: :top_0
+                                        lanes:
+                                        - &id013 !!python/object/new:env.Lane
+                                          dictitems:
+                                            cross_lanes: &id020 !!set {}
+                                            edge: *id011
+                                            from_routes: !!set
+                                              *id007: null
+                                              *id012: null
+                                            froms: !!set
+                                              ? &id016 !!python/object/new:env.Lane
+                                                dictitems:
+                                                  edge: *id010
+                                                  from_routes: !!set
+                                                    *id007: null
+                                                    *id012: null
+                                                  froms: !!set
+                                                    ? &id015 !!python/object/new:env.Lane
+                                                      dictitems:
+                                                        cross_lanes: &id014 !!set {}
+                                                        edge: *id009
+                                                        from_routes: !!set
+                                                          *id007: null
+                                                          *id012: null
+                                                        froms: !!set
+                                                          ? &id017 !!python/object/new:env.Lane
+                                                            dictitems:
+                                                              edge: *id008
+                                                              from_routes: !!set
+                                                                *id007: null
+                                                                *id012: null
+                                                              froms: !!set
+                                                                *id013: null
+                                                              id: left_0
+                                                              index: 0
+                                                              left: null
+                                                              length: 100.0
+                                                              next_cross_lanes: *id014
+                                                              next_junction: &id018 !!python/object/new:env.Junction
+                                                                dictitems:
+                                                                  id: bottom
+                                                                  incLanes: left_0
+                                                                  intLanes: :bottom_0_0
+                                                                  lanes:
+                                                                  - *id015
+                                                                  next_lanes:
+                                                                  - *id016
+                                                                  prev_lanes:
+                                                                  - *id017
+                                                                  route_position: !!python/object/new:env.Namespace
+                                                                    dictitems:
+                                                                      *id007: 200.1
+                                                                      *id012: 100.0
+                                                                  shape: 31.90,0.00
+                                                                    31.97,-3.20 31.68,-3.20
+                                                                    31.75,0.00
+                                                                  type: priority
+                                                                  x: 31.82
+                                                                  y: 0.0
+                                                              next_junction_lanes: &id019 []
+                                                              positions: []
+                                                              right: null
+                                                              shape: 31.79,65.26 30.50,65.24
+                                                                29.17,65.16 27.85,65.02
+                                                                26.53,64.84 25.22,64.60
+                                                                23.92,64.31 22.64,63.98
+                                                                21.37,63.58 20.11,63.14
+                                                                18.88,62.65 17.66,62.11
+                                                                16.47,61.53 15.30,60.89
+                                                                14.16,60.21 13.04,59.49
+                                                                11.96,58.72 10.91,57.91
+                                                                9.89,57.06 8.90,56.16
+                                                                7.95,55.23 7.04,54.27
+                                                                6.17,53.26 5.34,52.23
+                                                                4.55,51.16 3.80,50.06
+                                                                3.10,48.93 2.44,47.77
+                                                                1.83,46.59 1.27,45.39
+                                                                0.75,44.16 0.29,42.92
+                                                                -0.13,41.65 -0.50,40.38
+                                                                -0.81,39.08 -1.07,37.78
+                                                                -1.28,36.47 -1.44,35.15
+                                                                -1.55,33.82 -1.60,32.50
+                                                                -1.60,31.17 -1.55,29.84
+                                                                -1.44,28.51 -1.28,27.19
+                                                                -1.07,25.88 -0.81,24.58
+                                                                -0.50,23.29 -0.13,22.01
+                                                                0.29,20.74 0.75,19.50
+                                                                1.27,18.27 1.83,17.07
+                                                                2.44,15.89 3.10,14.73
+                                                                3.80,13.60 4.55,12.50
+                                                                5.34,11.44 6.17,10.40
+                                                                7.04,9.40 7.95,8.43
+                                                                8.90,7.50 9.89,6.61
+                                                                10.91,5.75 11.96,4.94
+                                                                13.04,4.17 14.16,3.45
+                                                                15.30,2.77 16.47,2.13
+                                                                17.66,1.55 18.88,1.01
+                                                                20.11,0.52 21.37,0.08
+                                                                22.64,-0.31 23.92,-0.65
+                                                                25.22,-0.94 26.53,-1.18
+                                                                27.85,-1.36 29.17,-1.49
+                                                                30.50,-1.57 31.79,-1.60
+                                                              speed: 13.89
+                                                              to_routes: !!set
+                                                                *id007: null
+                                                                *id012: null
+                                                              tos: !!set
+                                                                *id015: null
+                                                              vehicles: []
+                                                          : null
+                                                        id: :bottom_0_0
+                                                        index: 0
+                                                        junction: *id018
+                                                        junction_lanes: *id019
+                                                        left: null
+                                                        length: 0.1
+                                                        next_cross_lanes: *id020
+                                                        next_junction: &id021 !!python/object/new:env.Junction
+                                                          dictitems:
+                                                            id: top
+                                                            incLanes: right_0
+                                                            intLanes: :top_0_0
+                                                            lanes:
+                                                            - *id013
+                                                            next_lanes:
+                                                            - *id017
+                                                            prev_lanes:
+                                                            - *id016
+                                                            route_position: !!python/object/new:env.Namespace
+                                                              dictitems:
+                                                                *id007: 100.0
+                                                                *id012: 200.1
+                                                            shape: 31.97,66.86 31.90,63.66
+                                                              31.75,63.66 31.68,66.86
+                                                            type: priority
+                                                            x: 31.82
+                                                            y: 63.66
+                                                        next_junction_lanes: &id022 []
+                                                        positions: []
+                                                        right: null
+                                                        shape: 31.79,-1.60 31.86,-1.60
+                                                        speed: 13.89
+                                                        to_routes: !!set
+                                                          *id007: null
+                                                          *id012: null
+                                                        tos: !!set
+                                                          *id016: null
+                                                        vehicles: []
+                                                    : null
+                                                  id: right_0
+                                                  index: 0
+                                                  left: null
+                                                  length: 100.0
+                                                  next_cross_lanes: *id020
+                                                  next_junction: *id021
+                                                  next_junction_lanes: *id022
+                                                  positions: []
+                                                  right: null
+                                                  shape: 31.86,-1.60 33.15,-1.57 34.48,-1.49
+                                                    35.80,-1.36 37.12,-1.18 38.43,-0.94
+                                                    39.73,-0.65 41.01,-0.31 42.28,0.08
+                                                    43.54,0.52 44.77,1.01 45.99,1.55
+                                                    47.18,2.13 48.35,2.77 49.49,3.45
+                                                    50.60,4.17 51.69,4.94 52.74,5.75
+                                                    53.76,6.61 54.75,7.50 55.70,8.43
+                                                    56.61,9.40 57.48,10.40 58.31,11.44
+                                                    59.10,12.50 59.85,13.60 60.55,14.73
+                                                    61.21,15.89 61.82,17.07 62.38,18.27
+                                                    62.90,19.50 63.36,20.74 63.78,22.01
+                                                    64.15,23.29 64.46,24.58 64.72,25.88
+                                                    64.93,27.19 65.09,28.51 65.20,29.84
+                                                    65.25,31.17 65.25,32.50 65.20,33.82
+                                                    65.09,35.15 64.93,36.47 64.72,37.78
+                                                    64.46,39.08 64.15,40.38 63.78,41.65
+                                                    63.36,42.92 62.90,44.16 62.38,45.39
+                                                    61.82,46.59 61.21,47.77 60.55,48.93
+                                                    59.85,50.06 59.10,51.16 58.31,52.23
+                                                    57.48,53.26 56.61,54.27 55.70,55.23
+                                                    54.75,56.16 53.76,57.06 52.74,57.91
+                                                    51.69,58.72 50.60,59.49 49.49,60.21
+                                                    48.35,60.89 47.18,61.53 45.99,62.11
+                                                    44.77,62.65 43.54,63.14 42.28,63.58
+                                                    41.01,63.98 39.73,64.31 38.43,64.60
+                                                    37.12,64.84 35.80,65.02 34.48,65.16
+                                                    33.15,65.24 31.86,65.26
+                                                  speed: 13.89
+                                                  to_routes: !!set
+                                                    *id007: null
+                                                    *id012: null
+                                                  tos: !!set
+                                                    *id013: null
+                                                  vehicles: []
+                                              : null
+                                            id: :top_0_0
+                                            index: 0
+                                            junction: *id021
+                                            junction_lanes: *id022
+                                            left: null
+                                            length: 0.1
+                                            next_cross_lanes: !!set {}
+                                            next_junction: &id023 !!python/object/new:env.Junction
+                                              dictitems:
+                                                id: null
+                                                route_position: !!python/object/apply:collections.defaultdict
+                                                - !!python/name:env.%3Clambda%3E ''
+                                            next_junction_lanes: !!set {}
+                                            positions: []
+                                            right: null
+                                            shape: 31.86,65.26 31.79,65.26
+                                            speed: 13.89
+                                            to_routes: !!set
+                                              *id007: null
+                                              *id012: null
+                                            tos: !!set
+                                              *id017: null
+                                            vehicles: []
+                                        length: 0.1
+                                        positions: []
+                                        route_position: !!python/object/new:env.Namespace
+                                          dictitems:
+                                            *id007: 100.0
+                                            *id012: 200.1
+                                        to_routes: !!set {}
+                                        tos: !!set
+                                          *id008: null
+                                        vehicles: []
+                                    - *id008
+                                    id: route_left
+                                    junctions: !!python/tuple
+                                    - - *id018
+                                      - *id021
+                                    - - 100.0
+                                      - 200.1
+                                    next: !!python/object/new:env.Namespace
+                                      dictitems:
+                                        *id008: *id009
+                                        *id017: *id015
+                                        *id009: *id010
+                                        *id015: *id016
+                                        *id010: *id011
+                                        *id016: *id013
+                                        *id011: *id008
+                                        *id013: *id017
+                                    prev: !!python/object/new:env.Namespace
+                                      dictitems:
+                                        *id009: *id008
+                                        *id015: *id017
+                                        *id010: *id009
+                                        *id016: *id015
+                                        *id011: *id010
+                                        *id013: *id016
+                                        *id008: *id011
+                                        *id017: *id013
+                                : null
+                              froms: !!set
+                                *id009: null
+                              id: right
+                              lanes:
+                              - *id016
+                              length: 100.0
+                              positions: []
+                              priority: -1
+                              route_position: !!python/object/new:env.Namespace
+                                dictitems:
+                                  *id007: 0
+                                  *id012: 100.1
+                              shape: 31.82,0.00 33.09,0.03 34.35,0.10 35.61,0.23 36.87,0.40
+                                38.11,0.63 39.35,0.90 40.57,1.23 41.78,1.60 42.98,2.02
+                                44.15,2.48 45.31,3.00 46.44,3.56 47.56,4.16 48.64,4.81
+                                49.71,5.50 50.74,6.23 51.74,7.00 52.71,7.81 53.65,8.66
+                                54.56,9.55 55.42,10.47 56.25,11.42 57.05,12.41 57.80,13.43
+                                58.51,14.48 59.18,15.55 59.80,16.65 60.38,17.78 60.92,18.92
+                                61.41,20.09 61.85,21.28 62.25,22.48 62.60,23.69 62.90,24.92
+                                63.15,26.17 63.35,27.41 63.50,28.67 63.60,29.93 63.65,31.20
+                                63.65,32.46 63.60,33.73 63.50,34.99 63.35,36.25 63.15,37.50
+                                62.90,38.74 62.60,39.97 62.25,41.18 61.85,42.39 61.41,43.57
+                                60.92,44.74 60.38,45.89 59.80,47.01 59.18,48.11 58.51,49.19
+                                57.80,50.23 57.05,51.25 56.25,52.24 55.42,53.19 54.56,54.11
+                                53.65,55.00 52.71,55.85 51.74,56.66 50.74,57.43 49.71,58.16
+                                48.64,58.85 47.56,59.50 46.44,60.11 45.31,60.66 44.15,61.18
+                                42.98,61.64 41.78,62.06 40.57,62.44 39.35,62.76 38.11,63.03
+                                36.87,63.26 35.61,63.44 34.35,63.56 33.09,63.64 31.82,63.66
+                              to: top
+                              to_routes: !!set
+                                *id007: null
+                                *id012: null
+                              tos: !!set
+                                *id011: null
+                              vehicles: []
+                          - *id011
+                          - *id008
+                          - *id009
+                          - *id010
+                          id: route_right
+                          junctions: !!python/tuple
+                          - - *id021
+                            - *id018
+                          - - 100.0
+                            - 200.1
+                          next: !!python/object/new:env.Namespace
+                            dictitems:
+                              *id010: *id011
+                              *id016: *id013
+                              *id011: *id008
+                              *id013: *id017
+                              *id008: *id009
+                              *id017: *id015
+                              *id009: *id010
+                              *id015: *id016
+                          prev: !!python/object/new:env.Namespace
+                            dictitems:
+                              *id011: *id010
+                              *id013: *id016
+                              *id008: *id011
+                              *id017: *id013
+                              *id009: *id008
+                              *id015: *id017
+                              *id010: *id009
+                              *id016: *id015
+                      : null
+                      *id012: null
+                    froms: !!set
+                      *id011: null
+                    id: left
+                    lanes:
+                    - *id017
+                    length: 100.0
+                    positions: []
+                    priority: -1
+                    route_position: !!python/object/new:env.Namespace
+                      dictitems:
+                        *id007: 100.1
+                        *id012: 0
+                    shape: 31.82,63.66 30.56,63.64 29.30,63.56 28.04,63.44 26.78,63.26
+                      25.54,63.03 24.30,62.76 23.08,62.44 21.87,62.06 20.67,61.64
+                      19.50,61.18 18.34,60.66 17.20,60.11 16.09,59.50 15.00,58.85
+                      13.94,58.16 12.91,57.43 11.91,56.66 10.94,55.85 10.00,55.00
+                      9.09,54.11 8.23,53.19 7.40,52.24 6.60,51.25 5.85,50.23 5.14,49.19
+                      4.47,48.11 3.85,47.01 3.26,45.89 2.73,44.74 2.24,43.57 1.79,42.39
+                      1.40,41.18 1.05,39.97 0.75,38.74 0.50,37.50 0.30,36.25 0.15,34.99
+                      0.05,33.73 0.00,32.46 0.00,31.20 0.05,29.93 0.15,28.67 0.30,27.41
+                      0.50,26.17 0.75,24.92 1.05,23.69 1.40,22.48 1.79,21.28 2.24,20.09
+                      2.73,18.92 3.26,17.78 3.85,16.65 4.47,15.55 5.14,14.48 5.85,13.43
+                      6.60,12.41 7.40,11.42 8.23,10.47 9.09,9.55 10.00,8.66 10.94,7.81
+                      11.91,7.00 12.91,6.23 13.94,5.50 15.00,4.81 16.09,4.16 17.20,3.56
+                      18.34,3.00 19.50,2.48 20.67,2.02 21.87,1.60 23.08,1.23 24.30,0.90
+                      25.54,0.63 26.78,0.40 28.04,0.23 29.30,0.10 30.56,0.03 31.82,0.00
+                    to: bottom
+                    to_routes: !!set
+                      *id007: null
+                      *id012: null
+                    tos: !!set
+                      *id009: null
+                    vehicles: []
+                : null
+              function: internal
+              id: :bottom_0
+              lanes:
+              - *id015
+              length: 0.1
+              positions: []
+              route_position: !!python/object/new:env.Namespace
+                dictitems:
+                  *id007: 200.1
+                  *id012: 100.0
+              to_routes: !!set {}
+              tos: !!set
+                *id010: null
+              vehicles: []
+          :top_0: *id011
+          left: *id008
+          right: *id010
+      external_edges: !!python/object/new:env.Container
+        dictitems:
+          left: *id008
+          right: *id010
+      external_lanes: !!python/object/new:env.Container
+        dictitems:
+          left_0: *id017
+          right_0: *id016
+      flows: !!python/object:env.Container {}
+      internal_edges: !!python/object/new:env.Container
+        dictitems:
+          :bottom_0: *id009
+          :top_0: *id011
+      internal_lanes: !!python/object/new:env.Container
+        dictitems:
+          :bottom_0_0: *id015
+          :top_0_0: *id013
+      junctions: !!python/object/new:env.Container
+        dictitems:
+          bottom: *id018
+          top: *id021
+      lanes: !!python/object/new:env.Container
+        dictitems:
+          :bottom_0_0: *id015
+          :top_0_0: *id013
+          left_0: *id017
+          right_0: *id016
+      new_arrived: null
+      new_collided: null
+      new_departed: null
+      routes: !!python/object/new:env.Container
+        dictitems:
+          route_left: *id012
+          route_right: *id007
+      sentinel_junction: *id023
+      subscribes: !!python/object:env.Namespace {}
+      tc: null
+      traffic_lights: !!python/object:env.Container {}
+      types: !!python/object/new:env.Container
+        dictitems:
+          human: !!python/object/new:env.Type
+            dictitems:
+              accel: 1
+              carFollowModel: IDM
+              decel: 1.5
+              delta: 4
+              id: human
+              impatience: 0.5
+              laneChangeModel: LC2013
+              lcCooperative: 1.0
+              lcKeepRight: 1.0
+              lcSpeedGain: 1.0
+              lcStrategic: 1.0
+              maxSpeed: 30
+              minGap: 2
+              sigma: 0.2
+              speedDev: 0.1
+              speedFactor: 1.0
+              tau: 1.0
+              vehicles: !!set {}
+          rl: !!python/object/new:env.Type
+            dictitems:
+              accel: 1
+              carFollowModel: IDM
+              decel: 1.5
+              delta: 4
+              id: rl
+              impatience: 0.5
+              laneChangeModel: LC2013
+              lcCooperative: 1.0
+              lcKeepRight: 1.0
+              lcSpeedGain: 1.0
+              lcStrategic: 1.0
+              maxSpeed: 30
+              minGap: 2
+              sigma: 0
+              speedDev: 0.1
+              speedFactor: 1.0
+              tau: 1.0
+              vehicles: !!set {}
+      vehicles: !!python/object:env.Container {}
+_i: 0
+_model: *id024
+_model_output_size: *id005
+_n_obs: 3
+accel_feature: false
+accel_penalty: 0
+act_type: accel
+adv_norm: false
+alg: PPO
+av: 1
+beta: 1.0
+center_reward: true
+circ_feature: false
+circumference: 200
+circumference_max: 300
+circumference_min: 200
+circumference_range: null
+collision_penalty: 100
+debug: false
+device: cpu
+disable_amp: true
+e: false
+gamma: 0.9995
+global_reward: true
+handcraft: false
+high: 1
+horizon: 2000
+i_rollout: 0
+i_worker: 0
+initial_space: free
+layers:
+- 64
+- tanh
+- 64
+- tanh
+lc_act_type: discrete
+lc_av: false
+logger: true
+low: -1
+lr: 0.0001
+main: false
+max_accel: 0.5
+max_decel: 0.5
+max_speed: 10
+mrtl: false
+n_lanes: 1
+n_rollouts_per_step: 32
+n_rollouts_per_worker: 1
+n_steps: 100
+n_veh: 12
+n_workers: 32
+name: av_1_c_200
+norm_action: true
+norm_obs: false
+norm_reward: true
+obs_clip: .inf
+opt_level: O0
+redef_sumo: false
+render: false
+res: /Users/xiawu/sumo_test/pareto/av_1_c_200/veh_12
+residual_transfer: false
+reward_clip: .inf
+rollout_kwargs: null
+scale_drac: 1
+scale_pet: 1
+scale_ttc: 1
+seed_np: 1409397498
+seed_torch: 23558
+sigma: 0.2
+sim_step: 0.1
+skip_stat_steps: 0
+skip_vehicle_info_stat_steps: true
+step_save: 5
+tb: false
+tmp: false
+use_critic: false
+use_ray: true
+warmup_steps: 0
+wb: false
+weight_init: orthogonal
+weight_scale: default
+)
+  File "/Users/xiawu/sumo_test/automatic_vehicular_control/exp.py", line 214, in rollouts_single_process
+    rollout, stats = c.rollout()
+  File "/Users/xiawu/sumo_test/automatic_vehicular_control/exp.py", line 228, in rollout
+    ret = c._env.reset()
+  File "/Users/xiawu/sumo_test/automatic_vehicular_control/env.py", line 1264, in reset
+    return self.norm_obs(self.env.reset())
+  File "/Users/xiawu/sumo_test/automatic_vehicular_control/env.py", line 1134, in reset
+    if not self.reset_sumo():
+  File "/Users/xiawu/sumo_test/automatic_vehicular_control/ring_single_veh_number.py", line 36, in reset_sumo
+    return super().reset_sumo()
+  File "/Users/xiawu/sumo_test/automatic_vehicular_control/env.py", line 1110, in reset_sumo
+    self.ts.setup()
+  File "/Users/xiawu/sumo_test/automatic_vehicular_control/env.py", line 847, in setup
+    subscribes.sim = SubscribeDef(tc.simulation, [
+AttributeError: 'NoneType' object has no attribute 'simulation'
+[36m(_n_obs: 3 pid=37718)[0m accel_feature: false[32m [repeated 15x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m accel_penalty: 0[32m [repeated 15x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m act_type: accel[32m [repeated 15x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m adv_norm: false[32m [repeated 15x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m alg: PPO[32m [repeated 15x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m av: 1[32m [repeated 15x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m beta: 1.0[32m [repeated 15x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m center_reward: true[32m [repeated 15x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m circ_feature: false[32m [repeated 15x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m circumference: 200[32m [repeated 15x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m circumference_max: 300[32m [repeated 15x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m circumference_min: 200[32m [repeated 15x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m circumference_range: null[32m [repeated 15x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m collision_penalty: 100[32m [repeated 15x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m debug: false[32m [repeated 15x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m device: cpu[32m [repeated 15x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m disable_amp: true[32m [repeated 15x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m e: false[32m [repeated 15x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m gamma: 0.9995[32m [repeated 15x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m global_reward: true[32m [repeated 15x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m handcraft: false[32m [repeated 15x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m high: 1[32m [repeated 15x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m horizon: 2000[32m [repeated 15x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m i_worker: 28[32m [repeated 15x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m initial_space: free[32m [repeated 15x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m lc_act_type: discrete[32m [repeated 15x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m logger: true[32m [repeated 15x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m low: -1[32m [repeated 15x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m lr: 0.0001[32m [repeated 15x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m main: false[32m [repeated 15x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m max_accel: 0.5[32m [repeated 15x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m max_decel: 0.5[32m [repeated 15x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m max_speed: 10[32m [repeated 15x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m mrtl: false[32m [repeated 15x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m n_lanes: 1[32m [repeated 15x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m n_rollouts_per_step: 32[32m [repeated 15x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m n_rollouts_per_worker: 1[32m [repeated 15x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m n_steps: 100[32m [repeated 15x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m n_veh: 12[32m [repeated 15x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m n_workers: 32[32m [repeated 15x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m name: av_1_c_200[32m [repeated 15x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m norm_action: true[32m [repeated 15x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m norm_reward: true[32m [repeated 15x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m opt_level: O0[32m [repeated 15x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m redef_sumo: false[32m [repeated 15x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m render: false[32m [repeated 15x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m res: /Users/xiawu/sumo_test/pareto/av_1_c_200/veh_12[32m [repeated 15x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m residual_transfer: false[32m [repeated 15x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m scale_drac: 1[32m [repeated 15x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m scale_pet: 1[32m [repeated 15x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m scale_ttc: 1[32m [repeated 15x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m seed_np: 1409397498[32m [repeated 15x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m seed_torch: 23558[32m [repeated 15x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m sigma: 0.2[32m [repeated 15x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m sim_step: 0.1[32m [repeated 15x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m skip_stat_steps: 0[32m [repeated 15x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m step_save: 5[32m [repeated 15x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m tb: false[32m [repeated 15x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m tmp: false[32m [repeated 15x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m use_critic: false[32m [repeated 15x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m use_ray: true[32m [repeated 15x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m warmup_steps: 0[32m [repeated 15x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m wb: false[32m [repeated 15x across cluster][0m
+[36m(_n_obs: 3 pid=37718)[0m  Retrying in 1 seconds[32m [repeated 112x across cluster][0m
+[36m(_n_obs: 3 pid=37440)[0m Could not connect to TraCI server at localhost:64709 [Errno 61] Connection refused[32m [repeated 124x across cluster][0m
