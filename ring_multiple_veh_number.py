@@ -256,7 +256,7 @@ if __name__ == '__main__':
     for n_veh in range(2, 28, 1):
         c = Ring.from_args(globals(), locals()).setdefaults(
             n_lanes=1,
-            horizon=3000,
+            horizon=2000,
             warmup_steps=0,
             n_steps=100,
             sim_step=0.1,        

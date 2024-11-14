@@ -74,9 +74,10 @@ automatic_vehicular_control/
 
 ## 3. Code running
 ### 3.1 Local Running
-#### 3.1.1 IDM without RL:
+#### 3.1.1 Without RL 
+##### 3.1.1.1 IDM without RL with varying vehicle number:
 ```
-python $F/ring_multiple_veh_number.py $F/pareto/av_1_c_250/ "av=0" "n_veh=18" "circumference=250"  "warmup_steps=10" "skip_stat_steps=0" \
+python $F/ring_multiple_veh_number.py $F/pareto/av_1_c_250/ "av=0" "circumference=250"  "warmup_steps=10" "skip_stat_steps=0" \
 "horizon=2000" "global_reward=True" "n_steps=100" \
 "gamma=0.9995" "beta=1.0" "scale_ttc=1" "scale_drac=1" \
 "seed_np=1409397498" "seed_torch=23558" "residual_transfer=False" "mrtl=False" \
@@ -105,6 +106,16 @@ python $F/ring_multiple_veh_number.py $F/pareto/av_1_c_250/ "av=0" "n_veh=18" "c
 - **wb**, **tb**: Enable or disable logging with Weights & Biases (`wb`) and TensorBoard (`tb`) (`True` or `False`).
 
 
+#### 3.1.1.2 IDM without RL with single vehicle number:
+```
+python $F/ring_multiple_veh_number.py $F/pareto/av_1_c_250/ "av=0" "n_veh=18" "circumference=250"  "warmup_steps=10" "skip_stat_steps=0" \
+"horizon=2000" "global_reward=True" "n_steps=100" \
+"gamma=0.9995" "beta=1.0" "scale_ttc=1" "scale_drac=1" \
+"seed_np=1409397498" "seed_torch=23558" "residual_transfer=False" "mrtl=False" \
+"handcraft=False" "step_save=False" "lr=0.0001"  \
+"wb=False" "tb=False" 2>&1 | tee automatic_vehicular_control/logs/av_1/log_n_veh_18.txt 
+```
+- **n_veh**: set vehicle number. 
 #### 3.1.2 RL:
 ```
 python $F/ring_single_veh_number.py $F/pareto/av_1_c_250/ "av=1" "n_veh=18" "circumference=250" "n_workers=8" "n_rollouts_per_step=8"  "warmup_steps=10" "skip_stat_steps=0" \

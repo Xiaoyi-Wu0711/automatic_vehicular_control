@@ -257,12 +257,12 @@ if __name__ == '__main__':
         n_lanes=1,
         horizon=1000,
         warmup_steps=0,
-        n_steps=100,
+        n_steps=10,
         sim_step=0.1,        
         n_workers = 2, 
         n_rollouts_per_step =2, # rollouts to collect 
-        av=1,
-        n_veh=22,
+        av=0,
+        n_veh=7,
         max_speed=10,
         max_accel=0.5,
         max_decel=0.5,
@@ -331,3 +331,5 @@ if __name__ == '__main__':
     else:
         c.run_2()
     print(f"Simulation with {c.n_veh} vehicles completed")
+
+

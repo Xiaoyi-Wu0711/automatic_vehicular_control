@@ -1,0 +1,85 @@
+accel_feature: false
+accel_penalty: 0
+act_type: accel
+adv_norm: false
+alg: !!python/name:ut.PPO ''
+av: 0
+beta: 1.0
+center_reward: true
+circ_feature: false
+circumference: 200
+circumference_max: 300
+circumference_min: 200
+circumference_range: null
+collision_penalty: 100
+debug: false
+device: cpu
+disable_amp: true
+e: false
+gamma: 0.9995
+global_reward: true
+handcraft: false
+high: 1
+horizon: 1000
+initial_space: free
+lc_act_type: discrete
+logger: true
+low: -1
+lr: 0.0001
+main: true
+max_accel: 0.5
+max_decel: 0.5
+max_speed: 10
+mrtl: false
+n_lanes: 1
+n_rollouts_per_step: 2
+n_steps: 50
+n_veh: 22
+n_workers: 2
+name: av_0_c_200
+norm_action: true
+norm_reward: true
+opt_level: O0
+redef_sumo: false
+render: true
+res: /Users/xiawu/sumo_test/automatic_vehicular_control/pareto/av_0_c_200/veh_22/
+residual_transfer: false
+scale_drac: 1
+scale_pet: 1
+scale_ttc: 1
+seed_np: 1409397498
+seed_torch: 23558
+sigma: 0.2
+sim_step: 0.1
+skip_stat_steps: 0
+step_save: 5
+tb: false
+tmp: false
+warmup_steps: 0
+wb: false
+
+netconvert -o automatic_vehicular_control/pareto/av_0_c_200/veh_22/sumo/net.xml -n automatic_vehicular_control/pareto/av_0_c_200/veh_22/sumo/nod.xml -e automatic_vehicular_control/pareto/av_0_c_200/veh_22/sumo/edg.xml -x automatic_vehicular_control/pareto/av_0_c_200/veh_22/sumo/con.xml --no-turnarounds true
+Warning: Environment variable SUMO_HOME is not set properly, disabling XML validation. Set 'auto' or 'always' for web lookups.
+Warning: Environment variable SUMO_HOME is not set, using built in type maps.
+sumo-gui --net-file automatic_vehicular_control/pareto/av_0_c_200/veh_22/sumo/net.xml --additional-files automatic_vehicular_control/pareto/av_0_c_200/veh_22/sumo/add.xml --gui-settings-file automatic_vehicular_control/pareto/av_0_c_200/veh_22/sumo/gui.xml --begin 0 --step-length 0.1 --no-step-log true --time-to-teleport -1 --no-warnings true --collision.action remove --collision.check-junctions true --max-depart-delay 0.5 --random true --start true
+ Retrying in 1 seconds
+Traceback (most recent call last):
+  File "/Users/xiawu/sumo_test/automatic_vehicular_control/ring_single_veh_number.py", line 332, in <module>
+    c.run_2()
+  File "/Users/xiawu/sumo_test/automatic_vehicular_control/exp.py", line 452, in run_2
+    ret = c._env.step()
+  File "/Users/xiawu/sumo_test/automatic_vehicular_control/env.py", line 1267, in step
+    ret = self.env.step(action)
+  File "/Users/xiawu/sumo_test/automatic_vehicular_control/ring_single_veh_number.py", line 55, in step
+    super().step()
+  File "/Users/xiawu/sumo_test/automatic_vehicular_control/env.py", line 1080, in step
+    self.ts.step()
+  File "/Users/xiawu/sumo_test/automatic_vehicular_control/env.py", line 895, in step
+    tc.simulationStep()
+  File "/Users/xiawu/miniconda3/envs/sumo_py310/lib/python3.10/site-packages/traci/connection.py", line 368, in simulationStep
+    result = self._sendCmd(tc.CMD_SIMSTEP, None, None, "D", step)
+  File "/Users/xiawu/miniconda3/envs/sumo_py310/lib/python3.10/site-packages/traci/connection.py", line 231, in _sendCmd
+    return self._sendExact()
+  File "/Users/xiawu/miniconda3/envs/sumo_py310/lib/python3.10/site-packages/traci/connection.py", line 137, in _sendExact
+    raise FatalTraCIError("Connection closed by SUMO.")
+traci.exceptions.FatalTraCIError: Connection closed by SUMO.
