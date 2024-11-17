@@ -1,7 +1,7 @@
 from exp import *
 from env import *
 from u import *
-
+import time
 class RingEnv(Env):
     def def_sumo(self):
         c = self.c
@@ -253,16 +253,19 @@ class Ring(Main):
             c._model.p_head[-1].bias.data[c.lc_av:] = 0
 
 if __name__ == '__main__':
+    start = time.time()
+    formatted_time = time.strftime("%b_%d_%H_%M_%S_%Y", time.localtime(start))
+    print("start time: ", formatted_time)
     c = Ring.from_args(globals(), locals()).setdefaults(
         n_lanes=1,
         horizon=1000,
         warmup_steps=0,
-        n_steps=10,
+        n_steps=100,
         sim_step=0.1,        
         n_workers = 2, 
         n_rollouts_per_step =2, # rollouts to collect 
-        av=0,
-        n_veh=7,
+        av=1,
+        n_veh=22,
         max_speed=10,
         max_accel=0.5,
         max_decel=0.5,
@@ -301,7 +304,7 @@ if __name__ == '__main__':
         residual_transfer=False, # this flag deals with which network to modify (nominal if False, residual if True). instantiates both.
         mrtl=False, # this flag deals with adding beta to observations
     )
-    c.res = c.res +"/veh_"+str(c.n_veh)+"/"
+    c.res = c.res +"/veh_"+str(c.n_veh+c.av)+"/"
     os.makedirs(c.res, exist_ok=True)
 
     if c.seed_torch:
@@ -331,5 +334,3 @@ if __name__ == '__main__':
     else:
         c.run_2()
     print(f"Simulation with {c.n_veh} vehicles completed")
-
-

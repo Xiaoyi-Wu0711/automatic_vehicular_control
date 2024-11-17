@@ -302,7 +302,7 @@ if __name__ == '__main__':
             residual_transfer=False, # this flag deals with which network to modify (nominal if False, residual if True). instantiates both.
             mrtl=False, # this flag deals with adding beta to observations
         )
-        c.res = c.res +"/veh_"+str(c.n_veh)+"/"
+        c.res = c.res +"/veh_"+str(c.n_veh+c.av)+"/"
         os.makedirs(c.res, exist_ok=True)
 
         if c.seed_torch:
