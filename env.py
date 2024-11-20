@@ -457,7 +457,7 @@ class SumoDef:
             'collision.action': COLLISION.remove,
             'collision.check-junctions': True,
             'max-depart-delay': c.get('max_depart_delay', 0.5),
-            'random': True,
+            'random': True, #change to False to rid simulation of randomness!
             'start': c.get('start', True)
         })
         cmd = ['sumo-gui' if c.render else 'sumo']

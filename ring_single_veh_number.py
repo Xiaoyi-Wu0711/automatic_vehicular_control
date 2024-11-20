@@ -32,7 +32,7 @@ class RingEnv(Env):
     def reset_sumo(self):
         c = self.c
         if c.circumference_range:
-            c.circumference = np.random.randint(*c.circumference_range)
+            c.circumference = np.random.randint(*c.circumference_range) #this is not being used
         return super().reset_sumo()
 
     @property
