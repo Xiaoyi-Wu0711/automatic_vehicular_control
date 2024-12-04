@@ -1,0 +1,37 @@
+#!/bin/bash
+#SBATCH --job-name=ring_train     # Job name
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=32
+#SBATCH --exclusive
+#SBATCH --array=0-11
+#SBATCH --output=automatic_vehicular_control/test/logs/av_1/Output_%j_%i.out
+#SBATCH --error=automatic_vehicular_control/test/logs/av_1/Output_%j_%i.err
+#SBATCH --partition=gpuq,rome,workq,fatq
+
+export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
+export F=automatic_vehicular_control
+export R=results
+
+conda activate /home/xiawu/.conda/envs/default/envs/sumo_py310
+
+seeds=('0' '1' '2' )
+vehicle_numbers=(1 2 3 4)
+circumference=250
+beta=0
+for seed in "${seeds[@]}"; do
+  for n_veh in "${vehicle_numbers[@]}"; do
+    output_dir="$F/pareto/test/av_1/c_${circumference}/beta_${beta}/seed_${seed}/n_veh_${n_veh}/"
+    # Create the output directory if it doesn't exist
+    mkdir -p "${output_dir}"
+    # Run the Python script with cleanly formatted arguments
+    python $F/train_test.py --seed seed --n_veh n_veh
+    echo "Completed: Seed=${seed}, Vehicles=${n_veh}"
+  done
+done
+
+echo "All experiments completed!"
+
+
+
+
+

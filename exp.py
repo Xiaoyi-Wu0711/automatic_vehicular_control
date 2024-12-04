@@ -225,7 +225,7 @@ class Main(Config):
             c.update(c.rollout_kwargs[c.i_rollout])
         t_start = time()
 
-        ret = c._env.reset()
+        ret = c._env.reset() # observation 
         if not isinstance(ret, dict):
             ret = dict(obs=ret) 
         rollout = NamedArrays()
@@ -237,13 +237,18 @@ class Main(Config):
         a_space = c.action_space
         step = 0
         while step < c.horizon + c.skip_stat_steps and not done:
+            device=torch.device(c.device)
+            obs_tmp=to_torch(rollout.obs[-1]).to(device)
+            c._model = c._model.to(device)  # Ensure model is on the same device
+            # print(f"Model is on device: {next(c._model.parameters()).device}")
+            # print(f"Input tensor is on device: {obs_tmp.device}")
             # TODO: if training residual, use torch no grad or use policy=False (?) to get nominal pred, then call pred on residual normally and sum pred.actions
-            pred = from_torch(c._model(to_torch(rollout.obs[-1]), value=False, policy=True, argmax=False))
+            pred = from_torch(c._model(obs_tmp, value=False, policy=True, argmax=False))
             if c.get('aclip', True) and isinstance(a_space, Box):
                 pred.action = np.clip(pred.action, a_space.low, a_space.high)
             rollout.append(**pred)
 
-            ret = c._env.step(rollout.action[-1])
+            ret = c._env.step(rollout.action[-1]) # obs, reward, and info
             speed = {"speed": np.mean([v.speed for v in c._env.ts.vehicles])}
             rollout.append(**speed)
             if isinstance(ret, tuple):
@@ -286,41 +291,40 @@ class Main(Config):
             rollout.update(obs=step_obs, ret=ret)
             if c.use_critic:
                 rollout.update(value=value_[:len(ret)], adv=adv)
-        c.mean_dict[str(ii)]["reward"].append(np.array(rollout["reward"]))
-        c.mean_dict[str(ii)]["speed"].append(np.array(rollout["speed"]))
+                
+        if not c.e: # todo for Xiaoyi 
+            c.mean_dict[str(ii)]["reward"].append(np.array(rollout["reward"]))
+            c.mean_dict[str(ii)]["speed"].append(np.array(rollout["speed"]))
+        
+        speed_reward_values = rollout.get('speed_reward', [])
 
         log = c.get_log_ii(ii)
         log(**stats)
         log(
             reward_mean=np.mean(reward),
             reward_std=np.std(reward),
-
+            # In exp.py, line 305
+            speed_reward_mean = np.mean(speed_reward_values) if speed_reward_values else None,
+            speed_reward_std=np.std(speed_reward_values) if speed_reward_values else None,
             # outflow_reward_mean=np.mean(rollout.outflow_reward) if rollout.outflow_reward else None,
             # outflow_reward_std=np.std(rollout.outflow_reward) if rollout.outflow_reward else None,
+            ssm_mean=np.mean(rollout.ssm),
+            ssm_std=np.std(rollout.ssm),
 
-            #THESE WERE COMMENTED OUT BY MARCUS TO AVOID ISSUE
-            # speed_reward_mean=np.mean(rollout.speed_reward) if rollout.speed_reward else None,
-            # speed_reward_std=np.std(rollout.speed_reward) if rollout.speed_reward else None,
-
-
-            # ssm_mean=np.mean(rollout.ssm),
-            # ssm_std=np.std(rollout.ssm),
-
-            # ttc_mean=np.mean(rollout.ttc) if rollout.ttc else None,
-            # ttc_std=np.std(rollout.ttc) if rollout.ttc else None,
-            # drac_mean=np.mean(rollout.drac) if rollout.drac else None,
-            # drac_std=np.std(rollout.drac) if rollout.drac else None,
-            
-            # pet_mean=np.mean(rollout.pet) if rollout.pet else None,
-            # pet_std=np.std(rollout.pet) if rollout.pet else None,
+            ttc_mean=np.mean(rollout.ttc) if rollout.ttc else None,
+            ttc_std=np.std(rollout.ttc) if rollout.ttc else None,
+            drac_mean=np.mean(rollout.drac) if rollout.drac else None,
+            drac_std=np.std(rollout.drac) if rollout.drac else None,
+            pet_mean=np.mean(rollout.pet) if rollout.pet else None,
+            pet_std=np.std(rollout.pet) if rollout.pet else None,
 
             # nom_action = np.mean(rollout.nom_action),
             # res_action = np.mean(rollout.res_action),
 
-            # raw_ttc_mean=np.mean(rollout.raw_ttc) if rollout.raw_ttc else None,
-            # raw_ttc_std=np.std(rollout.raw_ttc) if rollout.raw_ttc else None,
-            # raw_drac_mean=np.mean(rollout.raw_drac) if rollout.raw_drac else None,
-            # raw_drac_std=np.std(rollout.raw_drac) if rollout.raw_drac else None,
+            raw_ttc_mean=np.mean(rollout.raw_ttc) if rollout.raw_ttc else None,
+            raw_ttc_std=np.std(rollout.raw_ttc) if rollout.raw_ttc else None,
+            raw_drac_mean=np.mean(rollout.raw_drac) if rollout.raw_drac else None,
+            raw_drac_std=np.std(rollout.raw_drac) if rollout.raw_drac else None,
 
             value_mean=np.mean(value_) if c.use_critic else None,
             ret_mean=np.mean(ret),
@@ -335,7 +339,7 @@ class Main(Config):
         c.log('')
 
     def on_train_end(c):
-        np.savez( c.res+"mean_dict.npz", **c.mean_dict)
+        np.savez( c.res+"/mean_dict.npz", **c.mean_dict)
 
         if c._results is not None:
             c.save_train_results(c._results)
@@ -383,14 +387,15 @@ class Main(Config):
 
         c._run_start_time = time()
         c._i = 1
-        for _ in range(c.n_steps):
+        for step in range(c.n_steps):
             c.rollouts()
             if c.get('result_save'):
                 c._results.to_csv(c.result_save)
             if c.get('vehicle_info_save'):
-                np.savez_compressed(c.vehicle_info_save, **{k: v.values.astype(type(v.iloc[0])) for k, v in c._env.vehicle_info.iteritems()})
+                print(step)
+                np.savez_compressed(c.vehicle_info_save, **{k: v.values.astype(type(v.iloc[0])) for k, v in c._env.vehicle_info.items()})
                 if c.get('save_agent'):
-                    np.savez_compressed(c.vehicle_info_save.replace('.npz', '_agent.npz'), **{k: v.values.astype(type(v.iloc[0])) for k, v in c._env.agent_info.iteritems()})
+                    np.savez_compressed(c.vehicle_info_save.replace('.npz', '_agent.npz'), **{k: v.values.astype(type(v.iloc[0])) for k, v in c._env.agent_info.items()})                
                 c._env.sumo_paths['net'].cp(c.vehicle_info_save.replace('.npz', '.net.xml'))
             c._i += 1
             c.log('')
@@ -401,6 +406,7 @@ class Main(Config):
         c.log(format_yaml({k: v for k, v in c.items() if not k.startswith('_')}))
         c.setdefaults(n_rollouts_per_step=1)
         if c.e is not False:
+            c.setdefaults(device='cpu')
             c.n_workers = 1
             c.setdefaults(use_ray=False, n_rollouts_per_worker=c.n_rollouts_per_step // c.n_workers)
             c.eval()

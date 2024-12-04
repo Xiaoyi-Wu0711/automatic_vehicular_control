@@ -1,10 +1,8 @@
 #!/bin/bash
-
 #SBATCH --job-name=ring_train     # Job name
 #SBATCH --ntasks-per-core 1  
 #SBATCH --ntasks-per-node 32
 #SBATCH --exclusive
-#SBATCH --array=0-2
 #SBATCH --output=automatic_vehicular_control/logs/av_1/output_%j_%i.out  # Output file for logs (%j will be replaced by job ID)
 #SBATCH --error=automatic_vehicular_control/logs/av_1/output_%j_%i.err   # Error file for logs
 #SBATCH --time=12:00:00             # Total runtime limit (HH:MM:SS)
@@ -16,13 +14,12 @@ export R=results
 # Activate Conda environment
 conda activate /home/xiawu/.conda/envs/default/envs/sumo_py310
 
-ids=('0' '1' '2')
-seed="${ids[$SLURM_ARRAY_TASK_ID]}"
+seed=1
 
 # Run the training script
 # python $F/ring.py pareto/av_1/ circumference=200 av=1 n_veh=26 n_workers=32 n_rollouts_per_step=32 warmup_steps=2000 skip_stat_steps=5000 horizon=5000 global_reward=True
 
-output_dir="$F/pareto/av_1/c_250/beta_0_5/seed_${seed}/"
+output_dir="$F/pareto/av_1/c_250/beta_0_tmp_2/seed_${seed}/"
 # Create the output directory if it doesn't exist
 mkdir -p "${output_dir}"
 
@@ -30,7 +27,7 @@ mkdir -p "${output_dir}"
 python "$F/ring_single_veh_number.py" "${output_dir}" \
     "n_veh=2" \
     "av=1" \
-    "beta=0.5" \
+    "beta=0" \
     "circumference=250" \
     "n_workers=45" \
     "n_rollouts_per_step=45" \

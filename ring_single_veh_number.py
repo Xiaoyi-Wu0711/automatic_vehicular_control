@@ -10,7 +10,6 @@ class RingEnv(Env):
             E('node', id='bottom', x=0, y=-r),
             E('node', id='top', x=0, y=r),
         )
-
         get_shape = lambda start_angle, end_angle: ' '.join('%.5f,%.5f' % (r * np.cos(i), r * np.sin(i)) for i in np.linspace(start_angle, end_angle, 80))
         edges = E('edges',
             E('edge', **{'id': 'right', 'from': 'bottom', 'to': 'top', 'length': c.circumference / 2, 'shape': get_shape(-np.pi / 2, np.pi / 2), 'numLanes': c.n_lanes}),
@@ -32,7 +31,7 @@ class RingEnv(Env):
     def reset_sumo(self):
         c = self.c
         if c.circumference_range:
-            c.circumference = np.random.randint(*c.circumference_range) #this is not being used
+            c.circumference = np.random.randint(*c.circumference_range)
         return super().reset_sumo()
 
     @property
@@ -304,7 +303,7 @@ if __name__ == '__main__':
         residual_transfer=False, # this flag deals with which network to modify (nominal if False, residual if True). instantiates both.
         mrtl=False, # this flag deals with adding beta to observations
     )
-    c.res = c.res +"/veh_"+str(c.n_veh+c.av)+"/"
+    print("c.res ", c.res)
     os.makedirs(c.res, exist_ok=True)
 
     if c.seed_torch:

@@ -1,0 +1,86 @@
+#!/bin/bash
+#SBATCH --job-name=eval     # Job name
+#SBATCH --ntasks-per-core 1  
+#SBATCH --ntasks-per-node 1
+#SBATCH --array=0-10
+#SBATCH --output=automatic_vehicular_control/logs/res_2/av_1/output_%j_%i.out  # Output file for logs (%j will be replaced by job ID)
+#SBATCH --error=automatic_vehicular_control/logs/res_2/av_1/output_%j_%i.err   # Error file for logs
+#SBATCH --time=12:00:00             # Total runtime limit (HH:MM:SS)
+#SBATCH --partition=gpuq,rome,workq,fatq
+
+export F=automatic_vehicular_control
+export R=results
+
+# Activate Conda environment
+conda activate /home/xiawu/.conda/envs/default/envs/sumo_py310
+
+circumference=250
+beta=0
+seed=1
+# model trained from n_veh_1
+vehicle_numbers=(0 2 4 6 8 12 16 18 20 24 26)
+n_veh_1="${vehicle_numbers[$SLURM_ARRAY_TASK_ID]}"
+# model transferred to n_veh_2
+n_veh_2=4
+step=100
+
+# get policy trained on n_veh_1
+transferred_dir="$F/pareto/2_av_1/c_${circumference}/beta_${beta}/seed_${seed}/veh_${n_veh_1}/"
+
+# check the performance policy trained on n_veh_1 transferred to n_veh_2
+eval_dir="$F/pareto/2_av_1/c_${circumference}/beta_${beta}/seed_${seed}/veh_${n_veh_2}/eval/"
+
+# Create the output directory if it doesn't exist
+mkdir -p "${eval_dir}"
+
+# Run the Python script with cleanly formatted arguments
+python "$F/ring_single_veh_number.py" "${transferred_dir}" \
+                "device='cpu'"\
+                "e=${step}" \
+                "n_veh=${n_veh_2}" \
+                "av=1" \
+                "beta=${beta}" \
+                "circumference=${circumference}" \
+                "n_rollouts_per_step=1"\
+                "skip_vehicle_info_stat_steps=False"\
+                "full_rollout_only=True"\
+                "warmup_steps=2000" \
+                "skip_stat_steps=5000" \
+                "horizon=5000" \
+                "n_steps=10" \
+                "scale_ttc=1" \
+                "scale_drac=1" \
+                "result_save=${eval_dir}eval_from_veh_${n_veh_1}.csv"\ 
+                "vehicle_info_save=False"\
+                # "vehicle_info_save=${eval_dir}trajectory_from_veh_${n_veh_1}.npz"\
+                "save_agent=False"
+
+echo "All experiments completed!"
+
+
+# python "$F/ring_single_veh_number.py" "${transferred_dir}" \
+#                 "device='cpu'"\
+#                 "e=${step}" \
+#                 "n_veh=${n_veh_2}" \
+#                 "av=1" \
+#                 "beta=${beta}" \
+#                 "circumference=${circumference}" \
+#                 "n_rollouts_per_step=1"\
+#                 "skip_vehicle_info_stat_steps=False"\
+#                 "full_rollout_only=True"\
+#                 "warmup_steps=2000" \
+#                 "skip_stat_steps=5000" \
+#                 "horizon=5000" \
+#                 "n_steps=10" \
+#                 "scale_ttc=1" \
+#                 "scale_drac=1" \
+#                 "result_save=${eval_dir}eval_from_veh_${n_veh_1}.csv"\ 
+#                 "vehicle_info_save=False"\ 
+#                 "save_agent=False"
+
+# python "$F/ring_single_veh_number.py" "$F/pareto/2_av_1/c_250/beta_0/seed_1/veh_2/"  "device='cpu'" "e=100"  "n_veh=2"  "av=1"  "beta=0"  "circumference=250"  "n_rollouts_per_step=1" "skip_vehicle_info_stat_steps=False" "full_rollout_only=True" "warmup_steps=2000"  "skip_stat_steps=5000"  "horizon=5000"  "n_steps=5"  "scale_ttc=1"  "scale_drac=1"  "result_save=$F/pareto/2_av_1/c_250/beta_0/seed_1/veh_2/eval_from_veh_2.csv" "vehicle_info_save=$F/pareto/2_av_1/c_250/beta_0/seed_1/veh_2/trajectory_from_veh_2"  "save_agent=$F/pareto/2_av_1/c_250/beta_0/seed_1/veh_2/agent_from_veh_2" "render=True"
+
+
+
+# python "$F/ring_single_veh_number.py" "$F/pareto/2_av_1/c_250/beta_0/seed_1/veh_4/" "device='cpu'" "n_veh=2" "e=100"  "av=1"  "beta=0"  "circumference=250"  "n_rollouts_per_step=1" "skip_vehicle_info_stat_steps=False" "full_rollout_only=True" "warmup_steps=2000"  "skip_stat_steps=5000"  "horizon=5000"  "n_steps=10"  "scale_ttc=1"  "scale_drac=1"  "result_save=$F/pareto/2_av_1/c_250/beta_0/seed_1/veh_2/eval_from_veh_4.csv" "vehicle_info_save=$F/pareto/2_av_1/c_250/beta_0/seed_1/veh_2/trajectory_from_veh_4"  "save_agent=$F/pareto/2_av_1/c_250/beta_0/seed_1/veh_2/agent_from_veh_4" "render=True"
+                

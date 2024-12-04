@@ -457,7 +457,7 @@ class SumoDef:
             'collision.action': COLLISION.remove,
             'collision.check-junctions': True,
             'max-depart-delay': c.get('max_depart_delay', 0.5),
-            'random': True, #change to False to rid simulation of randomness!
+            'random': True,
             'start': c.get('start', True)
         })
         cmd = ['sumo-gui' if c.render else 'sumo']
@@ -883,7 +883,7 @@ class TrafficState:
             is_rl = cycle > last_cycle
         return 'rl' if is_rl else 'human'
 
-    def step(self):
+    def step(self, step):
         """
         Take a simulation step and update state
         """
@@ -894,6 +894,11 @@ class TrafficState:
         # Actual SUMO step
         tc.simulationStep()
         sim_res = subscribes.sim.get()
+
+
+        # view_ids = traci.gui.getIDList()
+        # print(" view_ids ", view_ids)
+        # tc.gui.screenshot("View #0", str(step)+".png")
 
         for veh in self.vehicles:
             veh.unvar('edge', 'lane')
@@ -1077,7 +1082,7 @@ class Env:
 
         if self._agent_info is not None:
             self.extend_agent_info()
-        self.ts.step()
+        self.ts.step(self._step)
         self.append_step_info()
         if self._vehicle_info is not None:
             self.extend_vehicle_info()
