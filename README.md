@@ -223,23 +223,21 @@ This document explains the various parameters used in the evaluation and trainin
 | **Parameter**          | **Default Value**                  | **Notes**                                                                 |
 |------------------------|------------------------------------|---------------------------------------------------------------------------|
 | `circumference`        | 250                                | Set to 250 meters in the default configuration.                          |
-| `beta`                 | 0 or 0.5                           | Changes based on whether the task is evaluation or training.             |
+| `beta`                 | 0 or 0.5                           | tradeoff between safety and performance             |
 | `warmup_steps`         | 2000                               | Provides sufficient stabilization time for simulations.                  |
 | `horizon`              | 5000                               | Ensures long enough simulation runs for meaningful statistics.           |
-| `alg`                  | `TRPO`                             | Can be replaced with other algorithms (e.g., PPO, SAC).                  |
+| `alg`                  | `TRPO`                             | Can be replaced with other algorithms (e.g., PPO, TRPO).                  |
 | `gamma`                | 0.9995                             | A high discount factor for long-term reward optimization.                |
 | `lr`                   | 1e-4                               | Can be adjusted for faster/slower convergence.                           |
 | `tb`                   | `True`                             | Enables TensorBoard logging by default.                                  |
-| `beta`                          | Weighting factor for reward scaling. Adjusts how specific objectives (e.g., speed, safety) influence training. |
 | `seed`                          | Random seed for reproducibility of simulations and experiments.                                               |
-| `vehicle_numbers`               | Array of vehicle counts used for job arrays. Each job in the array evaluates a different vehicle number.       |
-| `step`                          | Number of evaluation steps to run for each simulation.                                                        |
-| `transferred_dir`               | Path to the directory containing the trained policy.                                                          |
-| `warmup_steps`                  | Steps before statistics collection starts, allowing the simulation to stabilize.                              |
-| `skip_stat_steps`               | Steps to skip after warmup before collecting statistics, ensuring the simulation reaches a steady state.       |
-| `horizon`                       | Total number of simulation steps for the evaluation.                                                          |
-| `n_rollouts_per_step`           | Number of simulation rollouts to perform per evaluation step.                                                 |
+| `n_veh`               | Total vehicle number       | 22|
+| `av`               | av number       | 1 or 0 |
+| `n_steps`                          | Number of gradient updates number                   |  100                             |
+| `skip_stat_steps`               | Steps to skip after warmup before collecting statistics, ensuring the simulation reaches a steady state.       | 5000 |
+| `horizon`                       | Total number of simulation steps for the evaluation.    | 5000             |                                  |
+| `n_rollouts_per_step`           | Number of simulation rollouts to perform per evaluation step.                                      | 45    |
 | `scale_ttc`/`scale_drac`        | Scaling factors for reward components related to time-to-collision (TTC) and deceleration rates (DRAC).        |
-| `render`    | SUMO GUI render       |
+| `render`    | SUMO GUI render       | False or True |
 
 ---
