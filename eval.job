@@ -82,5 +82,4 @@ echo "All experiments completed!"
 
 
 
-# python "$F/ring_single_veh_number.py" "$F/pareto/2_av_1/c_250/beta_0/seed_1/veh_4/" "device='cpu'" "n_veh=2" "e=100"  "av=1"  "beta=0"  "circumference=250"  "n_rollouts_per_step=1" "skip_vehicle_info_stat_steps=False" "full_rollout_only=True" "warmup_steps=2000"  "skip_stat_steps=5000"  "horizon=5000"  "n_steps=10"  "scale_ttc=1"  "scale_drac=1"  "result_save=$F/pareto/2_av_1/c_250/beta_0/seed_1/veh_2/eval_from_veh_4.csv" "vehicle_info_save=$F/pareto/2_av_1/c_250/beta_0/seed_1/veh_2/trajectory_from_veh_4"  "save_agent=$F/pareto/2_av_1/c_250/beta_0/seed_1/veh_2/agent_from_veh_4" "render=True"
-                
+python "$F/ring_single_veh_number.py" "$F/pareto/2_av_1/c_250/beta_0/seed_1/veh_2/" "device='cpu'" "n_veh=2" "e=50"  "av=1"  "beta=0"  "circumference=250"  "n_rollouts_per_step=1" "skip_vehicle_info_stat_steps=False" "full_rollout_only=True" "warmup_steps=2000"  "skip_stat_steps=5000"  "horizon=5000"  "n_steps=10"  "scale_ttc=1"  "scale_drac=1"  "result_save=$F/pareto/2_av_1/c_250/beta_0/seed_1/veh_2/eval_from_veh_2.csv" "vehicle_info_save=$F/pareto/2_av_1/c_250/beta_0/seed_1/veh_2/trajectory_from_veh_2"  "save_agent=$F/pareto/2_av_1/c_250/beta_0/seed_1/veh_2/agent_from_veh_2" "render=True"

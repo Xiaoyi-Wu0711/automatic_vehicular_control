@@ -1,6 +1,11 @@
 # Project
 
-This project is extending RL for autonomous vehicle in mixed autonomy env. 
+This project uses RL for autonomous vehicle control in mixed autonomy env within two focuses:
+
+1. Generalization: Robust-RL under different road densities; 
+
+2. Multi-objective optimization: Effictive balance between safe and speed. 
+
 You may find the original project at: [Project Website](https://mit-wu-lab.github.io/automatic_vehicular_control), [IEEE Website](https://ieeexplore.ieee.org/document/9765650), [arXiv](https://arxiv.org/abs/2208.00268).
 
 ```
