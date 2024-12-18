@@ -58,7 +58,7 @@ Follow this [tutorial](https://www.arch.jhu.edu/short-tutorial-how-to-create-a-s
 
 ## Cleanup
 Storage Efficiency is extremely important on SuperCloud acccounts, so make sure to delete all unecessary files (like output or errors logs) after you are done. 
-1. To remove a directory and all of its contents, run `rm -rf directory_name`
+1. To remove a directory and all of its contents, run `rm -rf directory_name` (the -r indicates a recursive removal and -f force the removal bypassing any errors)
 2. To remove a file, run `rm file_name`
 
 For instance, a clean up may look like:
