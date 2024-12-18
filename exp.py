@@ -387,15 +387,14 @@ class Main(Config):
 
         c._run_start_time = time()
         c._i = 1
-        for step in range(c.n_steps):
+        for _ in range(c.n_steps):
             c.rollouts()
             if c.get('result_save'):
                 c._results.to_csv(c.result_save)
             if c.get('vehicle_info_save'):
-                print(step)
                 np.savez_compressed(c.vehicle_info_save, **{k: v.values.astype(type(v.iloc[0])) for k, v in c._env.vehicle_info.items()})
                 if c.get('save_agent'):
-                    np.savez_compressed(c.vehicle_info_save.replace('.npz', '_agent.npz'), **{k: v.values.astype(type(v.iloc[0])) for k, v in c._env.agent_info.items()})                
+                    np.savez_compressed(c.vehicle_info_save.replace('.npz', '_agent.npz'), **{k: v.values.astype(type(v.iloc[0])) for k, v in c._env.agent_info.items()})
                 c._env.sumo_paths['net'].cp(c.vehicle_info_save.replace('.npz', '.net.xml'))
             c._i += 1
             c.log('')

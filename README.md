@@ -1,12 +1,6 @@
 # Project
 
-This project uses RL for autonomous vehicle control in mixed autonomy env within two focuses:
-
-1. Generalization: Robust-RL under different road densities; 
-
-2. Multi-objective optimization: Effictive balance between safe and speed. 
-
-You may find the original project at: [Project Website](https://mit-wu-lab.github.io/automatic_vehicular_control), [IEEE Website](https://ieeexplore.ieee.org/document/9765650), [arXiv](https://arxiv.org/abs/2208.00268).
+You may find this project at: [Project Website](https://mit-wu-lab.github.io/automatic_vehicular_control), [IEEE Website](https://ieeexplore.ieee.org/document/9765650), [arXiv](https://arxiv.org/abs/2208.00268).
 
 ```
 @article{yan2022unified,
@@ -22,7 +16,7 @@ You may find the original project at: [Project Website](https://mit-wu-lab.githu
 
 This project uses Python with several dependencies managed by `conda`. Follow the instructions below to set up your development environment.
 
-Updated date: Dec 4th 2024.
+Updated date: Oct 2nd 2024.
 
 
 ## Requirements
@@ -54,44 +48,29 @@ export R=results
 ## 2. Directory Structure
 
 The code directory structure is
-
-- **pareto/**
-  - **2_av_1/c_250/**
-  - **beta_0/**
-    - **seed_0/**
-      - **veh_2/** - Results for 2 vehicles
-        - **commit/** - Commit metadata for reproducibility
-        - **models/** - Trained models for this configuration
-        - **sumo/** - SUMO simulation-related files
-        - `2024-11-27T02_52_53.log` - Log file for this run
-        - `config.yaml` - Experiment configuration
-        - `eval_from_veh_2.csv` - Evaluation results for 2 vehicles
-        - `events.out.tfevents.*` - TensorBoard logs for monitoring
-        - `train_results.csv` - Training results summary
-
-- **statistics/** - Analysis tools and notebooks
-  - `FD.ipynb` - Notebook for flow-density analysis
-  - `trajectory.ipynb` - Notebook for analyzing vehicle trajectories
-- `init.py` - Package initialization script
-- `.gitignore` - Git ignore file
-- `actual_runs.ipynb` - Notebook for running experiments and visualizations
-- `config.yaml` - Main configuration for experiments
-- `env.py` - Environment setup and related classes
-- `environment.yml` - Conda environment file
-- `eval.job` - SLURM job script for evaluation
-- `exp.py` - Experiment setup script
-- `figure_eight.py` - Script for figure-eight scenario simulations
-- `IDM.job` - SLURM job script for IDM model evaluation
-- `README.md` - Documentation for the project
-- `ring_multiple_veh_number.py` - Script for multiple vehicle number experiments
-- `ring_single_veh_number.py` - Script for single vehicle number experiments
-- `runs.ipynb` - Notebook for managing experiment runs
-- `train_multi_nodes.job` - SLURM job script for multi-node training(multiple vehicle number scenarios)
-- `train_single_node.job` - SLURM job script for single-node training(single vehicle number scenarios)
-- `train.job` - SLURM job script for main training
-- `u.py` - Helper functions for utilities
-- `ut.py` - Functions for defining algorithms and neural networks
-
+``` 
+automatic_vehicular_control/
+│   ├── __pycache__/                # Compiled Python files
+│   ├── evaluations/                # Evaluation results and metrics
+│   ├── models/                     # Model checkpoints
+│   ├── pareto/
+│   │   └── single_ring/            # Experiments for the single-ring traffic scenario
+│   │       ├── from_scratch/       # Training from scratch experiments
+│   │       ├── seeding/            # Experiments with different random seeds
+│   │       └── ssm_scaling_5/      # Experiments with different SSM scaling weights
+│   ├── sumo/                       # SUMO simulation-related files
+│   ├── __init__.py                 # Package initialization script
+│   ├── *.log                       # Log files for experiment runs
+│   ├── actual_runs.ipynb           # Jupyter notebook for executing and plotting experiments
+│   ├── config.yaml                 # Configuration file for experiments
+│   ├── env.py                      # Environment setup and classes
+│   ├── environment.yml             # Conda environment setup
+│   ├── eval_commands.sh            # Shell script for running evaluations
+│   ├── exp.py                      # Experiment setup script
+│   ├── ring.py                     # Main script for running the ring road environment
+│   ├── ut.py                       # Definie algo and NN related func
+│   ├── u.py                        # Definie help func
+```
 
 
 ## 3. Code running
@@ -106,7 +85,7 @@ python $F/ring.py $F/pareto/single_ring/seeding/beta1.0_SSM1_torch23558_np140939
 ```
 
 #### Explanation of Arguments:
-<!-- - **$F/ring.py**: Path to the main running script.
+- **$F/ring.py**: Path to the main running script.
 - **pareto/single_ring/seeding/beta1.0_SSM1_torch23558_np1409397498**: Output directory for storing results.
 - **worker_kwargs**: Configuration details for workers
 - **n_workers**: Number of workers to use in parallel for rollouts.  
@@ -125,19 +104,37 @@ python $F/ring.py $F/pareto/single_ring/seeding/beta1.0_SSM1_torch23558_np140939
 - **residual_transfer**, **mrtl**, **handcraft**: Additional training configurations.
 - **step_save**: Whether to save the model at each training step (`True` or `False`).
 - **lr**: Learning rate for training.  
-- **wb**, **tb**: Enable or disable logging with Weights & Biases (`wb`) and TensorBoard (`tb`) (`True` or `False`). -->
+- **wb**, **tb**: Enable or disable logging with Weights & Biases (`wb`) and TensorBoard (`tb`) (`True` or `False`).
 
 Each parameter has a specific role in controlling the training process, and modifying them can lead to different training outcomes, depending on the training scenario and requirements.
 
 ### 3.2 Evaluation Command:
-```
-python "$F/ring_single_veh_number.py" "$F/pareto/2_av_1/c_250/beta_0/seed_1/veh_4/" "device='cpu'"  \
-"n_veh=2" "e=100"  "av=1"  "beta=0"  "circumference=250"  "n_rollouts_per_step=1" "skip_vehicle_info_stat_steps=False" "full_rollout_only=True" \
-"warmup_steps=2000"  "skip_stat_steps=5000"  "horizon=5000"  "n_steps=10"  "scale_ttc=1"  "scale_drac=1"  "result_save=$F/pareto/2_av_1/c_250/   \
-beta_0/seed_1/veh_2/eval_from_veh_4.csv" "vehicle_info_save=$F/pareto/2_av_1/c_250/beta_0/seed_1/veh_2/trajectory_from_veh_4"  "save_agent=$F/ \
-pareto/2_av_1/c_250/beta_0/seed_1/veh_2/agent_from_veh_4" "render=True"
 
 ```
+python $F/ring.py . "e=True" "warmup_steps=2000" "skip_stat_steps=5000" \
+"horizon=1000" "circumference=250" "n_steps=10" "n_rollouts_per_step=1" \
+"skip_vehicle_info_stat_steps=False" "full_rollout_only=True" \
+"result_save=$F/evaluations/test.csv" "vehicle_info_save=trajectories/test.npz" \
+"save_agent=True"
+```
+
+#### Explanation of Arguments
+
+- **$F/ring.py**: Path to the running script.
+- **"."**: Represents the current directory as the output directory for storing evaluation results.
+- **e**: Specifies evaluation mode (`True`). This enables evaluation without further training.
+- **warmup_steps**: Number of warmup steps before starting the evaluation.
+- **skip_stat_steps**: Number of steps to skip before collecting statistical data during evaluation.
+- **horizon**: Number of simulation steps in an episode for evaluation.
+- **circumference**: Circumference of the ring road environment.
+- **n_steps**: Number of evaluation steps to be performed.
+- **n_rollouts_per_step**: Number of rollouts per evaluation step.
+- **skip_vehicle_info_stat_steps**: Whether to skip recording vehicle information statistics for the first few steps (`True` or `False`).
+- **full_rollout_only**: Whether to consider only complete rollouts for evaluation (`True` or `False`).
+- **result_save**: Path to save the evaluation results as a CSV file.
+- **vehicle_info_save**: Path to save vehicle trajectory data in `.npz` format.
+- **save_agent**: Whether to save the agent's information (`True` or `False`).
+
 
 ### 3.3 Running IDM without RL 
 ```
@@ -155,94 +152,16 @@ python $F/ring.py $F/pareto/single_ring/IDM/different_veh \
 ### 3.4 Batch Running with Slurm:
 Training:
 ```
-sbatch train.job
+sbatch train_commands.sh
 ```
 
 Evaluation:
 ```
-sbatch eval.job
+sbatch eval_commands.sh
 ```
 
-# Parameters Explanation for Evaluation and Training Scripts
+## 4. TODO
+1. IDM debug finished, check the RL bugs
+2. Test batch running and check if the plot is right: Training with 50 veh one lane of 1000m on Super Cloud. 
+3. Try different veh number under the scenarios of w or w/o RL and compare if the fundamental diagram get improved Super Cloud.
 
-This document explains the various parameters used in the evaluation and training scripts for automatic vehicular control.
-
----
-
-## General SLURM Parameters
-
-| **Parameter**               | **Description**                                                                                          |
-|-----------------------------|----------------------------------------------------------------------------------------------------------|
-| `--job-name`                | Name of the job. Helps identify it in the queue and logs.                                               |
-| `--ntasks-per-core`         | Number of tasks to be executed per core. Typically set to 1.                                            |
-| `--ntasks-per-node`         | Number of tasks per compute node. For distributed jobs, this controls task distribution.                |
-| `--exclusive`               | Ensures the compute node is reserved exclusively for this job.                                          |
-| `--array`                   | Defines the range of tasks for a job array. Allows execution of multiple tasks with different parameters. |
-| `--output`/`--error`        | File paths for standard output and error logs. `%j` is replaced with the job ID and `%i` with the array index. |
-| `--time`                    | Maximum allowed runtime for the job in HH:MM:SS format.                                                |
-| `--partition`               | Specifies the cluster partition or queue to use (e.g., `gpuq`, `rome`, etc.).                          |
-
----
-
-## Evaluation Parameters
-
-| **Parameter**                   | **Description**                                                                                               |
-|---------------------------------|---------------------------------------------------------------------------------------------------------------|
-| `transferred_dir/output_dir`(aka input policy path)               | Path to policies pre-trained/trained on the source vehicle configuration.                     |
-| `e`                             |   number of gradient update steps of the trained model                                       |
-| `result_save` (for reward/speed plots)                  | File path to save evaluation results as a CSV file.                                                           |
-| `vehicle_info_save` (for Time-Space plots)            | (Optional) Path to save vehicle trajectory in as a `.npz` file.    |
-| `save_agent`                    | Whether to save the agent's state or policy after evaluation.                                      |
-
----
-
-## Training Parameters
-
-| **Parameter**                   | **Description**                                                                                               |
-|---------------------------------|---------------------------------------------------------------------------------------------------------------|
-| `alg`                           | Reinforcement learning algorithm to use (e.g., `TRPO`).                                                       |
-| `output_dir`     | Directory where trained policies and logs are stored.                                                        |
-| `gamma`                         | Discount factor for future rewards. Determines the agent's long-term planning horizon.                        |
-| `lr`                            | Learning rate for training the agent.                                                                         |
-| `n_workers`                     | Number of parallel workers to use for collecting rollouts.                                                    |
-| `n_rollouts_per_step`           | Number of rollouts performed per training step.                                                               |
-| `warmup_steps`                  | Steps before starting to collect training statistics.                                                         |
-| `skip_stat_steps`               | Steps to skip after warmup before collecting training statistics.                                              |
-| `horizon`                       | Total number of steps per rollout during training.                                                            |
-| `n_steps`                       | Total number of training steps.                                                                               |
-| `global_reward`                 | Whether to use a global reward for the system (e.g., optimizing overall traffic flow).                        |
-| `seed_np`/`seed_torch`          | Seeds for reproducibility in NumPy and PyTorch computations.                                                  |
-| `residual_transfer`             | If `True`, uses residual learning for policy transfer.                                                        |
-| `mrtl`                          | If `True`, uses Multi-Task Reinforcement Learning (MTRL) for policy training.                                  |
-| `handcraft`                     | If `True`, uses handcrafted rules in training or evaluation.                                                  |
-| `step_save`                     | If `True`, saves the agent’s state or checkpoint at each step.                                                |
-| `tb`                            | Enables TensorBoard logging for training metrics visualization.                                               |
-| `wb`                            | Enables Weights and Biases (if integrated) for monitoring experiments.                                        |
-| `eval_dir`                  | Directory where evaluation result                              |
----
-
-
-
-## Default Parameter Values in Scripts
-
-| **Parameter**          | **Default Value**                  | **Notes**                                                                 |
-|------------------------|------------------------------------|---------------------------------------------------------------------------|
-| `circumference`        | 250                                | Set to 250 meters in the default configuration.                          |
-| `beta`                 | 0 or 0.5                           | tradeoff between safety and performance             |
-| `warmup_steps`         | 2000                               | Provides sufficient stabilization time for simulations.                  |
-| `horizon`              | 5000                               | Ensures long enough simulation runs for meaningful statistics.           |
-| `alg`                  | `TRPO`                             | Can be replaced with other algorithms (e.g., PPO, TRPO).                  |
-| `gamma`                | 0.9995                             | A high discount factor for long-term reward optimization.                |
-| `lr`                   | 1e-4                               | Can be adjusted for faster/slower convergence.                           |
-| `tb`                   | `True`                             | Enables TensorBoard logging by default.                                  |
-| `seed`                          | Random seed for reproducibility of simulations and experiments.                                               |
-| `n_veh`               | Total vehicle number       | 22|
-| `av`               | av number       | 1 or 0 |
-| `n_steps`                          | Number of gradient updates number                   |  100                             |
-| `skip_stat_steps`               | Steps to skip after warmup before collecting statistics, ensuring the simulation reaches a steady state.       | 5000 |
-| `horizon`                       | Total number of simulation steps for the evaluation.    | 5000             |                                  |
-| `n_rollouts_per_step`           | Number of simulation rollouts to perform per evaluation step.                                      | 45    |
-| `scale_ttc`/`scale_drac`        | Scaling factors for reward components related to time-to-collision (TTC) and deceleration rates (DRAC).        |
-| `render`    | SUMO GUI render       | False or True |
-
----

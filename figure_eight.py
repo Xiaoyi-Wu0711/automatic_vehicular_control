@@ -1,6 +1,6 @@
-from automatic_vehicular_control_raw.exp import *
-from automatic_vehicular_control_raw.env import *
-from automatic_vehicular_control_raw.u import *
+from automatic_vehicular_control_2.exp import *
+from automatic_vehicular_control_2.env import *
+from automatic_vehicular_control_2.u import *
 
 class FigureEightEnv(Env):
     def def_sumo(self):

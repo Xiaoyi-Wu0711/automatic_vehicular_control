@@ -13,8 +13,8 @@ class RingEnv(Env):
 
         get_shape = lambda start_angle, end_angle: ' '.join('%.5f,%.5f' % (r * np.cos(i), r * np.sin(i)) for i in np.linspace(start_angle, end_angle, 80))
         edges = E('edges',
-            E('edge', **{'id': 'right', 'from': 'bottom', 'to': 'top', 'length': c.circumference / 2, 'shape': get_shape(-np.pi / 2, np.pi / 2), 'numLanes': c.n_lanes}),
-            E('edge', **{'id': 'left', 'from': 'top', 'to': 'bottom', 'length': c.circumference / 2, 'shape': get_shape(np.pi / 2, np.pi * 3 / 2), 'numLanes': c.n_lanes}),
+            E('edge', **{'id': 'right', 'from': 'bottom', 'to': 'top', 'length': c.circumference / 2, 'shape': get_shape(-np.pi / 2, np.pi / 2), 'numLanes': c.n_lanes, 'speed': 33}),
+            E('edge', **{'id': 'left', 'from': 'top', 'to': 'bottom', 'length': c.circumference / 2, 'shape': get_shape(np.pi / 2, np.pi * 3 / 2), 'numLanes': c.n_lanes, 'speed': 33}),
         )
 
         connections = E('connections',
@@ -23,8 +23,8 @@ class RingEnv(Env):
         )
 
         additional = E('additional',
-            E('vType', id='human', **{**IDM, **LC2013, **dict(accel=1, decel=1.5, minGap=2, sigma=c.sigma)}),
-            E('vType', id='rl', **{**IDM, **LC2013, **dict(accel=1, decel=1.5, minGap=2, sigma=0)}),
+            E('vType', id='human', **{**Krauss, **LC2013, **dict(accel=1.5, decel=1.5, minGap=2, sigma=c.sigma)}),
+            E('vType', id='rl', **{**Krauss, **LC2013, **dict(accel=1.5, decel=1.5, minGap=2, sigma=c.sigma)}),
             *build_closed_route(edges, c.n_veh, c.av, space=c.initial_space)
         )
         return super().def_sumo(nodes, edges, connections, additional)
@@ -272,8 +272,7 @@ if __name__ == '__main__':
             circumference_min=200,
             circumference_range=None,
             initial_space='free',
-            sigma=0.2,
-
+            sigma=0,
             circ_feature=False,
             accel_feature=False,
             act_type='accel',

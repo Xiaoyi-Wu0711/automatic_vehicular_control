@@ -1,11 +1,10 @@
 #!/bin/bash
 
 #SBATCH --job-name=IDM    # Job name
-#SBATCH --output=automatic_vehicular_control_2/logs/av_0/output_%j.out  # Output file for logs (%j will be replaced by job ID)
-#SBATCH --error=automatic_vehicular_control_2/logs/av_0/output_%j.err   # Error file for logs
+#SBATCH --output=automatic_vehicular_control/logs/av_0/output_%j.out  # Output file for logs (%j will be replaced by job ID)
+#SBATCH --error=automatic_vehicular_control/logs/av_0/output_%j.err   # Error file for logs
 #SBATCH --ntasks-per-core 1  
-#SBATCH --ntasks-per-node 32
-#SBATCH --exclusive
+#SBATCH --ntasks-per-node 1
 #SBATCH --time=03:00:00             # Total runtime limit (HH:MM:SS)
 #SBATCH --partition=workq,fatq,gpuq,rome
 
@@ -15,8 +14,9 @@ export R=results
 # Activate Conda environment
 conda activate /home/xiawu/.conda/envs/default/envs/sumo_py310
 
-# Run the training script
-python $F/ring_multiple_veh_number.py $F/pareto/av_0/c_250/beta_0/ "av=0" "circumference=250" "n_workers=32" "n_rollouts_per_step=32" "warmup_steps=0" "skip_stat_steps=0" "horizon=2000" "global_reward=True" "n_steps=100" "alg='TRPO'" "use_critic=False" "gamma=0.9995" "beta=0" "scale_ttc=1" "scale_drac=1" "seed_np=1409397498" "seed_torch=23558" "residual_transfer=False" "mrtl=False" "handcraft=False" "step_save=False" "lr=0.0001" "wb=False" "tb=False"   2>&1 | tee automatic_vehicular_control/logs/IDM/log_c_250_beta_0.txt 
+seed=0
 
+# Run the training script
+python $F/ring_multiple_veh_number.py $F/pareto/no_rad_av_0_krauss_test_2/c_250/beta_0/ "av=0" "sigma=0" "max_speed=33" "circumference=250" "n_workers=32" "n_rollouts_per_step=32" "warmup_steps=0" "skip_stat_steps=0" "horizon=2000" "global_reward=True" "n_steps=10" "alg='TRPO'" "use_critic=False" "gamma=0.9995" "beta=0" "scale_ttc=1" "scale_drac=1" "seed_np=${seed}" "seed_torch=${seed}" "residual_transfer=False" "mrtl=False" "handcraft=False" "step_save=False" "lr=0.0001" "wb=False" "tb=False"  
 
 echo "Training job completed!"

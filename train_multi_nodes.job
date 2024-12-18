@@ -4,10 +4,10 @@
 #SBATCH --ntasks-per-core 1  
 #SBATCH --ntasks-per-node 32
 #SBATCH --exclusive
-#SBATCH --array=0
+#SBATCH --array=0-13
 #SBATCH --output=automatic_vehicular_control/logs/res_2/av_1/output_%j_%i.out  # Output file for logs (%j will be replaced by job ID)
 #SBATCH --error=automatic_vehicular_control/logs/res_2/av_1/output_%j_%i.err   # Error file for logs
-#SBATCH --time=12:00:00             # Total runtime limit (HH:MM:SS)
+#SBATCH --time=24:00:00             # Total runtime limit (HH:MM:SS)
 #SBATCH --partition=gpuq,rome,workq,fatq
 
 export F=automatic_vehicular_control
@@ -17,17 +17,17 @@ export R=results
 conda activate /home/xiawu/.conda/envs/default/envs/sumo_py310
 
 # seed=1
-# # vehicle_numbers=(2 4 6 8 10 12 14 16 18 20 22 24 26)
+vehicle_numbers=(2 4 6 8 10 12 14 16 18 20 22 24 26)
 # vehicle_numbers=(2)
 circumference=250
-beta=1
+beta=0
 seed=2
-# vehicle_numbers=(2 4 6 8 10 12 14 16 18 20 22 24 26)
-vehicle_numbers=(24)
+# vehicle_numbers=(2 10 22)
+# vehicle_numbers=(2 4 6)
 
 n_veh="${vehicle_numbers[$SLURM_ARRAY_TASK_ID]}"
 
-output_dir="$F/pareto/2_av_1/c_${circumference}/beta_${beta}/seed_${seed}/veh_${n_veh}/"
+output_dir="$F/pareto/IDM_av_1_1/c_${circumference}/beta_${beta}/seed_${seed}/veh_${n_veh}/"
 # Create the output directory if it doesn't exist
 mkdir -p "${output_dir}"
 # Run the Python script with cleanly formatted arguments
@@ -36,14 +36,15 @@ python "$F/ring_single_veh_number.py" "${output_dir}" \
                 "n_veh=${n_veh}" \
                 "av=1" \
                 "beta=${beta}" \
+                "max_speed=33" \
                 "circumference=${circumference}" \
                 "n_workers=45" \
                 "n_rollouts_per_step=45" \
-                "warmup_steps=2000" \
-                "skip_stat_steps=5000" \
+                "warmup_steps=5000" \
+                "skip_stat_steps=2000" \
                 "horizon=5000" \
                 "global_reward=True" \
-                "n_steps=100" \
+                "n_steps=200" \
                 "alg='TRPO'" \
                 "use_critic=True" \
                 "gamma=0.9995" \
@@ -58,6 +59,13 @@ python "$F/ring_single_veh_number.py" "${output_dir}" \
                 "lr=1e-4" \
                 "wb=False" \
                 "tb=True" \
-                "result_save=${output_dir}result.csv"
+                "result_save=${output_dir}result.csv"\
+                "sigma=0"
 
-echo "All experiments completed!"
+
+# python "$F/ring_single_veh_number.py" "$F/pareto/4_av_1/c_250/beta_0/seed_1/veh_2/" "e=False" "n_veh=2" "av=1" "beta=0" "max_speed=30" "circumference=250" "n_workers=45" "n_rollouts_per_step=45" "warmup_steps=5000" "skip_stat_steps=2000" "horizon=5000" "global_reward=True" "n_steps=200" "alg='TRPO'" "use_critic=True" "gamma=0.9995" "scale_ttc=1" "scale_drac=1" "seed_np=1" "seed_torch=1" "residual_transfer=False" "mrtl=False" "handcraft=False" "step_save=False" "lr=1e-4" "wb=False" "tb=True" "result_save=$F/pareto/4_av_1/c_250/beta_0/seed_1/veh_2/result.csv"
+
+# echo "All experiments completed!"
+
+
+# python "$F/ring_single_veh_number.py" "$F/pareto/4_av_1/c_250/beta_0/seed_1/veh_6/" "e=False" "n_veh=6" "av=1" "beta=0" "max_speed=30" "circumference=250" "n_workers=45" "n_rollouts_per_step=45" "warmup_steps=5000" "skip_stat_steps=2000" "horizon=5000" "global_reward=True" "n_steps=200" "alg='TRPO'" "use_critic=True" "gamma=0.9995" "scale_ttc=1" "scale_drac=1" "seed_np=1" "seed_torch=1" "residual_transfer=False" "mrtl=False" "handcraft=False" "step_save=False" "lr=1e-4" "wb=False" "tb=True" "result_save=$F/pareto/4_av_1/c_250/beta_0/seed_1/veh_6/result.csv"

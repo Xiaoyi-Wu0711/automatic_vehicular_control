@@ -144,31 +144,59 @@ DETECTOR_GAP = 0.6
 SHOW_DETECTORS = True
 
 # Car following models
+# IDM = dict(
+#     accel=2.6,
+#     decel=4.5,
+#     tau=1.0,  # past 1 at sim_step=0.1 you no longer see waves
+#     minGap=2.5,
+#     maxSpeed=30,
+#     speedFactor=1.0,
+#     speedDev=0.1,
+#     impatience=0.5,
+#     delta=4,
+#     carFollowModel='IDM',
+#     sigma=0.2,
+# )
+
+# Krauss = dict(
+#     accel=2.6,
+#     decel=4.5,
+#     tau=1.0,
+#     minGap=2.5,
+#     sigma=0.5,
+#     maxSpeed=30,
+#     speedFactor=1.0,
+#     speedDev=0.1,
+#     impatience=0.5,
+#     carFollowModel='Krauss',
+# )
+
+# https://sumo.dlr.de/docs/Definition_of_Vehicles%2C_Vehicle_Types%2C_and_Routes.html
 IDM = dict(
-    accel=2.6,
-    decel=4.5,
+    accel=1.5,
+    decel=1.5,
     tau=1.0,  # past 1 at sim_step=0.1 you no longer see waves
-    minGap=2.5,
-    maxSpeed=30,
+    minGap=2,
+    maxSpeed=33,
     speedFactor=1.0,
-    speedDev=0.1,
-    impatience=0.5,
+    speedDev=0,
+    impatience=0,
     delta=4,
     carFollowModel='IDM',
-    sigma=0.2,
+    sigma=0,
 )
 
 Krauss = dict(
-    accel=2.6,
-    decel=4.5,
+    # accel=2.6,
+    # decel=4.5,
     tau=1.0,
     minGap=2.5,
-    sigma=0.5,
-    maxSpeed=30,
+    maxSpeed=33,
     speedFactor=1.0,
-    speedDev=0.1,
-    impatience=0.5,
+    speedDev=0,
+    impatience=0,
     carFollowModel='Krauss',
+    sigma=0,
 )
 
 # Lane change models
