@@ -155,7 +155,7 @@ python $F/ring.py $F/pareto/single_ring/IDM/different_veh \
 ### 3.4 Batch Running with Slurm:
 Training:
 ```
-sbatch train.job
+sbatch train_multi_nodes.job
 ```
 
 Evaluation:

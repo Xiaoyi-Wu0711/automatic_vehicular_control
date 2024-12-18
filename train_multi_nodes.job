@@ -1,3 +1,4 @@
+
 #!/bin/bash
 
 #SBATCH --job-name=ring_train     # Job name
